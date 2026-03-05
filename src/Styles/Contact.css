@@ -3,8 +3,8 @@
 .paragraph{
     width: 40%;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 26%;
+    left: 3%;
 }
 
 
@@ -137,7 +137,16 @@ line-height:1.6;
 
 }
 
-
+.response-badge{
+background:#e8ffe8;
+color:green;
+padding:10px 20px;
+border-radius:20px;
+font-size:14px;
+margin-bottom:20px;
+font-weight:bold;
+display:inline-block;
+}
 
 
 .form{
@@ -206,8 +215,6 @@ outline:none;
 
 
 
-/* MEDIUM BUTTON LEFT SIDE */
-
 .form button{
 
 padding:10px 20px;
@@ -217,8 +224,6 @@ width:auto;
 min-width:120px;
 
 font-size:15px;
-
-/* background:rgb(93,255,78); */
 
 
 background:rgb(27,145,27);
@@ -240,17 +245,16 @@ align-self:flex-start;
 
 
 
-/* 
-.form button:hover{
-
-background:rgb(27,145,27);
-
-} */
-
-
-
-
 @media(max-width:768px){
+
+.paragraph{
+position:relative;
+width:90%;
+top:0;
+left:0;
+margin:auto;
+text-align:center;
+}
 
 .second-box{
 
@@ -259,6 +263,10 @@ flex-direction:column;
 align-items:center;
 
 }
+.map iframe{
+width:100%;
+}
+
 
 .detailss,
 .form{
@@ -289,11 +297,16 @@ margin-bottom:10px;
     margin: 0px;
 
 }
-.imageview{
+/* .imageview{
     box-sizing: border-box;
     overflow: hidden;
     margin-bottom: -4px;
 
+} */
+.imageview{
+margin-top:10px;
+margin-bottom:20px;
+overflow:hidden;
 }
 img{
     width: 100%;
@@ -307,6 +320,74 @@ img{
 .form label{
     margin-left: 10px;
 }
+.errorconsultation{
+color:red;
+font-size:14px;
+margin-bottom:10px;
+}
+.whatsapp-float{
+position:fixed;
+bottom:30px;
+right:30px;
+width:60px;
+height:60px;
+/* background:#25D366; */
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+z-index:999;
+transition:0.3s;
+}
 
+.whatsapp-float img{
+width:32px;
+height:32px;
+}
 
+.whatsapp-float:hover{
+transform:scale(1.1);
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
 
+.sticky-cta{
+width:100%;
+text-align:center;
+padding:25px;
+/* background:linear-gradient(90deg,#2e7d32,#43a047); */
+margin-top:40px;
+border-radius:10px;
+}
+
+.sticky-cta a{
+color:white;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+padding:12px 30px;
+background:#1b5e20;
+border-radius:30px;
+transition:0.3s;
+}
+
+.sticky-cta a:hover{
+background:#388e3c;
+}
+.offer-banner{
+background:linear-gradient(90deg,#2e7d32,#66bb6a);
+color:white;
+text-align:center;
+padding:12px;
+font-weight:bold;
+/* font-size:16px; */
+letter-spacing:0.5px;
+}
+.loader{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:bold;
+}
