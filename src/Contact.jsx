@@ -7,8 +7,6 @@ import phoneIcon from "./assets/telephone.png";
 import whatsapp from "./assets/whatsapp.png";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -153,9 +151,9 @@ function Contact() {
       <NavBar />
 
       {/* OFFER BANNER */}
-      <div className="offer-banner">
+    <div className="offer-banner">
         🎉 Special Offer – 20% Off on Membership!
-      </div>
+    </div>
 
       <div className="imageview">
         <img src={ropeimage} alt="banner" />
@@ -320,7 +318,7 @@ function Contact() {
               onChange={handleChange}
             ></textarea>
             <div className="errorconsultation">{errors.consultation}</div>
-            <label>Book Consultation</label>
+            <label>Choose Your Date For An Consulting</label>
             <input type="date" name="consultation" placeholder="Select consultation date" value={formData.consultation} onChange={handleChange} min={new Date().toISOString().split("T")[0]}/>
             
 
