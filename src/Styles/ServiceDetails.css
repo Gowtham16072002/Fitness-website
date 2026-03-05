@@ -4,20 +4,31 @@
   margin-top: 40px;
 }
 
-.service-container {
+.service-container { 
   /* display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 40px; */
-  display: flex;
+   display: flex; 
   gap: 30px;
   flex-wrap: wrap;
-}
+} 
+ /* .service-container { 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+} */
 
 .right-cards{
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+ /* .right-cards{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+} */
 
 .cardSD{
   background-color: #e9e9ec;
@@ -63,10 +74,10 @@
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
-  /* color: #333; */
-}
+  color: #333;
+ } 
 
-.cardSD h4 {
+ .cardSD h4 {
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -78,15 +89,113 @@
 .cardSD ul li {
   margin-bottom: 8px;
   font-size: 15px;
+ } 
+
+
+ /*-------------------------------------------------------------*/
+
+/* ================= PRICING ================= */
+
+.pricing-section{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.pricing-title{
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.pricing-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card{
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  width: 260px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.pricing-card h3{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.pricing-card h2{
+  color: green;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul{
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li{
+  margin-bottom: 8px;
+}
+
+.pricing-btn{
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.pricing-btn:hover{
+  background:#1f6b3a;
 }
 
 
-@media (max-width: 992px) {
-  /* .services-container {
-    grid-template-columns: 1fr;
-  } */
 
-  .right-cards {
+/* ================= FAQ ================= */
+
+.faq-section{
+  margin-top: 80px;
+}
+
+.faq-title{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.faq-container{
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-item{
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.faq-item h4{
+  margin-bottom: 10px;
+  color: #1f6b3a;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+  .service-container{
     flex-direction: column;
   }
+
+  .pricing-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
