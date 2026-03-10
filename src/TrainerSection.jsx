@@ -12,7 +12,7 @@ function TrainerSection() {
         <div>
             <section className="trainers">
 
-                <h2 className="trainer-title">Our Trainers</h2>
+                <h2 className="trainer-title">Our Expert Trainers</h2>
 
                 <div className="trainer-container">
 

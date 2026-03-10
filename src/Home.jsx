@@ -9,6 +9,11 @@ import ZumbaDetails from "./ZumbaDetails";
 import Payment from "./Payment";
 import Membership from "./Membership";
 import WhyChooseUs from "./WhyChooseUs";
+import TransFormation from "./TransFormation";
+import Program2 from "./Program2";
+import TrainerSection from "./TrainerSection";
+import Testimonials from "./Testimonials";
+import PricingPlans from "./PricingPlans";
 
 
 
@@ -20,32 +25,22 @@ function FitnessLanding() {
 
             <NavBar />
 
-            {/* <section className="hero">
-              <div className="overlay"></div>
-              <div className="hero-content">
-                  <h2>Transform Your Body, Mind & Lifestyle</h2>
-                  <p>
-                      Personalized fitness, wellness, and coaching programs designed to
-                      help you feel stronger, healthier, and more confident—inside and
-                      out
-                  </p>
-                  <div className="hero-buttons">
-                      <button onClick={()=>{navigate("/contact")}} className="btn primary"><b>Book your Free Consultation</b></button>
-                      <button onClick={()=>{navigate("/programs")}} className="btn secondary"><b>View our Programs</b></button>
-                  </div>
-              </div>
-          </section> */}
             <section className="hero">
                 <div className="hero-content">
 
-                    <h1>Transform Your Body. Transform Your Life.</h1>
+                    <h1>Complete Fitness for Body, Mind & Energy</h1>
 
                     <p>
-                        Science-backed training programs tailored to your fitness goals.
+                        Gym training, yoga, Zumba dance programs designed to help
+                        you achieve strength, flexibility and confidence.
                     </p>
 
                     <button className="hero-btn">
                         Start 7-Day Free Trial
+                    </button>
+
+                    <button className="hero-btn">
+                        View Programs
                     </button>
 
                 </div>
@@ -70,8 +65,13 @@ function FitnessLanding() {
 
             </section>
 
-            <WhyChooseUs/>
+            <WhyChooseUs />
+            <Program2/>
+            <TrainerSection/>
+            <TransFormation/>
+            <Testimonials/>
             <HomeMidsec />
+            <PricingPlans/>
             <FooterAbove />
             <Footer />
             {/* <ZumbaDetails/> */}

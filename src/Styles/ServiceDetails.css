@@ -4,39 +4,41 @@
   margin-top: 40px;
 }
 
-.service-container { 
-   display: flex; 
+.service-container {
+  display: flex;
   gap: 30px;
   flex-wrap: wrap;
-} 
+}
 
-.right-cards{
+.right-cards {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.cardSD{
+
+.cardSD {
   background-color: #e9e9ec;
   padding: 40px;
   border-radius: 40px;
   position: relative;
 }
 
-.cardSD:hover{
+.cardSD:hover {
   background: #2f8f52;
   color: white;
 }
+
 .cardSD:hover .icon-circleSD {
   background: white;
   color: #1f6b3a;
 }
 
-.left-card{
+.left-card {
   padding: 50px;
   flex: 1;
 }
 
-.icon-circleSD{
+.icon-circleSD {
   width: 70px;
   height: 70px;
   background-color: green;
@@ -60,9 +62,9 @@
   line-height: 1.6;
   margin-bottom: 20px;
   /* color: #333; */
- } 
+}
 
- .cardSD h4 {
+.cardSD h4 {
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -74,101 +76,37 @@
 .cardSD ul li {
   margin-bottom: 8px;
   font-size: 15px;
- } 
-
-
- /*-------------------------------------------------------------*/
-
-/* ================= PRICING ================= */
-
-.pricing-section{
-  margin-top: 80px;
-  text-align: center;
 }
 
-.pricing-title{
-  font-size: 32px;
-  margin-bottom: 40px;
-}
 
- .pricing-container{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
- .pricing-card{
-  background: white;
-  padding: 40px;
-  border-radius: 25px;
-  width: 260px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.pricing-card h3{
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.pricing-card h2{
-  color: green;
-  margin-bottom: 20px;
-}
-
-.pricing-card ul{
-  margin-bottom: 20px;
-}
-
-.pricing-card ul li{
-  margin-bottom: 8px;
-}
-
-.pricing-btn{
-  background: green;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  align-self: center;
-}
-.pricing-btn:hover{
-  background:#1f6b3a;
-}
-
+/*-------------------------------------------------------------*/
 
 
 /* ================= FAQ ================= */
 
-.faq-section{
+.faq-section {
   margin-top: 80px;
 }
 
-.faq-title{
+.faq-title {
   text-align: center;
   font-size: 32px;
   margin-bottom: 40px;
 }
 
-.faq-container{
+.faq-container {
   max-width: 900px;
   margin: auto;
 }
 
-.faq-item{
+.faq-item {
   background: white;
   padding: 25px;
   border-radius: 15px;
   margin-bottom: 20px;
 }
 
-.faq-item h4{
+.faq-item h4 {
   margin-bottom: 10px;
   color: #1f6b3a;
 }
@@ -179,13 +117,8 @@
 
 @media (max-width: 992px) {
 
-  .service-container{
+  .service-container {
     flex-direction: column;
-  }
-
-  .pricing-container{
-    flex-direction: column;
-    align-items: center;
   }
 
 }

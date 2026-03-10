@@ -8,23 +8,24 @@ import Zumbaimage from './assets/ZumbaImage.jpeg'
 function Program2() {
   return (
     <div className="programs-section">
-
+      <div className="prg-header">
+        <h1>Our Fitness Programs</h1>
+      </div>
       <div className="programs-container">
-
         <div className="program-card">
           <div className="image-box"><img src={Gymimage} alt="" /></div>
           <h3>Beginner fitness program</h3>
-          <p>Our Gym Fitness Program is designed to improve strength, endurance, 
-          and overall health through structured workouts and expert guidance. 
-          It includes a balanced mix of cardio, strength training and core workouts tailored for beginners and advanced members. 
-          With modern equipment and certified trainers, 
-          the program helps you achieve your fitness goals safely and effectively.</p>
+          <p>Our Gym Fitness Program is designed to improve strength, endurance,
+            and overall health through structured workouts and expert guidance.
+            It includes a balanced mix of cardio, strength training and core workouts tailored for beginners and advanced members.
+            With modern equipment and certified trainers,
+            the program helps you achieve your fitness goals safely and effectively.</p>
           <ul>
             <li>Improves muscle strength and stamina</li>
             <li>Supports weight management and fat loss</li>
             <li>Boosts energy and overall well-being</li>
           </ul>
-        <button>Choose this Program</button>
+          <button>Choose this Program</button>
         </div>
 
 
@@ -32,7 +33,7 @@ function Program2() {
           <div className="image-box"><img src={Yogaimage} alt="" /></div>
           <h3>Yoga Fitness Program</h3>
           <p>Our Yoga Fitness Program focuses on improving flexibility, balance, and mental well-being through guided poses and breathing techniques.
-           It combines traditional yoga practices with modern fitness methods to strengthen the body and calm the mind.
+            It combines traditional yoga practices with modern fitness methods to strengthen the body and calm the mind.
             Suitable for all levels, it helps reduce stress while enhancing overall physical health.</p>
           <ul>
             <li>Increases flexibility and balance</li>

@@ -7,6 +7,7 @@ import AboutTop from './AboutTop'
 import CommunitySection from './CommunitySection'
 import TrainerSection from './TrainerSection'
 import Testimonials from './Testimonials'
+import TransFormation from './TransFormation'
 
 
 function About() {
@@ -17,6 +18,7 @@ function About() {
           <MissionVision/>
           <TrainerSection/>
           <Testimonials/>
+          <TransFormation/>
           <CommunitySection/>
           <Footer/>
       </div>
