@@ -3,7 +3,7 @@ import "./Styles/Home.css"
 import NavBar from "./NavBar";
 import { Link, useNavigate } from "react-router-dom";
 import HomeMidsec from "./HomeMidsec";
-import FooterAbove from "./Footerabove";
+import FooterAbove from "./FooterAbove";
 import Footer from "./Footer";
 import ZumbaDetails from "./ZumbaDetails";
 import Payment from "./Payment";

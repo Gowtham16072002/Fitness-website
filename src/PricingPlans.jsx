@@ -11,35 +11,47 @@ function PricingPlans() {
                 <div className="pricing-container">
 
                     <div className="pricing-card">
-                        <h3>Basic</h3>
-                        <h2>₹1999</h2>
-                        <ul>
+                        <div>
+                            <h3>Basic</h3>
+                            <h2>₹1999</h2>
+                        </div>
+                        <div className='pricing-content'>
+                            <ul>
                             <li>Gym Access</li>
                             <li>Group Classes</li>
                         </ul>
+                        </div>
                         <button className="pricing-btn">Choose Plan</button>
                     </div>
 
                     <div className="pricing-card">
-                        <h3>Pro</h3>
-                        <h2>₹3999</h2>
-                        <ul>
+                        <div>
+                            <h3>Pro</h3>
+                            <h2>₹3999</h2>
+                        </div>
+                        <div className='pricing-content'>
+                            <ul>
                             <li>Personal Training</li>
                             <li>Diet Plan</li>
                             <li>Progress Tracking</li>
                         </ul>
+                        </div>
                         <button className="pricing-btn">Choose Plan</button>
                     </div>
 
                     <div className="pricing-card">
-                        <h3>Elite</h3>
-                        <h2>₹6999</h2>
-                        <ul>
+                        <div>
+                            <h3>Elite</h3>
+                            <h2>₹6999</h2>
+                        </div>
+                        <div className='pricing-content'>
+                            <ul>
                             <li>Full Transformation Program</li>
                             <li>Personal Trainer</li>
                             <li>Customized Diet Plan</li>
                             <li>Weekly Progress Check</li>
                         </ul>
+                        </div>
                         <button className="pricing-btn">Choose Plan</button>
                     </div>
 

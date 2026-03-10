@@ -1,4 +1,4 @@
-/* ===== Section ===== */
+/*Section*/
 .cta {
   position: relative;
   height: 80vh;
@@ -11,11 +11,16 @@
   overflow: hidden;
 }
 
-/* ===== Content ===== */
+/*Content*/
 .cta-content h1 {
   font-size: 44px;
   margin-bottom: 15px;
   font-weight: 800;
+}
+
+.cta-content h4{
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .cta-content p {
@@ -25,7 +30,7 @@
   line-height: 1.6;
 }
 
-/* ===== Button ===== */
+/*Button*/
 .cta-btn {
   background: #1f6b3a;
   color: white;
@@ -35,6 +40,7 @@
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 10px;
 }
 
 .cta-btn:hover {
@@ -42,7 +48,7 @@
   transform: scale(1.05);
 }
 
-/* ===== Floating Icons ===== */
+/*Floating Icons*/
 .icon {
   position: absolute;
   font-size: 38px;
@@ -59,14 +65,14 @@
 .icon5 { top: 45%; right: 25%; animation-delay: 2s; }
 .icon6 { bottom: 20%; right: 15%; animation-delay: 2.5s; }
 
-/* ===== Floating Animation ===== */
+/* Floating Animation */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0px); }
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 768px) {
   .cta-content h1 {
     font-size: 32px;

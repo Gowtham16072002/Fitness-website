@@ -6,14 +6,15 @@
 
 .service-container {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  height: 130vh;
+  gap: 10px;
 }
 
 .right-cards {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  height: 100%;
+  gap: 10px;
 }
 
 .cardSD {
@@ -21,6 +22,7 @@
   padding: 40px;
   border-radius: 40px;
   position: relative;
+  height: 50%;
 }
 
 .cardSD:hover {
@@ -34,7 +36,7 @@
 }
 
 .left-card {
-  padding: 50px;
+  height: 100%;
   flex: 1;
 }
 
@@ -58,15 +60,17 @@
 }
 
 .cardSD p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 30px;
   margin-bottom: 20px;
+  text-align: justify;
   /* color: #333; */
 }
 
 .cardSD h4 {
   margin-bottom: 10px;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .cardSD ul {
@@ -75,7 +79,8 @@
 
 .cardSD ul li {
   margin-bottom: 8px;
-  font-size: 15px;
+  font-size: 12px;
+  margin-top: 15px;
 }
 
 
