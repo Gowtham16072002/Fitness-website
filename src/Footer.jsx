@@ -1,6 +1,7 @@
 import React from "react";
 import "./Styles/Footer.css";
-import logo from './assets/weightlifting.png'
+import logo from './assets/LogoIcon.png'
+import logoName from './assets/LogoName.png'
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -10,6 +11,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-left">
           <img src={logo} alt="VictoryFit Logo" className="footer-logo" />
+          <img src={logoName} alt="VictoryFit LogoName" className="footer-logoName" />
           <h3>VictoryFit</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.

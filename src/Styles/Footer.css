@@ -1,6 +1,7 @@
 .footer {
   /* background: #f2f2f2; */
-  background: #fff;
+  /* background: #fff; */
+  background: black;
   width: 100%;
 }
 
@@ -19,6 +20,10 @@
   width: 70px;
   margin-bottom: 10px;
 }
+.footer-logoName{
+  width: 60px;
+  margin-bottom: 10px;
+}
 
 /* .footer-left{
   border: 2px solid black;
@@ -27,7 +32,7 @@
 
 .footer-left p {
   margin-top: 10px;
-  color: #555;
+  color:white;
   line-height: 1.6;
 }
 
@@ -49,7 +54,8 @@
 .footer-links li {
   margin-bottom: 8px;
   cursor: pointer;
-  color: #555;
+  /* color: #555; */
+  color: white;
 }
 
 .footer-links li:hover {
@@ -60,12 +66,14 @@
 
 .footer-social h4{
     font-size: 22px;
+    color: white;
 }
 .social-icons {
   display: flex;
   gap: 15px;
   font-size: 18px;
   margin-top: 10px;
+  color: white;
 }
 
 /* Full width copyright bar */
