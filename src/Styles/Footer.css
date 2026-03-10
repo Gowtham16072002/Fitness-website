@@ -96,6 +96,9 @@
   margin-top: 10px;
   color: white;
 }
+.social-icons a{
+  color: white;
+}
 /* Full width copyright bar */
 .footer-bottom {
   width: 100%;

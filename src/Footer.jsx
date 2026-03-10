@@ -52,12 +52,20 @@ function Footer() {
    <div className="footer-social">
         <h4>Follow Us</h4>
         <div className="social-icons">
-          <i className="fa-brands fa-facebook"></i>
-          <i className="fa-brands fa-twitter"></i>
-          <i className="fa-brands fa-youtube"></i>
-          <i className="fa-brands fa-instagram"></i>
+          <a href="https://www.facebook.com/victoryfit" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/victoryfit" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/@victoryfit" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/victoryfit" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
         </div>
-      </div>
+    </div>
 
   <div className="footer-bottom">
     Copyright © 2026 VyoobamTech. All rights reserved.
