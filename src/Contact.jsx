@@ -152,7 +152,9 @@ function Contact() {
 
       {/* OFFER BANNER */}
     <div className="offer-banner">
-        <marquee behavior="" direction="left">Special Offer – 20% Off on Membership!</marquee>
+      <div className="offer-text">
+      Special Offer – 20% Off on Membership!
+      </div>
     </div>
 
       <div className="imageview">
@@ -172,9 +174,9 @@ function Contact() {
       <div className="second-box">
 
       {/* STICKY CTA */}
-    <div className="sticky-cta">
+    {/* <div className="sticky-cta">
         <a href="#contact-form">Book Free Consultation</a>
-    </div>
+    </div> */}
         {/* LEFT DETAILS */}
         <div className="detailss" data-aos="fade-right">
 
@@ -265,7 +267,9 @@ function Contact() {
 
         {/* FORM */}
         <div className="form" id="contact-form" data-aos="fade-left">
-
+          <div className="consultation-text">
+              Book Free Consultation
+          </div>
           <div className="response-badge">
             ⏱ Response within 24 hours
           </div>
