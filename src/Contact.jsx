@@ -152,7 +152,7 @@ function Contact() {
 
       {/* OFFER BANNER */}
     <div className="offer-banner">
-        🎉 Special Offer – 20% Off on Membership!
+        <marquee behavior="" direction="left">Special Offer – 20% Off on Membership!</marquee>
     </div>
 
       <div className="imageview">

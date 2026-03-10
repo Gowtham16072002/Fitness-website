@@ -135,7 +135,7 @@
 }
 
 .social-icons i:hover{
-  color: #1f6f3d;
+  color:rgb(233, 6, 6);
   transform: scale(1.2);
 }
 .Nav-route{
@@ -144,5 +144,5 @@
 }
 
 .Nav-route:hover{
-  color: #1f6f3d;
+  color:rgb(233, 6, 6);
 }
