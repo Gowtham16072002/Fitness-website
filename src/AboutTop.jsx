@@ -2,10 +2,12 @@ import React from "react";
 import "./Styles/AboutTop.css";
 import './App.css'
 
-import img1 from "./assets/about1.jpg";
+import img1 from "./assets/about1.jpg"
 import img2 from "./assets/about2.jpg"
 import img3 from "./assets/about3.jpg"
 import img4 from "./assets/about4.jpg"
+import YogaSection from "./assets/YogaSection.png"
+import ZumbaSection from "./assets/ZumbaSection.png"
 import { useNavigate } from "react-router-dom";
 
 import AOS from "aos";
@@ -34,21 +36,25 @@ function AboutTop() {
         through gym training, yoga, Zumba dance programs.
       </p>
 
-      <div className="about-gallery">
-        <div className="about-img" data-aos="zoom-in">
+      <div className="about-gallery" data-aos="zoom-in">
+        <div className="about-img" >
           <img src={img1} alt="gym" />
+          <p>Cardio Zone</p>
         </div>
 
-        <div className="about-img" data-aos="zoom-in">
-          <img src={img2} alt="workout" />
+        <div className="about-img" >
+          <img src={YogaSection} alt="workout" />
+          <p>Yoga Section</p>
         </div>
 
-        <div className="about-img" data-aos="zoom-in">
-          <img src={img3} alt="training" />
+        <div className="about-img" >
+          <img src={ZumbaSection} alt="training" />
+          <p>Zumba Section</p>
         </div>
 
-        <div className="about-img" data-aos="zoom-in">
+        <div className="about-img" >
           <img src={img4} alt="fitness" />
+          <p>Modern Gym Equipment</p>
         </div>
       </div>
 

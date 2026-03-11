@@ -40,6 +40,7 @@ function TransFormation() {
                         <h3 className="before">Before</h3>
                         <img src={WLafter} />
                         <h3 className="after">After</h3>
+                        <h4>Weight Loss</h4>
                         <p>Strength & Weight Loss Transformation</p>
                         {/* <p>Lost 12kg in 3 months through strength training</p> */}
                     </div>
@@ -52,6 +53,7 @@ function TransFormation() {
                         <h3 className="before">Before</h3>
                         <img src={YogaAfter} />
                         <h3 className="after">After</h3>
+                        <h4>Yoga</h4>
                         <p>Yoga Flexibility & Wellness Transformation</p>
                         {/* <p>Improved flexibility and posture through yoga practice</p> */}
                     </div>
@@ -64,6 +66,7 @@ function TransFormation() {
                         <h3 className="before">Before</h3>
                         <img src={ZumbaAfter} />
                         <h3 className="after">After</h3>
+                        <h4>Zumba</h4>
                         <p>Zumba Fitness Transformation</p>
                         {/* <p>Burned calories and improved stamina with Zumba dance</p> */}
                     </div>
@@ -76,6 +79,7 @@ function TransFormation() {
                         <h3 className="before">Before</h3>
                         <img src={ZumbaAfter2} />
                         <h3 className="after">After</h3>
+                        <h4>Zumba Dance</h4>
                         <p>Zumba Dance Fitness Transformation</p>
                         {/* <p>Improved energy and coordination through dance workouts</p> */}
                     </div>
@@ -88,6 +92,7 @@ function TransFormation() {
                         <h3 className="before">Before</h3>
                         <img src={WLafter2} />
                         <h3 className="after">After</h3>
+                        <h4>Overall Fitness</h4>
                         <p>Complete Fitness Transformation</p>
                         {/* <p>Achieved overall fitness with guided training programs</p> */}
                     </div>
@@ -100,6 +105,7 @@ function TransFormation() {
                         <h3 className="before">Before</h3>
                         <img src={WGafter} />
                         <h3 className="after">After</h3>
+                        <h4>Weight Gain</h4>
                         <p>Strength & Weight Gain Transformation</p>
                         {/* <p>Gain 7kg in 3 months through strength training</p> */}
                     </div>

@@ -30,13 +30,16 @@
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-  background-color: #44a969;
-  color: white;
+  /* background-color: #44a969; */
+  /* color: white; */
+  background-color: white;
+  color: black;
 }
 
 .card-icon {
   font-size: 40px;
   margin-bottom: 20px;
+  color: rgb(16, 173, 16);
 }
 
 /* .float-icon{

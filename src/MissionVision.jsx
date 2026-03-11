@@ -2,13 +2,26 @@ import React from 'react'
 import './Styles/MissionVision.css'
 import Banner from './Banner'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+// npm install aos
+
 
 function MissionVision() {
+
+      useEffect(() => {
+              AOS.init({
+                duration: 1000,
+                once: true
+              });
+            }, []);
+
     return (
         <>
             <Banner />
     
-            <section className='mission-section'>
+            <section className='mission-section'data-aos="zoom-in">
                 {/* floating icons */}
                 {/* <i className="fa-solid fa-dumbbell float-icon left"></i>
                 <i className="fa-solid fa-person-running float-icon top"></i> */}

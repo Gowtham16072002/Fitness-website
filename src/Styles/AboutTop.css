@@ -30,13 +30,17 @@
   flex-wrap: wrap;
 }
 
+.about-gallery p{
+  padding: 12px;
+}
+
 /* Image container */
 .about-img {
   width: 260px;
   height: 170px;
   /* overflow: hidden; */
   border-radius: 10px;
-  transform: skewX(-8deg);
+  /* transform: skewX(-8deg); */
 }
 
 /* Image */
@@ -44,19 +48,21 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: skewX(8deg);
+  /* transform: skewX(8deg); */
   transition: transform 0.4s ease;
+  border-radius: 10px;
 }
 
 /* Hover effect */
 .about-img:hover img {
-  transform: skewX(8deg) scale(1.08);
+  /* transform: skewX(8deg) scale(1.08); */
+  transform: translateY(-8px);
 }
 
 /* Button */
 .about-btn {
-  background: #256b3f;
-  color: white;
+  background:rgb(245, 87, 87);
+  color: #ffffff;
   border: none;
   padding: 14px 34px;
   margin: 20px;
@@ -68,7 +74,7 @@
 }
 
 .about-btn:hover {
-  background: #1e5532;
+  background:rgb(233, 6, 6);
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
