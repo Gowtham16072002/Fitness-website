@@ -5,42 +5,42 @@
 }
 
 .service-container {
-  /* display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px; */
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  height: 130vh;
+  gap: 10px;
 }
 
-.right-cards{
+.right-cards {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  height: 100%;
+  gap: 10px;
 }
 
-.cardSD{
+.cardSD {
   background-color: #e9e9ec;
   padding: 40px;
   border-radius: 40px;
   position: relative;
+  height: 50%;
 }
 
-.cardSD:hover{
+.cardSD:hover {
   background: #2f8f52;
   color: white;
 }
+
 .cardSD:hover .icon-circleSD {
   background: white;
   color: #1f6b3a;
 }
 
-.left-card{
-  padding: 50px;
+.left-card {
+  height: 100%;
   flex: 1;
 }
 
-.icon-circleSD{
+.icon-circleSD {
   width: 70px;
   height: 70px;
   background-color: green;
@@ -60,15 +60,17 @@
 }
 
 .cardSD p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 30px;
   margin-bottom: 20px;
+  text-align: justify;
   /* color: #333; */
 }
 
 .cardSD h4 {
   margin-bottom: 10px;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .cardSD ul {
@@ -77,16 +79,51 @@
 
 .cardSD ul li {
   margin-bottom: 8px;
-  font-size: 15px;
+  font-size: 12px;
+  margin-top: 15px;
 }
 
 
-@media (max-width: 992px) {
-  /* .services-container {
-    grid-template-columns: 1fr;
-  } */
+/*-------------------------------------------------------------*/
 
-  .right-cards {
+
+/* ================= FAQ ================= */
+
+.faq-section {
+  margin-top: 80px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-item {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.faq-item h4 {
+  margin-bottom: 10px;
+  color: #1f6b3a;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+  .service-container {
     flex-direction: column;
   }
+
 }

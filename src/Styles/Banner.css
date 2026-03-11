@@ -1,7 +1,8 @@
 /* ===== Banner Section ===== */
 .fitness-banner {
   position: relative;
-  background: #256b3f;
+  /* background: #256b3f; */
+  background-color: rgb(38, 37, 37);
   padding: 100px 40px;
   overflow: hidden;
   text-align: center;

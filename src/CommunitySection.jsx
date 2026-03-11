@@ -12,9 +12,16 @@ function CommunitySection ()  {
               <div className="community-card">
                   <div className="overlay"></div>
                   <div className="community-content">
-                      <h2>Join Our Commmunity</h2>
-                      <p>Start your fitness journey with a team that truly cares about your success</p>
+
+                      {/* <h2>Join Our Commmunity</h2>
+                      <p>Start your fitness journey with a team that truly cares about your success</p> */}
+
+                      <h2>Start Your Fitness Transformation Today</h2>
+                      <p>Join hundreds of members improving their health and lifestyle.</p>
+
+                      <button className="community-btn">View Programs</button>
                       <button onClick={()=>{navigate("/contact")}} className="community-btn">Get Started today</button>
+                      <button className="community-btn">Join Now</button>
                   </div>
               </div>
           </section>

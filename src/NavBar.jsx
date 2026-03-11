@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from "./assets/weightlifting.png";
+import logo from './assets/LogoIcon.png'
+import logoName from './assets/LogoName.png'
 import "./Styles/NavBar.css"
 import './App.css'
 import { Link, useNavigate } from 'react-router-dom';
@@ -12,14 +13,23 @@ function NavBar() {
   return (
     <div>
           <nav className="navbar">
+            <div className='imageblock'>
+
+            
               <div className="logo">
                   <img
                       src={logo}
                       alt="VictoryFit Logo"
                       className="logo-img"
                   />
-                  <h1>VictoryFit</h1>
               </div>
+              <div className='logoName'>
+                <img src={logoName} 
+                alt="VictoryFit Logo" 
+                className="logoName-img"
+                />
+              </div>
+            </div>
               <ul className="nav-links">
                   
                   <Link className='Nav-route' to="/"><li> Home</li></Link>
