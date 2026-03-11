@@ -5,6 +5,7 @@ import locationIcon from "./assets/location.png";
 import mailIcon from "./assets/mail.png";
 import phoneIcon from "./assets/telephone.png";
 import whatsapp from "./assets/whatsapp.png";
+import Hours from "./assets/Hours.png";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import AOS from "aos";
@@ -240,7 +241,8 @@ function Contact() {
           <div className="sectionn">
 
             <div className="titlee">
-              <h2>Business Hours</h2>
+              <img src={Hours} className="iconn" alt="" />
+              <h2>Training Hours</h2>
             </div>
 
             <p>

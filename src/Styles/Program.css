@@ -32,7 +32,7 @@
     font-size: 2rem;
     left: 10%;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .ProgramCoverpage .btn{
     /* position: absolute; */
@@ -46,10 +46,20 @@
     margin-top: 50px;
     font-weight: bold;
 }
-.ProgramCoverpage .contextArea p{
+.ProgramCoverpage .contextArea p {
     top: 30%;
     left: 10%;
-    font-size: large;
+    font-size:large;
+}
+.ProgramCoverpage .contextArea-content p{
+    top: 30%;
+    left: 10%;
+    font-size:medium;
+}
+.contextArea .contextArea-paraa {
+    top: 30%;
+    left: 10%;
+    font-size: small;
 }
 .ProgramCoverpage span{
     color: rgb(49, 228, 32);
