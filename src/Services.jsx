@@ -1,7 +1,7 @@
 import React from 'react'
 import './Styles/Services.css'
 import Footer from './Footer'
-import FooterAbove from './Footerabove'
+import FooterAbove from './FooterAbove'
 import NavBar from './NavBar'
 import ServiceDetails from './ServiceDetails'
 import { useNavigate } from 'react-router-dom'

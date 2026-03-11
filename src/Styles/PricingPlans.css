@@ -46,7 +46,8 @@
 }
 
 .pricing-card h2 {
-  color: green;
+  /* color: green; */
+   color:rgb(245, 87, 87);
   margin-bottom: 20px;
 }
 
@@ -59,7 +60,8 @@
 }
 
 .pricing-btn {
-  background: green;
+  /* background: green; */
+  background-color:rgb(245, 87, 87);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -69,7 +71,8 @@
 }
 
 .pricing-btn:hover {
-  background: #1f6b3a;
+  /* background: #1f6b3a; */
+  background:rgb(233, 6, 6);
 }
 
 @media (max-width: 992px) {

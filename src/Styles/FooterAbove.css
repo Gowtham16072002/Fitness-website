@@ -3,7 +3,7 @@
   position: relative;
   height: 80vh;
   /* background: #f2f2f2; */
-  background: linear-gradient(180deg,rgb(197, 244, 207),white,white,white,rgb(197, 244, 207));
+  background: linear-gradient(180deg,rgba(233, 6, 6,0.5),white,white,white,rgba(233, 6, 6,0.5));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,8 @@
 
 /*Button*/
 .cta-btn {
-  background: #1f6b3a;
+  /* background: #1f6b3a; */
+  background-color:rgb(245, 87, 87);
   color: white;
   border: none;
   padding: 16px 40px;
@@ -44,7 +45,8 @@
 }
 
 .cta-btn:hover {
-  background: #2f8f52;
+  /* background: #2f8f52; */
+  background:rgb(233, 6, 6);
   transform: scale(1.05);
 }
 

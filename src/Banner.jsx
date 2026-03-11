@@ -1,7 +1,7 @@
 import React from "react";
 import "./Styles/Banner.css";
 
-function Banner()  {
+function Banner() {
   return (
     <section className="fitness-banner">
 
@@ -18,9 +18,7 @@ function Banner()  {
       {/* Text */}
       <div className="banner-content">
         <p>
-          Our mission is to make fitness simple, accessible, and effective
-          for everyone—whether you're just starting or looking to improve
-          your lifestyle.
+          Train stronger, move better, and live healthier with our gym, yoga, Zumba, and athletic programs designed to build strength, flexibility, endurance, and confidence.
         </p>
       </div>
 
