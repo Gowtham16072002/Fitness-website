@@ -3,12 +3,13 @@ import logo from './assets/LogoIcon.png'
 import logoName from './assets/LogoName.png'
 import "./Styles/NavBar.css"
 import './App.css'
-import { Link, useNavigate } from 'react-router-dom';
+// import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import Contact from './Contact'
 
 function NavBar() {
 
-    const navigate  =  useNavigate();
+    // const navigate  =  useNavigate();
     
   return (
     <div>
@@ -32,17 +33,11 @@ function NavBar() {
             </div>
               <ul className="nav-links">
                   
-                    <li className='Nav-route'><Link to="/">Home</Link></li>
-                  <li className='Nav-route'><Link to="/about">About</Link></li>
-                  <li className='Nav-route'><Link to="/service">Services</Link></li>
-                  <li className='Nav-route'><Link to="/programs">Programs</Link></li>
-                  <li className='Nav-route'><Link to="/contact">Contact</Link></li>
-                  {/* <Link className='Nav-route' to="/"><li> Home</li></Link>
-                  <Link className='Nav-route' to="/about"><li>About</li></Link>
-                  <Link className='Nav-route' to="/service"><li>Services</li></Link>
-                  <Link className='Nav-route' to="/programs"><li>Programs</li></Link>
-                  <Link className='Nav-route' to="/contact"><li>Contact</li></Link> */}
-                  
+                    <li><Link className='Nav-route' to="/">Home</Link></li>
+                  <li><Link className='Nav-route' to="/about">About</Link></li>
+                  <li><Link className='Nav-route' to="/service">Services</Link></li>
+                  <li><Link className='Nav-route' to="/programs">Programs</Link></li>
+                  <li><Link className='Nav-route' to="/contact">Contact</Link></li>    
               </ul>
               <Link to="/contact" className="btn primary nav-button"><b>Get started</b></Link>
               {/* <button onClick={()=>{navigate("/contact")}} className="btn primary"><b>Get started</b></button> */}

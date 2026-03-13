@@ -1,10 +1,8 @@
 import React from "react";
 import "./Styles/Home.css"
-import NavBar from "./NavBar";
 import { Link, useNavigate } from "react-router-dom";
 import HomeMidsec from "./HomeMidsec";
 import FooterAbove from "./FooterAbove";
-import Footer from "./Footer";
 import ZumbaDetails from "./ZumbaDetails";
 import Payment from "./Payment";
 import Membership from "./Membership";
@@ -22,8 +20,6 @@ function FitnessLanding() {
     const navigate = useNavigate();
     return (
         <div className="app">
-
-            {/* <NavBar /> */}
 
             <section className="hero">
                 <div className="hero-content">
@@ -73,7 +69,6 @@ function FitnessLanding() {
             <HomeMidsec />
             <PricingPlans/>
             <FooterAbove />
-            {/* <Footer /> */}
             {/* <ZumbaDetails/> */}
             {/* <Payment/>
           <Membership/> */}

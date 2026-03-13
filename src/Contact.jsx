@@ -7,8 +7,6 @@ import phoneIcon from "./assets/telephone.png";
 // import whatsapp from "./assets/whatsapp.png";
 import { FaWhatsapp } from "react-icons/fa";
 import Hours from "./assets/Hours.png";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -150,7 +148,6 @@ function Contact() {
   return (
 
     <>
-      <NavBar />
 
       {/* OFFER BANNER */}
     <div className="offer-banner">
@@ -349,7 +346,6 @@ function Contact() {
 
             <FaWhatsapp style={{fontSize:"2rem",color:"white"}} />
       </div>
-      <Footer />
     </>
   );
 }
