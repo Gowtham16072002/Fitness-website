@@ -17,12 +17,7 @@ function App() {
 
   return (
     <>
-      {/* <Home/>
-      <HomeMidsec/>
-      <FooterAbove/>
-      <Footer/>
-      <About/> */}
-
+    <NavBar/>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -32,7 +27,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
-      
+      <Footer/>
     </>
   )
 }

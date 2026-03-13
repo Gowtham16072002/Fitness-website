@@ -23,7 +23,7 @@ function FitnessLanding() {
     return (
         <div className="app">
 
-            <NavBar />
+            {/* <NavBar /> */}
 
             <section className="hero">
                 <div className="hero-content">
@@ -73,7 +73,7 @@ function FitnessLanding() {
             <HomeMidsec />
             <PricingPlans/>
             <FooterAbove />
-            <Footer />
+            {/* <Footer /> */}
             {/* <ZumbaDetails/> */}
             {/* <Payment/>
           <Membership/> */}

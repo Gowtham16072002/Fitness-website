@@ -11,7 +11,7 @@ function Services() {
     const navigate = useNavigate();
     return (
         <div>
-            <NavBar />
+            {/* <NavBar /> */}
 
 
             <section className='services'>
@@ -55,7 +55,7 @@ function Services() {
 
             <ServiceDetails/>
             <FooterAbove />
-            <Footer />
+            {/* <Footer /> */}
 
             
         </div>

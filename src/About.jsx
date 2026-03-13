@@ -13,14 +13,14 @@ import TransFormation from './TransFormation'
 function About() {
   return (
       <div>
-          <NavBar/>
+          {/* <NavBar/> */}
           <AboutTop/>
           <MissionVision/>
           <TrainerSection/>
           <Testimonials/>
           <TransFormation/>
           <CommunitySection/>
-          <Footer/>
+          {/* <Footer/> */}
       </div>
   )
 }

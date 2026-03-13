@@ -8,11 +8,11 @@ import FooterAbove from './FooterAbove'
 function Programs() {
   return (
     <div>
-        <NavBar/>
+        {/* <NavBar/> */}
         <Program/>
         <Program2/>
         <FooterAbove/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }
