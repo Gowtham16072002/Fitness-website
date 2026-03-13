@@ -44,7 +44,8 @@ function Services() {
                     </div>
                 </div>
                 <div className="btn">
-                    <button onClick={()=>{navigate("/contact")}} className="btn primary serviceBtn"><b>Get started</b></button>
+                    <Link to="/contact" className="btn primary nav-button"><b>Get started</b></Link>
+                    {/* <button onClick={()=>{navigate("/contact")}} className="btn primary serviceBtn"><b>Get started</b></button> */}
 
                 </div>
             </section>
