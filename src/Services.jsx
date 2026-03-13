@@ -1,8 +1,6 @@
 import React from 'react'
 import './Styles/Services.css'
-import Footer from './Footer'
 import FooterAbove from './FooterAbove'
-import NavBar from './NavBar'
 import ServiceDetails from './ServiceDetails'
 import { useNavigate } from 'react-router-dom'
 
@@ -11,7 +9,6 @@ function Services() {
     const navigate = useNavigate();
     return (
         <div>
-            <NavBar />
 
 
             <section className='services'>
@@ -55,8 +52,6 @@ function Services() {
 
             <ServiceDetails/>
             <FooterAbove />
-            <Footer />
-
             
         </div>
     )

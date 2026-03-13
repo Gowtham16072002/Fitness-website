@@ -4,7 +4,6 @@ import logoName from './assets/LogoName.png'
 import "./Styles/NavBar.css"
 import './App.css'
 import { Link, useNavigate } from 'react-router-dom';
-import Contact from './Contact'
 
 function NavBar() {
 
