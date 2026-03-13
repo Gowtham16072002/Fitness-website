@@ -32,14 +32,20 @@ function NavBar() {
             </div>
               <ul className="nav-links">
                   
-                  <Link className='Nav-route' to="/"><li> Home</li></Link>
+                    <li className='Nav-route'><Link to="/">Home</Link></li>
+                  <li className='Nav-route'><Link to="/about">About</Link></li>
+                  <li className='Nav-route'><Link to="/service">Services</Link></li>
+                  <li className='Nav-route'><Link to="/programs">Programs</Link></li>
+                  <li className='Nav-route'><Link to="/contact">Contact</Link></li>
+                  {/* <Link className='Nav-route' to="/"><li> Home</li></Link>
                   <Link className='Nav-route' to="/about"><li>About</li></Link>
                   <Link className='Nav-route' to="/service"><li>Services</li></Link>
                   <Link className='Nav-route' to="/programs"><li>Programs</li></Link>
-                  <Link className='Nav-route' to="/contact"><li>Contact</li></Link>
+                  <Link className='Nav-route' to="/contact"><li>Contact</li></Link> */}
                   
               </ul>
-              <button onClick={()=>{navigate("/contact")}} className="btn primary"><b>Get started</b></button>
+              <Link to="/contact" className="btn primary nav-button"><b>Get started</b></Link>
+              {/* <button onClick={()=>{navigate("/contact")}} className="btn primary"><b>Get started</b></button> */}
           </nav>
     </div>
   )
