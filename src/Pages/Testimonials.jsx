@@ -1,9 +1,9 @@
 import React from 'react'
-import './Styles/Testimonials.css'
-import feedback1 from './assets/feedback1.jpg'
-import feedback2 from './assets/feedback2.jpg'
-import feedback4 from './assets/feedback4.jpg'
-import feedback5 from './assets/feedback5.jpg'
+import '../Styles/Testimonials.css'
+import feedback1 from '../assets/feedback1.jpg'
+import feedback2 from '../assets/feedback2.jpg'
+import feedback4 from '../assets/feedback4.jpg'
+import feedback5 from '../assets/feedback5.jpg'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

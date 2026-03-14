@@ -1,11 +1,11 @@
 import React from "react";
-import "./Styles/AboutTop.css";
-import './App.css'
+import "../Styles/AboutTop.css";
+import '../App.css'
 
-import img1 from "./assets/about1.jpg"
-import img4 from "./assets/about4.jpg"
-import YogaSection from "./assets/YogaSection.png"
-import ZumbaSection from "./assets/ZumbaSection.png"
+import img1 from "../assets/about1.jpg"
+import img4 from "../assets/about4.jpg"
+import YogaSection from "../assets/YogaSection.png"
+import ZumbaSection from "../assets/ZumbaSection.png"
 import { useNavigate } from "react-router-dom";
 
 import AOS from "aos";

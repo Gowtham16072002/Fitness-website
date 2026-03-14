@@ -1,5 +1,5 @@
 import React from 'react'
-import './Styles/PricingPlans.css'
+import '../Styles/PricingPlans.css'
 
 function PricingPlans() {
     return (

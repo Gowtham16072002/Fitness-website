@@ -1,20 +1,20 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import YogaBefore from './assets/YogaBefore.jpeg';
-import YogaAfter from './assets/YogaAfter.png';
-import ZumbaBefore from './assets/ZumbaBefore.png';
-import ZumbaAfter from './assets/ZumbaAfter.png';
-import WLbefore from './assets/WLbefore.png';
-import WLafter from './assets/WLafter.png';
-import WLbefore2 from './assets/WLbefore2.png';
-import WLafter2 from './assets/WLafter2.png';
-import WGbefore from './assets/WGbefore.png';
-import WGafter from './assets/WGafter.png';
-import ZumbaBefore2 from './assets/ZumbaBefore2.png';
-import ZumbaAfter2 from './assets/ZumbaAfter2.png';
+import YogaBefore from '../assets/YogaBefore.jpeg';
+import YogaAfter from '../assets/YogaAfter.png';
+import ZumbaBefore from '../assets/ZumbaBefore.png';
+import ZumbaAfter from '../assets/ZumbaAfter.png';
+import WLbefore from '../assets/WLbefore.png';
+import WLafter from '../assets/WLafter.png';
+import WLbefore2 from '../assets/WLbefore2.png';
+import WLafter2 from '../assets/WLafter2.png';
+import WGbefore from '../assets/WGbefore.png';
+import WGafter from '../assets/WGafter.png';
+import ZumbaBefore2 from '../assets/ZumbaBefore2.png';
+import ZumbaAfter2 from '../assets/ZumbaAfter2.png';
 
 import "swiper/css";
-import "./Styles/TransFormation.css";
+import "../Styles/TransFormation.css";
 // npm install swiper
 
 function TransFormation() {

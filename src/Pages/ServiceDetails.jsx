@@ -1,5 +1,5 @@
 import PricingPlans from "./PricingPlans";
-import "./Styles/ServiceDetails.css";
+import "../Styles/ServiceDetails.css";
 
 function ServiceDetails() {
   return (

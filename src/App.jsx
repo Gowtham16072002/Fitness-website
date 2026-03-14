@@ -3,11 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from './Layout'
 
-import Home from './Home'
-import About from './About'
-import Services from './Services'
-import Programs from './Programs'
-import Contact from './Contact'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Services from './Pages/Services'
+import Programs from './Pages/Programs'
+import Contact from './Pages/Contact'
 
 function App() {
 

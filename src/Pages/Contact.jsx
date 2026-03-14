@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Styles/Contact.css";
-import locationIcon from "./assets/location.png";
-import mailIcon from "./assets/mail.png";
-import phoneIcon from "./assets/telephone.png";
+import "../Styles/Contact.css";
+import locationIcon from "../assets/location.png";
+import mailIcon from "../assets/mail.png";
+import phoneIcon from "../assets/telephone.png";
 import { FaWhatsapp } from "react-icons/fa";
-import Hours from "./assets/Hours.png";
+import Hours from "../assets/Hours.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

@@ -1,9 +1,9 @@
 import React from "react";
-import "./Styles/Program2.css";
-import Gymimage from './assets/GymImage.jpeg'
-import Yogaimage from './assets/YogaImage.jpeg'
-import Athleteimage from './assets/AthleteImage.jpeg'
-import Zumbaimage from './assets/ZumbaImage.jpeg'
+import "../Styles/Program2.css";
+import Gymimage from '../assets/GymImage.jpeg'
+import Yogaimage from '../assets/YogaImage.jpeg'
+import Athleteimage from '../assets/AthleteImage.jpeg'
+import Zumbaimage from '../assets/ZumbaImage.jpeg'
 
 function Program2() {
   return (

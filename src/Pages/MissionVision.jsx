@@ -1,5 +1,5 @@
 import React from 'react'
-import './Styles/MissionVision.css'
+import '../Styles/MissionVision.css'
 import Banner from './Banner'
 
 import AOS from "aos";

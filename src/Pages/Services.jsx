@@ -1,5 +1,5 @@
 import React from 'react'
-import './Styles/Services.css'
+import '../Styles/Services.css'
 import FooterAbove from './FooterAbove'
 import ServiceDetails from './ServiceDetails'
 import { Link,useNavigate } from 'react-router-dom'

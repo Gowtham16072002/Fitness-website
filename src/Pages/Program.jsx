@@ -1,6 +1,6 @@
 import React from 'react'
-import './Styles/Program.css'
-import mainImage from './assets/programMainImage.png'
+import '../Styles/Program.css'
+import mainImage from '../assets/programMainImage.png'
 
 function Program() {
   return (

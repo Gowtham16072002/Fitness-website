@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/Home.css"
+import "../Styles/Home.css"
 import { useNavigate } from "react-router-dom";
 import HomeMidsec from "./HomeMidsec";
 import FooterAbove from "./FooterAbove";

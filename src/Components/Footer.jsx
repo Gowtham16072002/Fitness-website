@@ -1,7 +1,7 @@
 import React from "react";
-import "./Styles/Footer.css";
-import logo from './assets/LogoIcon.png'
-import logoName from './assets/LogoName.png'
+import "../Styles/Footer.css";
+import logo from '../assets/LogoIcon.png'
+import logoName from '../assets/LogoName.png'
 import { Link } from 'react-router-dom';
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
