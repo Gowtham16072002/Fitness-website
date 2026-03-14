@@ -18,7 +18,7 @@ function HomeMidsec () {
       </div>
 
       <div className="feature-card white fade-in delay-1">
-        <div className="icon-circle green">
+        <div className="icon-circle">
           <i className="fa-solid fa-heart-pulse"></i>
         </div>
 
@@ -30,7 +30,7 @@ function HomeMidsec () {
       </div>
 
       <div className="feature-card white fade-in delay-2">
-        <div className="icon-circle green">
+        <div className="icon-circle">
           <i className="fa-solid fa-chart-line"></i>
         </div>
 

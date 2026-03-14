@@ -28,7 +28,7 @@ function TrainerSection() {
 
                 <div className="trainer-container">
 
-                    <div className="trainer" data-aos="zoom-in" data-aos-delay="200">
+                    <div className="trainer" data-aos="zoom-in" data-aos-delay="100">
                         <img src={Trainer1} alt="Trainer 1" />
                         <h3>Emilia clarke</h3>
                         <p>Strength & Conditioning Specialist</p>
@@ -36,7 +36,7 @@ function TrainerSection() {
                         <p>8+ Years Experience</p>
                     </div>
 
-                    <div className="trainer" data-aos="zoom-in" data-aos-delay="200">
+                    <div className="trainer" data-aos="zoom-in" data-aos-delay="300">
                         <img src={YogaMaleTrainer} alt="Trainer 2" />
                         <h3>Michael Lee</h3>
                         <p>Yoga Trainer</p>
@@ -44,7 +44,7 @@ function TrainerSection() {
                         <p>8+ Years Experience</p>
                     </div>
 
-                    <div className="trainer" data-aos="zoom-in" data-aos-delay="200">
+                    <div className="trainer" data-aos="zoom-in" data-aos-delay="500">
                         <img src={ZumbaTrainer} alt="Trainer 3" />
                         <h3>Jennifer</h3>
                         <p>Zumaba Trainer</p>

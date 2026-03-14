@@ -25,12 +25,24 @@ function TransFormation() {
             <p className="top-para">See how our gym, yoga, zumba, and dance programs help members
                 achieve their fitness goals and transform their lifestyle.</p>
 
-            <Swiper
+            {/* <Swiper
                 modules={[Autoplay]}
                 spaceBetween={30}
                 slidesPerView={3}
                 autoplay={{ delay: 2500 }}
                 loop={true}
+            > */}
+
+            <Swiper
+                modules={[Autoplay]}
+                spaceBetween={30}
+                autoplay={{ delay: 2500 }}
+                loop={true}
+                breakpoints={{
+                    0: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 }
+                }}
             >
 
                 <SwiperSlide>

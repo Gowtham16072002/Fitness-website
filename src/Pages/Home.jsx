@@ -38,6 +38,7 @@ function FitnessLanding() {
                 </div>
             </section>
 
+
             <section className="stats">
 
                 <div className="stat">
@@ -58,11 +59,11 @@ function FitnessLanding() {
             </section>
 
             <WhyChooseUs />
-            <Program2/>
-            <TrainerSection/>
-            <Testimonials/>
+            <Program2 />
+            <TrainerSection />
+            <Testimonials />
             <HomeMidsec />
-            <PricingPlans/>
+            <PricingPlans />
             <FooterAbove />
         </div>
     )
