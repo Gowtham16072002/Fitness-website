@@ -22,11 +22,8 @@ function MissionVision() {
             <Banner />
     
             <section className='mission-section'data-aos="zoom-in">
-                {/* floating icons */}
-                {/* <i className="fa-solid fa-dumbbell float-icon left"></i>
-                <i className="fa-solid fa-person-running float-icon top"></i> */}
                 <div className='cards'>
-                    {/* Mission card */}
+
                     <div className='card'>
                         <i className="fa-solid fa-bullseye card-icon"></i>
                         <h2>
@@ -36,8 +33,6 @@ function MissionVision() {
                             To empower people through fitness,wellness,and education so they can live healthier,more confident lives.
                         </p>
                     </div>
-
-                    {/* Vision card */}
 
                     <div className='card'>
                         <i className="fa-solid fa-eye card-icon"></i>

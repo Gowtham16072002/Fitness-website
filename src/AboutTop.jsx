@@ -3,8 +3,6 @@ import "./Styles/AboutTop.css";
 import './App.css'
 
 import img1 from "./assets/about1.jpg"
-import img2 from "./assets/about2.jpg"
-import img3 from "./assets/about3.jpg"
 import img4 from "./assets/about4.jpg"
 import YogaSection from "./assets/YogaSection.png"
 import ZumbaSection from "./assets/ZumbaSection.png"

@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import ropeimage from "./assets/ropeimage.png";
 import "./Styles/Contact.css";
 import locationIcon from "./assets/location.png";
 import mailIcon from "./assets/mail.png";
 import phoneIcon from "./assets/telephone.png";
-// import whatsapp from "./assets/whatsapp.png";
 import { FaWhatsapp } from "react-icons/fa";
 import Hours from "./assets/Hours.png";
 import AOS from "aos";
@@ -148,7 +146,6 @@ function Contact() {
   return (
 
     <>
-      {/* OFFER BANNER */}
     <div className="offer-banner">
       <div className="offer-text">
       Special Offer – 20% Off on Membership!
@@ -156,7 +153,6 @@ function Contact() {
     </div>
 
       <div className="imageview">
-        {/* <img src={ropeimage} alt="banner" /> */}
         <div className="paragraph">
 
         <h2>Get In Touch</h2>
@@ -172,11 +168,6 @@ function Contact() {
 
       <div className="second-box">
 
-      {/* STICKY CTA */}
-    {/* <div className="sticky-cta">
-        <a href="#contact-form">Book Free Consultation</a>
-    </div> */}
-        {/* LEFT DETAILS */}
         <div className="detailss" data-aos="fade-right">
 
           <div className="map">
@@ -189,7 +180,6 @@ function Contact() {
 
           </div>
 
-          {/* LOCATION */}
           <div className="sectionn">
 
             <div className="titlee">
@@ -207,7 +197,6 @@ function Contact() {
 
           </div>
 
-          {/* EMAIL */}
           <div className="sectionn">
 
             <div className="titlee">
@@ -221,7 +210,6 @@ function Contact() {
 
           </div>
 
-          {/* PHONE */}
           <div className="sectionn">
 
             <div className="titlee">
@@ -235,7 +223,6 @@ function Contact() {
 
           </div>
 
-          {/* BUSINESS HOURS */}
           <div className="sectionn">
 
             <div className="titlee">
@@ -251,21 +238,9 @@ function Contact() {
 
           </div>
 
-          {/* CALENDAR */}
-          {/* <div className="booking-calendar">
-
-            <h3>Book Free Consultation</h3>
-
-            <Calendar
-              onChange={setDate}
-              value={date}
-            />
-
-          </div> */}
 
         </div>
 
-        {/* FORM */}
         <div className="form" id="contact-form" data-aos="fade-left">
           <div className="consultation-text">
               Book Free Consultation
@@ -338,9 +313,6 @@ function Contact() {
 
       </div>
 
-      {/* WHATSAPP BUTTON */}
-      {/* <a href="https://wa.me/919876543210" className="whatsapp-float" target="_blank" rel="noopener noreferrer"><img src={whatsapp} alt=""/> */}
-      {/* </a> */}
       <div className="whatsapp-float">
 
             <FaWhatsapp style={{fontSize:"2rem",color:"white"}} />

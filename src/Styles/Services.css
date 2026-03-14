@@ -34,24 +34,18 @@
 
 .dL1 {
     height: 70px;
-    /* background-color: rgb(222, 243, 222); */
     background-color:rgba(233, 6, 6,0.3);
-    /* color: rgb(15, 67, 15); */
     color: black;
 }
 
 .dL2 {
     height: 170px;
-    /* background-color: rgb(222, 243, 222); */
     background-color:rgba(233, 6, 6,0.3);
-    /* color: rgb(15, 67, 15); */
     color: black;
 }
 
 .dL3 {
-    /* background-color: rgb(222, 243, 222); */
     background-color:rgba(233, 6, 6,0.3);
-    /* color: rgb(15, 67, 15); */
     color: black;
 }
 
@@ -60,7 +54,6 @@
 .center-div {
     width: 100%;
     height: 100%;
-    /* color: rgb(15, 67, 15); */
     color: black;
     display: flex;
     flex-direction: column;
@@ -78,12 +71,10 @@
 .dC1 p {
     line-height: 1.5;
     font-size: 17px;
-    /* color: rgb(15, 67, 15); */
     color: black;
 }
 
 .dC2 {
-    /* background-color: rgb(222, 243, 222); */
     background-color:rgba(233, 6, 6,0.3);
     width: 100%;
     height: 70px;
@@ -112,24 +103,18 @@
 
 .dR3 {
     height: 70px;
-    /* background-color: rgb(222, 243, 222); */
     background-color:rgba(233, 6, 6,0.3);
-    /* color: rgb(15, 67, 15); */
     color: black;
 }
 
 .dR2 {
     height: 170px;
-    /* background-color: rgb(222, 243, 222); */
     background-color:rgba(233, 6, 6,0.3);
-    /* color: rgb(15, 67, 15); */
     color: black;
 }
 
 .dR1 {
-    /* background-color: rgb(222, 243, 222); */
     background-color:rgba(233, 6, 6,0.3);
-    /* color: rgb(15, 67, 15); */
     color: black;
 }
 
@@ -151,8 +136,6 @@
     text-align: center;
 
 }
-
-
 
 @media (max-width: 900px) {
   .main-div {

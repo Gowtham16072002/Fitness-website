@@ -8,7 +8,6 @@ function FooterAbove() {
     return (
         <section className="cta">
 
-            {/* Floating Icons */}
             <i className="fa-solid fa-heart-pulse icon icon1"></i>
             <i className="fa-solid fa-dumbbell icon icon2"></i>
             <i className="fa-solid fa-bullseye icon icon3"></i>
@@ -16,9 +15,7 @@ function FooterAbove() {
             <i className="fa-solid fa-chart-line icon icon5"></i>
             <i className="fa-solid fa-crosshairs icon icon6"></i>
 
-            {/* Content */}
             <div className="cta-content">
-                {/* <h1>Ready to Get Started?</h1> */}
                 <h1>
                     Start Your Fitness Journey Today
                 </h1>

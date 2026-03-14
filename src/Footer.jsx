@@ -13,7 +13,6 @@ function Footer() {
     <footer className="footer">
   <div className="footer-container">
 
-    {/* LEFT SECTION */}
     <div className="footer-left">
 
       <div className="footer-brand">
@@ -30,7 +29,6 @@ function Footer() {
 
     </div>
 
-    {/* MIDDLE SECTION */}
     <div className="footer-links">
       <h4>Quick Links</h4>
       <ul>
@@ -42,7 +40,6 @@ function Footer() {
       </ul>
     </div>
 
-    {/* RIGHT SECTION */}
     <div className="footer-contact">
       <h4>Contact Us</h4>
 
@@ -57,19 +54,15 @@ function Footer() {
         <h4>Follow Us</h4>
         <div className="social-icons">
           <a href="https://www.facebook.com/victoryfit" target="_blank" rel="noopener noreferrer">
-            {/* <i className="fa-brands fa-facebook"></i> */}
             <FaFacebook className="icons fb" />
           </a>
           <a href="https://twitter.com/victoryfit" target="_blank" rel="noopener noreferrer">
-            {/* <i className="fa-brands fa-twitter"></i> */}
             <FaXTwitter className="icons x"/>
           </a>
           <a href="https://www.youtube.com/@victoryfit" target="_blank" rel="noopener noreferrer">
-            {/* <i className="fa-brands fa-youtube"></i> */}
             <FaYoutube className="icons yt"/>
           </a>
           <a href="https://www.instagram.com/victoryfit" target="_blank" rel="noopener noreferrer">
-            {/* <i className="fa-brands fa-instagram"></i> */}
             <FaInstagram className="icons ig"/>
           </a>
         </div>

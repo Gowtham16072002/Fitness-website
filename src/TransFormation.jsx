@@ -55,7 +55,6 @@ function TransFormation() {
                         <h3 className="after">After</h3>
                         <h4>Yoga</h4>
                         <p>Yoga Flexibility & Wellness Transformation</p>
-                        {/* <p>Improved flexibility and posture through yoga practice</p> */}
                     </div>
                 </SwiperSlide>
 
@@ -68,7 +67,6 @@ function TransFormation() {
                         <h3 className="after">After</h3>
                         <h4>Zumba</h4>
                         <p>Zumba Fitness Transformation</p>
-                        {/* <p>Burned calories and improved stamina with Zumba dance</p> */}
                     </div>
                 </SwiperSlide>
 
@@ -81,7 +79,6 @@ function TransFormation() {
                         <h3 className="after">After</h3>
                         <h4>Zumba Dance</h4>
                         <p>Zumba Dance Fitness Transformation</p>
-                        {/* <p>Improved energy and coordination through dance workouts</p> */}
                     </div>
                 </SwiperSlide>
 
@@ -94,7 +91,6 @@ function TransFormation() {
                         <h3 className="after">After</h3>
                         <h4>Overall Fitness</h4>
                         <p>Complete Fitness Transformation</p>
-                        {/* <p>Achieved overall fitness with guided training programs</p> */}
                     </div>
                 </SwiperSlide>
 
@@ -107,7 +103,6 @@ function TransFormation() {
                         <h3 className="after">After</h3>
                         <h4>Weight Gain</h4>
                         <p>Strength & Weight Gain Transformation</p>
-                        {/* <p>Gain 7kg in 3 months through strength training</p> */}
                     </div>
                 </SwiperSlide>
 

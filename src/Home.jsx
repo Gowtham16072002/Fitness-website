@@ -3,11 +3,7 @@ import "./Styles/Home.css"
 import { useNavigate } from "react-router-dom";
 import HomeMidsec from "./HomeMidsec";
 import FooterAbove from "./FooterAbove";
-import ZumbaDetails from "./ZumbaDetails";
-import Payment from "./Payment";
-import Membership from "./Membership";
 import WhyChooseUs from "./WhyChooseUs";
-import TransFormation from "./TransFormation";
 import Program2 from "./Program2";
 import TrainerSection from "./TrainerSection";
 import Testimonials from "./Testimonials";
@@ -64,14 +60,10 @@ function FitnessLanding() {
             <WhyChooseUs />
             <Program2/>
             <TrainerSection/>
-            <TransFormation/>
             <Testimonials/>
             <HomeMidsec />
             <PricingPlans/>
             <FooterAbove />
-            {/* <ZumbaDetails/> */}
-            {/* <Payment/>
-          <Membership/> */}
         </div>
     )
 }

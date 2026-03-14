@@ -3,7 +3,6 @@
   padding: 80px 60px;
   margin-top: 40px;
 }
-
 .service-container {
   display: flex;
   height: 130vh;
@@ -26,14 +25,12 @@
 }
 
 .cardSD:hover {
-  /* background: #2f8f52; */
   background:rgb(245, 87, 87);
   color: white;
 }
 
 .cardSD:hover .icon-circleSD {
   background: white;
-  /* color: #1f6b3a; */
   color:black;
 }
 
@@ -45,7 +42,6 @@
 .icon-circleSD {
   width: 70px;
   height: 70px;
-  /* background-color: green; */
   background-color:rgb(245, 87, 87);
   color: white;
   border-radius: 50%;
@@ -67,7 +63,6 @@
   line-height: 30px;
   margin-bottom: 20px;
   text-align: justify;
-  /* color: #333; */
 }
 
 .cardSD h4 {
@@ -85,13 +80,6 @@
   font-size: 12px;
   margin-top: 15px;
 }
-
-
-/*-------------------------------------------------------------*/
-
-
-/* ================= FAQ ================= */
-
 .faq-section {
   margin-top: 80px;
 }
@@ -118,10 +106,6 @@
   margin-bottom: 10px;
   color: #1f6b3a;
 }
-
-
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 992px) {
 

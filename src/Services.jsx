@@ -2,7 +2,7 @@ import React from 'react'
 import './Styles/Services.css'
 import FooterAbove from './FooterAbove'
 import ServiceDetails from './ServiceDetails'
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 
 function Services() {
 
@@ -41,8 +41,7 @@ function Services() {
                     </div>
                 </div>
                 <div className="btn">
-                    <button onClick={()=>{navigate("/contact")}} className="btn primary serviceBtn"><b>Get started</b></button>
-
+                    <Link to="/contact" className="btn primary nav-button"><b>Get started</b></Link>
                 </div>
             </section>
 

@@ -1,10 +1,7 @@
 import React from 'react'
 import './Styles/TrainerSection.css'
 import Trainer1 from './assets/Trainer1.avif'
-import Trainer2 from './assets/Trainer2.avif'
-import Trainer3 from './assets/Trainer3.avif'
 import ZumbaTrainer from './assets/ZumbaTrainer.jpg.png'
-import YogaTrainer from './assets/YogaTrainer.avif'
 import YogaMaleTrainer from './assets/YogaMaleTrainer.png'
 
 import AOS from "aos";

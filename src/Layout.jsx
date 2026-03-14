@@ -1,12 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
-import FooterAbove from "./FooterAbove";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 function Layout() {
   return (
     <>
+      <ScrollToTop/>
       <NavBar />
 
       <main>
