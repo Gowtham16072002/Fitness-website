@@ -1,58 +1,3 @@
-/* .trainers{
-  padding:60px 10%;
-  background:#f9f9f9;
-  text-align:center;
-}
-
-.trainer-title{
-  font-size:36px;
-  margin-bottom:40px;
-}
-
-.trainer-container{
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  flex-wrap:wrap;
-}
-
-.trainer{
-  background:white;
-  padding:20px;
-  width:350px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-
-.trainer p{
-    padding: 3px;
-}
-
-.trainer:hover{
-  transform:translateY(-10px);
-}
-
-.trainer img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  border-radius:10px;
-}
-
-.trainer h3{
-  margin-top:15px;
-  font-size:20px;
-}
-
-.trainer p{
-  color:gray;
-} */
-
-/* ========================= */
-/* TRAINER SECTION */
-/* ========================= */
-
 .trainers{
   padding:80px 10%;
   background:#f9f9f9;
@@ -60,17 +5,11 @@
   box-sizing:border-box;
 }
 
-/* TITLE */
-
 .trainer-title{
   font-size:36px;
   margin-bottom:50px;
   font-weight:700;
 }
-
-/* ========================= */
-/* TRAINER CONTAINER */
-/* ========================= */
 
 .trainer-container{
   display:flex;
@@ -78,10 +17,6 @@
   gap:30px;
   flex-wrap:wrap;
 }
-
-/* ========================= */
-/* TRAINER CARD */
-/* ========================= */
 
 .trainer{
   background:white;
@@ -97,7 +32,6 @@
   box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* TRAINER IMAGE */
 
 .trainer img{
   width:100%;
@@ -106,25 +40,16 @@
   border-radius:10px;
 }
 
-/* TRAINER NAME */
-
 .trainer h3{
   margin-top:15px;
   font-size:20px;
 }
-
-/* TRAINER TEXT */
 
 .trainer p{
   color:gray;
   font-size:15px;
   padding:3px;
 }
-
-
-/* ========================= */
-/* TABLET */
-/* ========================= */
 
 @media (max-width:768px){
 
@@ -145,11 +70,6 @@
 }
 
 }
-
-
-/* ========================= */
-/* MOBILE */
-/* ========================= */
 
 @media (max-width:480px){
 

@@ -1,49 +1,3 @@
-/* .testimonials{
-padding:80px 10%;
-background:#f8f8f8;
-text-align:center;
-}
-
-.testimonials h2{
-font-size:36px;
-margin-bottom:40px;
-}
-
-.testimonial-card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-margin:10px;
-}
-
-.stars{
-color:gold;
-margin-bottom:10px;
-margin-top: 5px;
-}
-
-.testimonial-card img{
-width:70px;
-height:70px;
-border-radius:50%;
-margin-bottom:10px;
-}
-
-.testimonial-card h3{
-margin-bottom:10px;
-font-size:18px;
-}
-
-.testimonial-card p{
-font-size:14px;
-color:#555;
-} */
-
-/* ========================= */
-/* TESTIMONIAL SECTION */
-/* ========================= */
-
 .testimonials{
   padding:80px 10%;
   background:#f8f8f8;
@@ -57,18 +11,10 @@ color:#555;
   font-weight:700;
 }
 
-/* ========================= */
-/* SLIDER SPACING */
-/* ========================= */
-
 .slick-slide{
   padding:10px;
   box-sizing:border-box;
 }
-
-/* ========================= */
-/* TESTIMONIAL CARD */
-/* ========================= */
 
 .testimonial-card{
   background:white;
@@ -85,8 +31,6 @@ color:#555;
   box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* CLIENT IMAGE */
-
 .testimonial-card img{
   width:70px;
   height:70px;
@@ -95,14 +39,10 @@ color:#555;
   margin-bottom:12px;
 }
 
-/* NAME */
-
 .testimonial-card h3{
   font-size:18px;
   margin-bottom:10px;
 }
-
-/* REVIEW */
 
 .testimonial-card p{
   font-size:14px;
@@ -110,17 +50,11 @@ color:#555;
   line-height:1.6;
 }
 
-/* STARS */
-
 .stars{
   color:gold;
   margin-top:10px;
   font-size:16px;
 }
-
-/* ========================= */
-/* SLIDER DOTS */
-/* ========================= */
 
 .slick-dots li button:before{
   font-size:12px;
@@ -130,10 +64,6 @@ color:#555;
 .slick-dots li.slick-active button:before{
   color:rgb(245,87,87);
 }
-
-/* ========================= */
-/* TABLET */
-/* ========================= */
 
 @media (max-width:768px){
 
@@ -150,10 +80,6 @@ color:#555;
 }
 
 }
-
-/* ========================= */
-/* MOBILE */
-/* ========================= */
 
 @media (max-width:480px){
 

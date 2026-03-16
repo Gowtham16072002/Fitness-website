@@ -1,153 +1,32 @@
-/* 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.features {
-  min-height: 80vh;
-  background-color:rgba(245, 87, 87,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  padding: 80px 40px;
-  flex-wrap: wrap;
-}
-
-.feature-card {
-  width: 330px;
-  min-height: 420px;
-  text-align: center;
-  padding: 70px 35px 45px;
-  border-radius: 200px 200px 0 0;
-  background: #ededed;
-  color: #222;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-
-
-.feature-card:hover {
-  background-color: rgba(233, 6, 6, 0.4);
-  color: white;
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
-}
-
-.icon-circle {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background:rgb(245, 87, 87);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  margin: 0 auto 25px;
-  transition: all 0.3s ease;
-}
-
-
-.feature-card:hover .icon-circle {
-  background: white;
-  color: black;
-}
-
-
-.feature-card h3 {
-  font-size: 22px;
-  margin-bottom: 18px;
-  font-weight: 700;
-}
-
-.feature-card p {
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.delay-1 {
-  animation-delay: 0.2s;
-}
-
-.delay-2 {
-  animation-delay: 0.4s;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-@media (max-width: 900px) {
-  .features {
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-  }
-} */
-
-
-/* Reset */
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
-/* ========================= */
-/* FEATURES SECTION */
-/* ========================= */
-
 .features{
   min-height:80vh;
   background-color:rgba(245,87,87,0.5);
-
   display:flex;
   justify-content:center;
   align-items:center;
   gap:70px;
-
   padding:80px 40px;
   flex-wrap:wrap;
 }
 
-/* ========================= */
-/* FEATURE CARD */
-/* ========================= */
-
 .feature-card{
   width:330px;
   min-height:420px;
-
   text-align:center;
   padding:70px 35px 45px;
-
   border-radius:200px 200px 0 0;
-
   background:#ededed;
   color:#222;
-
   box-shadow:0 20px 40px rgba(0,0,0,0.15);
-
   cursor:pointer;
   transition:all 0.3s ease;
 }
-
-/* Card background variations */
 
 .feature-card.transparent{
   background:#ededed;
@@ -157,57 +36,35 @@
   background:white;
 }
 
-/* Hover effect */
-
 .feature-card:hover{
   background-color:rgba(233,6,6,0.4);
   color:white;
-
   transform:translateY(-10px);
-
   box-shadow:0 30px 60px rgba(0,0,0,0.25);
 }
-
-/* ========================= */
-/* ICON */
-/* ========================= */
 
 .icon-circle{
   width:80px;
   height:80px;
-
   border-radius:50%;
-
   background:rgb(245,87,87);
   color:white;
-
   display:flex;
   justify-content:center;
   align-items:center;
-
   font-size:30px;
-
   margin:0 auto 25px;
-
   transition:all 0.3s ease;
 }
-
-/* Green icon variation */
 
 .icon-circle.green{
   background:#2ecc71;
 }
 
-/* Hover icon change */
-
 .feature-card:hover .icon-circle{
   background:white;
   color:black;
 }
-
-/* ========================= */
-/* TEXT */
-/* ========================= */
 
 .feature-card h3{
   font-size:22px;
@@ -219,10 +76,6 @@
   font-size:15px;
   line-height:1.7;
 }
-
-/* ========================= */
-/* FADE ANIMATION */
-/* ========================= */
 
 .fade-in{
   opacity:0;
@@ -245,10 +98,6 @@
   }
 }
 
-/* ========================= */
-/* TABLET */
-/* ========================= */
-
 @media (max-width:900px){
 
 .features{
@@ -264,10 +113,6 @@
 }
 
 }
-
-/* ========================= */
-/* MOBILE */
-/* ========================= */
 
 @media (max-width:480px){
 
