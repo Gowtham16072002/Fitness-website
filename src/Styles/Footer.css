@@ -8,6 +8,7 @@
   background: black;
   width: 100%;
   color: white;
+  position: relative;
 }
 
 .footer-container {
