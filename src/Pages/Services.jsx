@@ -40,7 +40,7 @@ function Services() {
                         <div className='dR3 right'></div>
                     </div>
                 </div>
-                <div className="btn">
+                <div className="service-btn">
                     <Link to="/contact" className="btn primary nav-button"><b>Get started</b></Link>
                 </div>
             </section>
