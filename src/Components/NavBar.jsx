@@ -12,7 +12,6 @@ function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div>
       <nav className="navbar">
 
         <div className='imageblock'>
@@ -42,7 +41,6 @@ function NavBar() {
         </Link>
 
       </nav>
-    </div>
   )
 }
 

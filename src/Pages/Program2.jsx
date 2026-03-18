@@ -4,8 +4,11 @@ import Gymimage from '../assets/GymImage.jpeg'
 import Yogaimage from '../assets/YogaImage.jpeg'
 import Athleteimage from '../assets/AthleteImage.jpeg'
 import Zumbaimage from '../assets/ZumbaImage.jpeg'
+import { useNavigate } from "react-router-dom";
 
 function Program2() {
+
+  const navigate = useNavigate();
   return (
     <div className="programs-section">
       <div className="prg-header">
@@ -20,12 +23,13 @@ function Program2() {
             It includes a balanced mix of cardio, strength training and core workouts tailored for beginners and advanced members.
             With modern equipment and certified trainers,
             the program helps you achieve your fitness goals safely and effectively.</p> */}
+
           <ul>
             <li>Improves muscle strength and stamina</li>
             <li>Supports weight management and fat loss</li>
             <li>Boosts energy and overall well-being</li>
           </ul>
-          <button>Choose this Program</button>
+          <button onClick={()=>{navigate("/beginnerGym")}}>Choose this Program</button>
         </div>
 
 
@@ -40,7 +44,7 @@ function Program2() {
             <li>Reduces stress and improves focus</li>
             <li>Enhances overall body strength</li>
           </ul>
-          <button>Choose this Program</button>
+          <button onClick={()=>{navigate("/beginnerYoga")}}>Choose this Program</button>
         </div>
 
 
