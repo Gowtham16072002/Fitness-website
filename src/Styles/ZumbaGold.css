@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ZumbaGold {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* important */
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+        url("../assets/ZumbaGold.png");
+    background-size: cover;
+    background-position: center;
+    /* padding: 40px; */
+}
+
+/* TOP ROW */
+.TopContainer {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    flex: 1;
+    /* height: 100%; */
+    /* border: 5px solid violet; */
+}
+
+.TopContainer h1 {
+    text-align: center;
+    /* color: beige; */
+    color: rgb(245, 87, 87);
+
+}
+
+/* LEFT SIDE */
+.ZumbaGoldContent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    /* border: 2px solid yellow;  */
+}
+
+/* .CardioContent span{
+    color: #47ff47;
+} */
+
+.ZumbaGoldContent p {
+    color: white;
+    line-height: 1.5;
+
+}
+
+/* RIGHT SIDE */
+.ZumbaGoldImage {
+    width: 50%;
+    display: flex;
+    margin: 40px;
+    /* height: 100%; */
+    /* margin-top: 60px; */
+    /* border: 2px solid red; */
+
+}
+
+.ZumbaGoldImages {
+    width: 100%;
+    /* height: 100%; */
+    /* border-radius: 20px;  */
+    overflow: hidden;
+    flex: 1;
+    /* border: 2px solid green; */
+
+}
+
+.ZumbaGoldImages .image-container {
+    width: 100%;
+    height: 100%;
+    /* height: 100%; */
+    /* margin-top: 40px; */
+    object-fit: cover;
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transition: opacity 0.3s ease-in-out;
+    /* border-top: 1000px; */
+    /* border: 1px solid #47ff47; */
+
+}
+
+
+/* BOTTOM SUBSCRIBE ROW */
+.subscribe {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* border: 6px solid rgb(185, 10, 10); */
+}
+
+/* SMALL BOXES */
+.subcribetred,
+.subcribeswim,
+.subcribejog,
+.subcribecyc {
+    width: 600px;
+    /* height: 350px; */
+    flex: 1;
+    padding: 20px;
+    /* border: 2px solid rgb(30, 146, 255); */
+    border-radius: 10px;
+    color: beige;
+    /* background-color: beige; */
+    /* opacity: 0.5; */
+}
+
+.subcribetred ul,
+.subcribeswim ul,
+.subcribejog ul,
+.subcribecyc ul {
+    margin-top: 15px;
+    padding-left: 10px;
+
+}
+
+.prg-list ul {
+    list-style: none;
+    /* Remove default bullets */
+    padding-left: 0;
+}
+
+.prg-list ul li::before {
+    content: "◆";
+    /* Diamond symbol */
+    color: #47ff47;
+    /* Change bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+    /* Space between diamond and text */
+}
+
+.ZumbaGoldContent h2 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.ZG-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 70px; */
+    border-radius: 15px;
+    margin: 50px;
+    padding: 14px 30px;
+    font-size: 15px;
+    background-color:rgb(245,87,87);
+    color: white;
+}
+
+.ZumbaGold-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .btn button {
+    padding: 10px 60px;
+    color: white;
+    font-weight: 800;
+    background-color: rgb(63, 167, 63);
+    border-radius: 20px;
+    border: none;
+} */
+
+/* .subcribetred,
+.subcribeswim,
+.subcribejog,
+.subcribecyc ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  color: white; */
+/* font-weight: bold; */
+/* } */
+.subscribefirst,
+.subscribesecond {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 5px solid rgb(139, 89, 97); */
+
+    justify-content: center;
+}
+
+.subscribefirst h2,
+.subscribesecond h2 {
+    text-align: center;
+    /* color: #47ff47; */
+}
+
+p {
+    font-size: 1rem;
+}
+
+.subcribetred {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail1.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.subcribeswim {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail2.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.subcribejog {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail3.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.subcribecyc {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail4.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}

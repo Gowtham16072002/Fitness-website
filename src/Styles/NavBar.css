@@ -53,15 +53,15 @@
   color: rgb(233, 6, 6);
 }
 
-.btn {
+/* .btn {
   padding: 12px 28px;
   border: none;
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
-}
+} */
 
-.btn.primary {
+/* .primary {
   background: rgb(245, 87, 87);
   color: white;
   text-decoration: none;
@@ -69,6 +69,16 @@
 
 .btn.primary:hover {
   background: rgb(233, 6, 6);
+} */
+
+.nav-button{
+  background: rgb(245, 87, 87);
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .menu-icon {
@@ -116,7 +126,7 @@
     display: flex;
   }
 
-  .btn.primary {
+  .nav-button{
     display: none;
   }
 

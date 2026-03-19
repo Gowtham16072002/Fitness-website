@@ -303,7 +303,7 @@ function Contact() {
 
             <div className="errormessage">{errors.message}</div>
 
-            <div className="btnn">
+            <div className="contact-btn">
               <button type="submit">Submit</button>
             </div>
 

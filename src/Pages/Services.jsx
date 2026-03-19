@@ -40,9 +40,12 @@ function Services() {
                         <div className='dR3 right'></div>
                     </div>
                 </div>
-                <div className="service-btn">
-                    <Link to="/contact" className="btn primary nav-button"><b>Get started</b></Link>
-                </div>
+                
+                    {/* <Link to="/contact" className="service-btn"><b>Get started</b></Link> */}
+                    <div className="service-btn-parent">
+                        <button onClick={()=>{navigate("/contact")}} className='service-btn'>Get Started</button>
+                    </div>
+                    
             </section>
 
             

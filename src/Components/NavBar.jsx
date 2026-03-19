@@ -36,7 +36,7 @@ function NavBar() {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
-        <Link to="/contact" className="btn primary nav-button">
+        <Link to="/contact" className="nav-button">
           Get Started
         </Link>
 

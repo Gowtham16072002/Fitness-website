@@ -5,6 +5,7 @@ import Yogaimage from '../assets/YogaImage.jpeg'
 import Athleteimage from '../assets/AthleteImage.jpeg'
 import Zumbaimage from '../assets/ZumbaImage.jpeg'
 import { useNavigate } from "react-router-dom";
+;
 
 function Program2() {
 
@@ -29,7 +30,7 @@ function Program2() {
             <li>Supports weight management and fat loss</li>
             <li>Boosts energy and overall well-being</li>
           </ul>
-          <button onClick={()=>{navigate("/beginnerGym")}}>Choose this Program</button>
+          <button className="program2-btn" onClick={()=>{navigate("/beginnerGym")}}>Choose this Program</button>
         </div>
 
 
@@ -44,7 +45,7 @@ function Program2() {
             <li>Reduces stress and improves focus</li>
             <li>Enhances overall body strength</li>
           </ul>
-          <button onClick={()=>{navigate("/beginnerYoga")}}>Choose this Program</button>
+          <button className="program2-btn" onClick={()=>{navigate("/beginnerYoga")}}>Choose this Program</button>
         </div>
 
 
@@ -57,7 +58,7 @@ function Program2() {
             <li>Improves coordination and stamina</li>
             <li>Makes workouts fun and engaging</li>
           </ul>
-          <button>Choose this Program</button>
+          <button className="program2-btn" onClick={()=>{navigate("/zumbaFitness")}}>Choose this Program</button>
         </div>
 
 
@@ -70,7 +71,7 @@ function Program2() {
             <li>Improves speed and agility</li>
             <li>Enhances overall athletic performance</li>
           </ul>
-          <button>Choose this Program</button>
+          <button className="program2-btn">Choose this Program</button>
         </div>
 
 

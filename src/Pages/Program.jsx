@@ -13,7 +13,7 @@ function Program() {
         <p>Welcome to your ultimate fitness destination, where health, strength, and confidence come together. Whether you're just starting your fitness journey or looking to push your limits, our programs are designed to help you achieve real, lasting results.</p><br />
         <p>At our fitness platform, we believe that fitness is not just about appearance — it's about building a stronger, healthier, and happier version of yourself.</p>
         </div>
-        <button className='btn'> Choose your path</button>
+        <button className='program-btn'> Choose your path</button>
       </div>
       <div className="FloatImage">
         <img src={mainImage} alt="" />
