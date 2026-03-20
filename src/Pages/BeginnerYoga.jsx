@@ -5,8 +5,10 @@ import YogaDetail1 from '../assets/YogaDetail1.jpeg'
 import YogaDetail2 from '../assets/YogaDetail2.jpeg'
 import YogaDetail3 from '../assets/YogaDetail3.jpeg'
 import YogaDetail4 from '../assets/YogaDetail4.jpeg'
+import { useNavigate } from 'react-router-dom'
 
 function BeginnerYoga() {
+  const navigate = useNavigate()
   return (
     <>
       <div className='BeginnerYoga'>
@@ -28,7 +30,7 @@ function BeginnerYoga() {
           </div>
           <div className='title'>JNANA YOGA</div>
         </div>
-        <div className='Membership'>
+        <div onClick={()=>{navigate("/pricingplan/YogaTraining")}} className='Membership'>
           <div className='picture'>
             <img src={YogaDetail4} alt="" />
           </div>

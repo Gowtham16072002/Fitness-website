@@ -35,7 +35,7 @@ function BeginnerGym() {
           </div>
           <div className='title'>NUTRITION</div>
         </div>
-        <div className='Membership'>
+        <div onClick={()=>{navigate("/pricingplan/gym")}} className='Membership'>
           <div className='picture'>
             <img src={MembershipImage} alt="" />
           </div>

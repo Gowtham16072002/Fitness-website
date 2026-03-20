@@ -1,7 +1,142 @@
 import React from 'react'
 import '../Styles/PricingPlans.css'
+import { useLocation } from 'react-router-dom'
 
 function PricingPlans() {
+    const location = useLocation()
+    const name = location.pathname.split("/")[2]
+    console.log(name);
+
+    const data = [
+        {
+            "name": "gym",
+            "plans": [
+                {
+                    "planName": "Basic",
+                    "price": "₹1999",
+                    "content": [
+                        "Gym Access",
+                        "Group Classes"
+                    ]
+                },
+                {
+                    "planName": "Pro",
+                    "price": "₹3999",
+                    "content": [
+                        "Personal Training",
+                        "Diet Plan",
+                        "Progress Tracking"
+                    ]
+                },
+                {
+                    "planName": "Elite",
+                    "price": "₹6999",
+                    "content": [
+                        "Full Transformation Program",
+                        "Personal Trainer",
+                        "Customized Diet plan",
+                        "Weekly Progress Check"
+                    ]
+                }
+            ],
+        },
+        {
+            "name": "YogaTraining",
+            "plans": [
+                {
+                    "planName": "Basic",
+                    "price": "₹1999",
+                    "content": [
+                        "Yoga Class Access",
+                        "Group Classes"
+                    ]
+                },
+                {
+                    "planName": "Pro",
+                    "price": "₹3999",
+                    "content": [
+                        "Personal Training",
+                        "Diet Plan",
+                        "Progress Tracking"
+                    ]
+                },
+                {
+                    "planName": "Elite",
+                    "price": "₹6999",
+                    "content": [
+                        "Full Transformation Program",
+                        "Personal Trainer",
+                        "Customized Diet Plan",
+                        "Weekly Progress Check"
+                    ]
+                }
+            ],
+        },
+        {
+            "name": "ZumbaTraining",
+            "plans": [
+                {
+                    "planName": "Basic",
+                    "price": "₹1999",
+                    "content": [
+                        "Zumba Class Access",
+                        "Group Classes"
+                    ]
+                },
+                {
+                    "planName": "Pro",
+                    "price": "₹3999",
+                    "content": [
+                        "Personal Training",
+                        "Diet Plan",
+                        "Progress Tracking"
+                    ]
+                },
+                {
+                    "planName": "Elite",
+                    "price": "₹6999",
+                    "content": [
+                        "Full Transformation Program",
+                        "Personal Trainer",
+                        "Customized Diet Plan",
+                        "Weekly Progress Check"
+                    ]
+                }
+            ],
+        },
+        {
+            "name": "GeneralSports",
+            "plans": [
+                {
+                    "planName": "Basic",
+                    "price": "₹1999",
+                    "content": [
+                        "Mentor Class Access",
+                        "Group Classes"
+                    ]
+                },
+                {
+                    "planName": "Pro",
+                    "price": "₹3999",
+                    "content": [
+                        "Personal Training",
+                        "Diet Plan",
+                        "Progress Tracking"
+                    ]
+                },
+                {
+                    "planName": "Elite",
+                    "price": "₹6999",
+                    "content": [
+                        "Full Improvement Program",
+                        "Personal Trainer",
+                        "Customized Diet Plan",
+                        "Weekly Progress Check"
+                    ]
+                }
+            ],
+        },
+    ]
     return (
         <div>
             <div className="pricing-section">
@@ -10,51 +145,34 @@ function PricingPlans() {
 
                 <div className="pricing-container">
 
-                    <div className="pricing-card">
-                        <div>
-                            <h3>Basic</h3>
-                            <h2>₹1999</h2>
-                        </div>
-                        <div className='pricing-content'>
-                            <ul>
-                            <li>Gym Access</li>
-                            <li>Group Classes</li>
-                        </ul>
-                        </div>
-                        <button className="pricing-btn">Choose Plan</button>
-                    </div>
+                    {
+                        data.map((plan) => {
+                            return name == plan.name ? plan.plans.map((plan) => {
 
-                    <div className="pricing-card">
-                        <div>
-                            <h3>Pro</h3>
-                            <h2>₹3999</h2>
-                        </div>
-                        <div className='pricing-content'>
-                            <ul>
-                            <li>Personal Training</li>
-                            <li>Diet Plan</li>
-                            <li>Progress Tracking</li>
-                        </ul>
-                        </div>
-                        <button className="pricing-btn">Choose Plan</button>
-                    </div>
+                                return <>
+                                    <div className="pricing-card">
+                                        <div>
+                                            <h3>{plan.planName}</h3>
+                                            <h2>{plan.price}</h2>
+                                        </div>
+                                        <div className='pricing-content'>
+                                            <ul>
+                                                {
+                                                    plan && plan.content.map((content) => {
+                                                        return <li>{content}</li>
+                                                    })
+                                                }
+                                            </ul>
+                                        </div>
+                                        <button className="pricing-btn">Choose Plan</button>
+                                    </div>
 
-                    <div className="pricing-card">
-                        <div>
-                            <h3>Elite</h3>
-                            <h2>₹6999</h2>
-                        </div>
-                        <div className='pricing-content'>
-                            <ul>
-                            <li>Full Transformation Program</li>
-                            <li>Personal Trainer</li>
-                            <li>Customized Diet Plan</li>
-                            <li>Weekly Progress Check</li>
-                        </ul>
-                        </div>
-                        <button className="pricing-btn">Choose Plan</button>
-                    </div>
 
+                                </>
+                            }) : <></>
+                        })
+                    }
+                    
                 </div>
 
             </div>
