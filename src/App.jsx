@@ -13,6 +13,7 @@ import Cardio from "./Pages/Cardio";
 import BeginnerYoga from './Pages/BeginnerYoga';
 import ZumbaFitness from './Pages/ZumbaFitness';
 import ZumbaGold from './Pages/ZumbaGold'
+import PricingPlans from './Pages/PricingPlans';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/beginnerYoga" element={<BeginnerYoga/>}/>
           <Route path="/zumbaFitness" element={<ZumbaFitness/>} />
           <Route path="/zumbaGold" element={<ZumbaGold/>}/>
+          <Route path="/pricingplan/:name" element={<PricingPlans/>}/>
         </Route>
 
       </Routes>

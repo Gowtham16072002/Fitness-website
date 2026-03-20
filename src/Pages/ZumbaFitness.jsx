@@ -31,7 +31,7 @@ function ZumbaFitness() {
                     </div>
                     <div className='title'>ZUMBA KIDS</div>
                 </div>
-                <div className='Membership'>
+                <div onClick={()=>{navigate("/pricingplan/ZumbaTraining")}} className='Membership'>
                     <div className='picture'>
                         <img src={ZumbaSection} alt="" />
                     </div>

@@ -7,7 +7,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import Program2 from "./Program2";
 import TrainerSection from "./TrainerSection";
 import Testimonials from "./Testimonials";
-import PricingPlans from "./PricingPlans";
+// import PricingPlans from "./PricingPlans";
 
 
 
@@ -63,7 +63,7 @@ function FitnessLanding() {
             <TrainerSection />
             <Testimonials />
             <HomeMidsec />
-            <PricingPlans />
+            {/* <PricingPlans /> */}
             <FooterAbove />
         </div>
     )
