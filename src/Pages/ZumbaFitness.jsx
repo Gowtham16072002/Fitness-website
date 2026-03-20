@@ -13,11 +13,11 @@ function ZumbaFitness() {
     return (
         <>
             <div className='ZumbaFitness'>
-                <div className='Cardio'>
+                <div onClick={()=>{navigate("/zumbaClassic")}} className='ZumbaClasic'>
                     <div className='picture'>
                         <img src={ZumbaClassic} alt="" />
                     </div>
-                    <div className='title'>ZUMBA FITNESS</div>
+                    <div className='title'>ZUMBA CLASSIC</div>
                 </div>
                 <div onClick={()=>{navigate("/zumbaGold")}} className='ZumbaGolden'>
                     <div className='picture'>
@@ -25,7 +25,7 @@ function ZumbaFitness() {
                     </div>
                     <div className='title'>ZUMBA GOLD</div>
                 </div>
-                <div className='Nutrition'>
+                <div className='ZumbaKids'>
                     <div className='picture'>
                         <img src={ZumbaChild} alt="" />
                     </div>

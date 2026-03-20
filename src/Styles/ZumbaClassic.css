@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.CardioPage {
+.ZumbaClassicPage {
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -33,7 +33,7 @@
 }
 
 /* LEFT SIDE */
-.CardioContent {
+.ZumbaClassicContent {
     width: 50%;
     height: 100%;
     display: flex;
@@ -49,14 +49,14 @@
     color: #47ff47;
 } */
 
-.CardioContent p {
+.ZumbaClassicContent p {
     color: white;
     line-height: 1.5;
 
 }
 
 /* RIGHT SIDE */
-.CardioImage {
+.ZumbaClassicImage {
     width: 50%;
     display: flex;
     margin: 40px;
@@ -66,7 +66,7 @@
 
 }
 
-.CardioImages {
+.ZumbaClassicImages {
     width: 100%;
     /* height: 100%; */
     /* border-radius: 20px;  */
@@ -76,7 +76,7 @@
 
 }
 
-.CardioImages .image-container {
+.ZumbaClassicImages .image-container {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -177,7 +177,7 @@
     color: white;
 }
 
-.cardio-btn{
+.ZumbaClassic-btn{
     display: flex;
     align-items: center;
     justify-content: center;
