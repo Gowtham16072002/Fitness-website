@@ -4,36 +4,32 @@
     box-sizing: border-box;
 }
 
-.CardioPage {
+.strengthTrainingPage {
     width: 100%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    /* important */
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
         url("../assets/BeginnerBackground.jpeg");
     background-size: cover;
     background-position: center;
-    /* padding: 40px; */
 }
 
-/* TOP ROW */
-.TopContainer {
+.strengthTrainingTopContainer {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%
 }
 
-.TopContainer h1 {
+.strengthTrainingTopContainer h1 {
     text-align: center;
-    /* color: beige; */
     color: rgb(245, 87, 87);
 
 }
 
 /* LEFT SIDE */
-.CardioContent {
+.strengthTrainingContent {
     width: 50%;
     height: 100%;
     display: flex;
@@ -41,49 +37,36 @@
     gap: 20px;
     margin-left: 20px;
     margin-top: 30px;
-    /* border: 2px solid yellow;  */
 }
 
-/* .CardioContent span{
-    color: #47ff47;
-} */
-
-.CardioContent p {
+.strengthTrainingContent p {
     color: white;
     line-height: 1.5;
 
 }
 
 /* RIGHT SIDE */
-.CardioImage {
+.strengthTrainingImage {
     width: 50%;
     display: flex;
     margin: 40px;
-    /* height: 100%; */
-    /* margin-top: 60px; */
-    /* border: 2px solid red; */
 
 }
 
-.CardioImages {
+.strengthTrainingImages {
     width: 100%;
-    /* height: 100%; */
-    /* border-radius: 20px;  */
     overflow: hidden;
     flex: 1;
-    /* border: 2px solid green; */
 
 }
 
-.CardioImages .image-container {
+.strengthTrainingImages .image-container {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
     animation: fade 0.8s ease-in-out;
 
 }
@@ -103,103 +86,58 @@
 }
 
 /* SMALL BOXES */
-.subcribetred,
-.subcribeswim,
-.subcribejog,
-.subcribecyc {
+.subcribeisometric,
+.subcribeisotonic,
+.subcribeisokinetic,
+.subcribeplyometric {
     width: 600px;
-    /* height: 350px; */
     flex: 1;
     padding: 20px;
-    /* border: 2px solid rgb(30, 146, 255); */
     border-radius: 10px;
     color: beige;
-    /* background-color: beige; */
-    /* opacity: 0.5; */
 }
 
-.subcribetred ul,
-.subcribeswim ul,
-.subcribejog ul,
-.subcribecyc ul {
+.subcribeisometric ul,
+.subcribeisotonic ul,
+.subcribeisokinetic ul,
+.subcribeplyometric ul {
     margin-top: 15px;
     padding-left: 10px;
 
 }
 
-.tredlist li,
-.swimlist li,
-.joglist li,
-.cyclist li{
+.prg-list ul {
     list-style: none;
     padding-left: 0;
 }
 
-.tredlist li::before,
-.swimlist li::before,
-.joglist li::before,
-.cyclist li::before{
+.prg-list ul li::before {
     content: "◆";
-    color: rgba(255, 47, 47, 1);
+    color: #47ff47;
     font-weight: bold;
     display: inline-block;
     width: 1.5em;
 }
+
 .CardioContent h2 {
     color: white;
     padding-bottom: 10px;
 }
-/* 
-.fade-In {
-    opacity: 1;
-}
 
-.fade-Out {
-    opacity: 0.90;
-} */
-
-.btn {
+.st-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 70px; */
-    /* border: 2px solid blue; */
-    /* margin: 50px; */
-    /* padding: 50px; */
-    font-size: 1rem;
-    border-radius: 15px;
-    border-style: none;
     margin: 50px;
-    padding: 14px 30px;
-    font-size: 15px;
-    background-color:rgb(245,87,87);
-    color: white;
+    font-size: 1rem;
 }
 
-.cardio-btn{
+.strengthTraining-btn{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* .btn button {
-    padding: 10px 60px;
-    color: white;
-    font-weight: 800;
-    background-color: rgb(63, 167, 63);
-    border-radius: 20px;
-    border: none;
-} */
-
-/* .subcribetred,
-.subcribeswim,
-.subcribejog,
-.subcribecyc ul {
-  list-style-type: circle;
-  padding-left: 20px;
-  color: white; */
-/* font-weight: bold; */
-/* } */
 .subscribefirst,
 .subscribesecond {
     display: flex;
@@ -208,7 +146,6 @@
     gap: 30px;
     flex-wrap: wrap;
     align-items: center;
-    /* border: 5px solid rgb(139, 89, 97); */
 
     justify-content: center;
 }
@@ -216,35 +153,34 @@
 .subscribefirst h2,
 .subscribesecond h2 {
     text-align: center;
-    /* color: #47ff47; */
 }
 
 p {
     font-size: 1rem;
 }
 
-.subcribetred {
+.subcribeisometric {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail1.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribeswim {
+.subcribeisotonic {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail2.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribejog {
+.subcribeisokinetic {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail3.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribecyc {
+.subcribeplyometric {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail4.jpeg");
     width: 100%;
     height: 100%;

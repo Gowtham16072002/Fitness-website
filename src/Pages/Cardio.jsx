@@ -15,20 +15,20 @@ function Cardio() {
     const [showImage, setShowImage] = useState(0);
     const [fade, setFade] = useState(true);
     useEffect(() => {
-        const intervel = setInterval(() => {
-            setFade(false)
-            setTimeout(() => {
-                if (showImage === images.length - 1) {
-                    setShowImage(0);
-                } else {
-                    setShowImage(showImage + 1);
-                }
-            }, 3000);
-            setFade(true)
-        }, 600)
+    const interval = setInterval(() => {
+        setFade(false); // start fade out
 
-        return () => clearInterval(intervel);
-    }, [showImage]);
+        setTimeout(() => {
+            setShowImage((prev) =>
+                prev === images.length - 1 ? 0 : prev + 1
+            );
+            setFade(true); // fade in new image
+        }, 900); // match CSS transition time
+
+    }, 3000); // change image every 3 sec
+
+    return () => clearInterval(interval);
+}, []);
 
     return (
         <div className='CardioPage'>
@@ -69,7 +69,8 @@ function Cardio() {
                     <div className='CardioImages'>
                         {/* <img src={images[showImage]} alt="cardio" /> */}
                         <div
-                            className={`image-container ${fade ? "fade-in" : "fade-out"}`}
+                            key={showImage}
+                            className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
                             style={{
                                 backgroundImage: `linear-gradient(45deg, rgba(0,0,0,1), rgba(0,0,0,0.2)),url(${images[showImage]})`,
                             }}
@@ -87,7 +88,7 @@ function Cardio() {
                         <div className='subcribetred'>
                             <div><h2>Treadmill</h2></div>
                             <div>
-                                <ul>
+                                <ul className='tredlist'>
                                     <li>Bone Density:High-impact movement strengthens your skeleton and prevents bone loss.</li>
                                     <li>Precision Control:You can precisely manage speed, incline, and pace for targeted training.</li>
                                     <li>Mental Health:Releases endorphins that reduce stress and build mental resilience through consistent effort.</li>
@@ -98,7 +99,7 @@ function Cardio() {
                         <div className='subcribeswim'>
                             <div><h2>Swimming</h2></div>
                             <div>
-                                <ul>
+                                <ul className='swimlist'>
                                     <li>Zero Impact: Protects joints and aids injury recovery by supporting 90% of your body weight.</li>
                                     <li>Full-Body Toning: Engages every major muscle group simultaneously, providing both cardio and resistance training.</li>
                                     <li>Lung Capacity: Enhances respiratory strength and oxygen efficiency through rhythmic, controlled breathing techniques.</li>
@@ -112,7 +113,7 @@ function Cardio() {
                         <div className='subcribejog'>
                             <div><h2>HIIT</h2></div>
                             <div>
-                                <ul>
+                                <ul className='joglist'>
                                     <li>Maximum Efficiency: Delivers massive cardiovascular gains in just 15 to 30 minutes of intense work.</li>
                                     <li>Afterburn Effect: Keeps your metabolism elevated and burning calories for hours after the workout ends.</li>
                                     <li>Metabolic Health: Significantly improves insulin sensitivity and heart resilience through high-intensity intervals.</li>
@@ -123,7 +124,7 @@ function Cardio() {
                         <div className='subcribecyc'>
                             <div><h2>Cycling</h2></div>
                             <div>
-                                <ul>
+                                <ul className='cyclist'>
                                     <li>Lower-Body Power: Specifically targets and strengthens your quads, hamstrings, glutes, and calves.</li>
                                     <li>Joint Longevity: Provides a high-intensity workout with minimal impact, protecting your knees and ankles.</li>
                                     <li>Heart Health: Significantly reduces cardiovascular disease risk by maintaining a steady, elevated heart rate.</li>
