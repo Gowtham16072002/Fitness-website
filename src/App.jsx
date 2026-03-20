@@ -10,6 +10,7 @@ import Programs from './Pages/Programs'
 import Contact from './Pages/Contact'
 import BeginnerGym from './Pages/BeginnerGym';
 import Cardio from "./Pages/Cardio";
+import StrengthTraining from "./Pages/StrengthTraining";
 import BeginnerYoga from './Pages/BeginnerYoga';
 import ZumbaFitness from './Pages/ZumbaFitness';
 import ZumbaGold from './Pages/ZumbaGold'
@@ -30,6 +31,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/beginnerGym" element={<BeginnerGym/>} />
           <Route path="/cardio" element={<Cardio/>} />
+          <Route path='/StrengthTraining' element={<StrengthTraining/>}/>
           <Route path="/beginnerYoga" element={<BeginnerYoga/>}/>
           <Route path="/zumbaFitness" element={<ZumbaFitness/>} />
           <Route path="/zumbaGold" element={<ZumbaGold/>}/>

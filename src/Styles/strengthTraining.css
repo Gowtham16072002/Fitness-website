@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .strengthTrainingTopContainer h1 {
@@ -34,7 +34,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
     margin-left: 20px;
     margin-top: 30px;
 }
@@ -42,7 +42,11 @@
 .strengthTrainingContent p {
     color: white;
     line-height: 1.5;
+    gap: 2px;
 
+}
+.strengthTrainingContent p span{
+    margin-bottom: 20px;
 }
 
 /* RIGHT SIDE */
@@ -55,6 +59,7 @@
 
 .strengthTrainingImages {
     width: 100%;
+    height: 100%;
     overflow: hidden;
     flex: 1;
 
@@ -62,7 +67,7 @@
 
 .strengthTrainingImages .image-container {
     width: 100%;
-    height: 100%;
+    height: 100%; 
     background-size: cover;
     background-position: center;
     border-top-left-radius: 100px;
@@ -77,12 +82,11 @@
 }
 
 
-.subscribe {
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
+.strengthTrainingsubscribe {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 /* SMALL BOXES */
@@ -91,7 +95,7 @@
 .subcribeisokinetic,
 .subcribeplyometric {
     width: 600px;
-    flex: 1;
+    height: 400px;
     padding: 20px;
     border-radius: 10px;
     color: beige;
@@ -106,25 +110,33 @@
 
 }
 
-.prg-list ul {
+.subcribeisometric li,
+.subcribeisotonic li,
+.subcribeisokinetic li,
+.subcribeplyometric li {
     list-style: none;
     padding-left: 0;
 }
 
-.prg-list ul li::before {
+
+
+.subcribeisometriclist li::before,
+.subcribeisotoniclist li::before,
+.subcribeisokineticlist li::before,
+.subcribeplyometriclist li::before {
     content: "◆";
-    color: #47ff47;
+    color: rgba(255, 47, 47, 0.8);
     font-weight: bold;
     display: inline-block;
     width: 1.5em;
 }
 
-.CardioContent h2 {
+.strengthTrainingContent h2 {
     color: white;
     padding-bottom: 10px;
 }
 
-.st-btn {
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,20 +150,21 @@
     justify-content: center;
 }
 
-.subscribefirst,
-.subscribesecond {
+.strengthTrainingsubscribefirst,
+.strengthTrainingsubscribesecond {
     display: flex;
     padding: 50px;
+    min-height: 230px;
     flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
+    flex: 1;
     align-items: center;
-
     justify-content: center;
 }
 
-.subscribefirst h2,
-.subscribesecond h2 {
+.strengthTrainingsubscribefirst h2,
+.strengthTrainingsubscribesecond h2 {
     text-align: center;
 }
 
@@ -160,28 +173,28 @@ p {
 }
 
 .subcribeisometric {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail1.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/isomericdetail.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .subcribeisotonic {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail2.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/Isotonicdetail.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .subcribeisokinetic {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail3.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/Isokineticdetail.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .subcribeplyometric {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail4.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/Plyometricdetail.png");
     width: 100%;
     height: 100%;
     background-size: cover;

@@ -12,18 +12,23 @@ function BeginnerGym() {
   return (
     <>
       <div className='Beginner'>
+
         <div onClick={()=>{navigate("/cardio")}} className='Cardio'>
           <div className='picture'>
             <img src={CardioImage} alt="" />
           </div>
           <div className='title'>CARDIO</div>
         </div>
-        <div className='Strength'>
+
+
+        <div onClick={()=>{navigate("/StrengthTraining")}} className='Strength'>
           <div className='picture'>
             <img src={StrengthImage} alt="" />
           </div>
           <div className='title'>STRENGTH TRAINING</div>
         </div>
+
+
         <div className='Nutrition'>
           <div className='picture'>
             <img src={NutritionImage} alt="" />

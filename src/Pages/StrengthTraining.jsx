@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import '../Styles/Cardio.css'
-import StrengthTrainingImage1 from '../assets/StrengthTrainingImage1.jpeg'
-import StrengthTrainingImage2 from '../assets/StrengthTrainingImage2.jpeg'
-import StrengthTrainingImage3 from '../assets/StrengthTrainingImage3.jpeg'
-import StrengthTrainingImage4 from '../assets/StrengthTrainingImage4.jpeg'
-import StrengthTrainingdetail1 from '../assets/StrengthTrainingdetail1.jpeg'
-import StrengthTrainingdetail2 from '../assets/StrengthTrainingdetail2.jpeg'
-import StrengthTrainingdetail3 from '../assets/StrengthTrainingdetail3.jpeg'
-import StrengthTrainingdetail4 from '../assets/StrengthTrainingdetail4.jpeg'
+import '../Styles/StrengthTraining.css'
+import isometricimage from '../assets/isometricimage.png'
+import isotonicimage from '../assets/isotonicimage.png'
+import isokineticimage from '../assets/isokineticimage.png'
+import plyometricimage from '../assets/plyometricimage.png'
 
-function Cardio() {
+function StrengthTraining() {
 
-    const strengthTraining_images = [strengthImage1, strengthImage2, strengthImage3, strengthImage4];
+    const images = [isometricimage,isotonicimage ,isokineticimage,plyometricimage];
     const [showImage, setShowImage] = useState(0);
     const [fade, setFade] = useState(true);
     useEffect(() => {
@@ -40,7 +36,7 @@ function Cardio() {
                     <p><span><b>Strength training is a form of physical exercise designed to improve muscle strength, endurance, and overall fitness by working muscles against resistance such as weights, machines, or body weight. It plays an important role in maintaining a healthy body and preventing injuries.</b></span></p>
                     <br /><section className='strengthTrainingContent1'>
                         {/* <h2>Treadmill</h2> */}
-                        <p>There are four main types of strength training. Isometric training involves muscle contraction without any visible movement. For example, holding a Plank helps build stability and core strength. Isotonic training is the most common type, where muscles change length during movement. This includes both concentric (lifting) and eccentric (lowering) actions, as seen in exercises like Squat and Bench press.</p>
+                        <p>Isometric training involves muscle contraction without any visible movement. For example, holding a Plank helps build stability and core strength. Isotonic training is the most common type, where muscles change length during movement. This includes both concentric (lifting) and eccentric (lowering) actions, as seen in exercises like Squat and Bench press.</p>
                     </section>
 
                     <section className='strengthTrainingContent2'>
@@ -60,8 +56,8 @@ function Cardio() {
                 </div>
 
                 {/* RIGHT */}
-                <div className="strengthImage">
-                    <div className='strengthImages'>
+                <div className="strengthTrainingImage">
+                    <div className='strengthTrainingImages'>
                         {/* <img src={images[showImage]} alt="cardio" /> */}
                         <div
                             key={showImage}
@@ -104,12 +100,12 @@ function Cardio() {
                         </div>
                     </div>
 
-                    <div className='subscribesecond'>
+                    <div className='strengthTrainingsubscribesecond'>
                         <div className='subcribeisokinetic'>
                             <div><h2>Isokinetic</h2></div>
                             <div>
                                 <ul className='subcribeisokineticlist'>
-                                    <li>Provides constant speed for safe, controlled muscle strengthening</li>
+                                    <li>Provides constant speed for safe</li>
                                     <li>Reduces risk of injury during exercise</li>
                                     <li>Useful for rehabilitation and recovery programs</li>
                                     <li>Targets specific muscles with precise resistance control</li>
@@ -119,7 +115,7 @@ function Cardio() {
                         <div className='subcribeplyometric'>
                             <div><h2>Plyometric</h2></div>
                             <div>
-                                <ul className='subcribeplyometric'>
+                                <ul className='subcribeplyometriclist'>
                                     <li>improves explosive power and speed</li>
                                     <li>Enhances athletic performance and agility</li>
                                     <li>Increases coordination and reaction time</li>
@@ -130,7 +126,7 @@ function Cardio() {
                     </div>
                 </div>
                 <div className='strengthTraining-btn'>
-                    <button className='st-btn'>Enroll Now</button>
+                    <button className='btn'>Enroll Now</button>
                 </div>
             </div>
 
@@ -139,4 +135,4 @@ function Cardio() {
     )
 }
 
-export default strenghtTraining;
+export default StrengthTraining;

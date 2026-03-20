@@ -108,15 +108,15 @@
 
 @keyframes float2 {
     0% {
-        transform: translateY(-10px);
+        transform:rotate(45deg) translateY(-10px);
     }
 
     50% {
-        transform: translateY(5px);
+        transform:rotate(45deg) translateY(5px);
     }
 
     100% {
-        transform: translateY(-10px);
+        transform:rotate(45deg) translateY(-10px);
     }
 }
 
