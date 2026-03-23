@@ -11,6 +11,7 @@ import Contact from './Pages/Contact'
 import BeginnerGym from './Pages/BeginnerGym';
 import Cardio from "./Pages/Cardio";
 import StrengthTraining from "./Pages/StrengthTraining";
+import Nutrition from "./Pages/Nutrition";
 import BeginnerYoga from './Pages/BeginnerYoga';
 import ZumbaFitness from './Pages/ZumbaFitness';
 import ZumbaGold from './Pages/ZumbaGold'
@@ -33,6 +34,7 @@ function App() {
           <Route path="/beginnerGym" element={<BeginnerGym/>} />
           <Route path="/cardio" element={<Cardio/>} />
           <Route path='/StrengthTraining' element={<StrengthTraining/>}/>
+          <Route path='/Nutrition' element={<Nutrition/>}/>
           <Route path="/beginnerYoga" element={<BeginnerYoga/>}/>
           <Route path="/zumbaFitness" element={<ZumbaFitness/>} />
           <Route path="/zumbaGold" element={<ZumbaGold/>}/>

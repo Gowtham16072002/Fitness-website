@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.strengthTrainingPage {
+.NutritionPage {
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -15,21 +15,21 @@
     background-position: center;
 }
 
-.strengthTrainingTopContainer {
+.NutritionTopContainer {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
 }
 
-.strengthTrainingTopContainer h1 {
+.NutritionTopContainer h1 {
     text-align: center;
     color: rgb(245, 87, 87);
 
 }
 
 /* LEFT SIDE */
-.strengthTrainingContent {
+.NutritionContent {
     width: 50%;
     height: 100%;
     display: flex;
@@ -37,28 +37,27 @@
     gap: 8px;
     margin-left: 20px;
     margin-top: 30px;
-    text-align: justify;
 }
 
-.strengthTrainingContent p {
+.NutritionContent p {
     color: white;
     line-height: 1.5;
     gap: 2px;
 
 }
-.strengthTrainingContent p span{
+.NutritionContent p span{
     margin-bottom: 20px;
 }
 
 /* RIGHT SIDE */
-.strengthTrainingImage {
+.NutritionImage {
     width: 50%;
     display: flex;
     margin: 40px;
 
 }
 
-.strengthTrainingImages {
+.NutritionImages {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -66,7 +65,7 @@
 
 }
 
-.strengthTrainingImages .image-container {
+.NutritionImages .image-container {
     width: 100%;
     height: 100%; 
     background-size: cover;
@@ -85,7 +84,7 @@
 }
 
 
-.strengthTrainingsubscribe {
+.Nutritionsubscribe {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,10 +92,10 @@
 }
 
 /* SMALL BOXES */
-.subcribeisometric,
-.subcribeisotonic,
-.subcribeisokinetic,
-.subcribeplyometric {
+.subcribeprotein,
+.subcribecarbohydrate,
+.subcribefat,
+.subcribevitAndmin {
     width: 600px;
     height: 400px;
     padding: 20px;
@@ -104,29 +103,29 @@
     color: beige;
 }
 
-.subcribeisometric ul,
-.subcribeisotonic ul,
-.subcribeisokinetic ul,
-.subcribeplyometric ul {
+.subcribeprotein ul,
+.subcribecarbohydrate ul,
+.subcribefat ul,
+.subcribevitAndmin ul {
     margin-top: 15px;
     padding-left: 10px;
 
 }
 
-.subcribeisometric li,
-.subcribeisotonic li,
-.subcribeisokinetic li,
-.subcribeplyometric li {
+.subcribeprotein li,
+.subcribecarbohydrate li,
+.subcribefat li,
+.subcribevitAndmin li {
     list-style: none;
     padding-left: 0;
 }
 
 
 
-.subcribeisometriclist li::before,
-.subcribeisotoniclist li::before,
-.subcribeisokineticlist li::before,
-.subcribeplyometriclist li::before {
+.subcribeproteinlist li::before,
+.subcribecarbohydratelist li::before,
+.subcribefatlist li::before,
+.subcribevitAndminlist li::before {
     content: "◆";
     color: rgba(255, 47, 47, 0.8);
     font-weight: bold;
@@ -134,7 +133,7 @@
     width: 1.5em;
 }
 
-.strengthTrainingContent h2 {
+.Nutritioncontent h2 {
     color: white;
     padding-bottom: 10px;
 }
@@ -147,14 +146,14 @@
     font-size: 1rem;
 }
 
-.strengthTraining-btn{
+.Nutrition-btn{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.strengthTrainingsubscribefirst,
-.strengthTrainingsubscribesecond {
+.Nutritionsubscribefirst,
+.Nutritionsubscribesecond {
     display: flex;
     padding: 50px;
     min-height: 230px;
@@ -166,8 +165,8 @@
     justify-content: center;
 }
 
-.strengthTrainingsubscribefirst h2,
-.strengthTrainingsubscribesecond h2 {
+.Nutritionsubscribefirst h2,
+.Nutritionsubscribesecond h2 {
     text-align: center;
 }
 
@@ -175,29 +174,29 @@ p {
     font-size: 1rem;
 }
 
-.subcribeisometric {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/isomericdetail.png");
+.subcribeprotein {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/proteindetail.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribeisotonic {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/Isotonicdetail.png");
+.subcribecarbohydrate {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/carbohydratedetail.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribeisokinetic {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/Isokineticdetail.png");
+.subcribefat {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/fatdetail.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribeplyometric {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/Plyometricdetail.png");
+.subcribevitAndmin {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/vitAndmindetail.png");
     width: 100%;
     height: 100%;
     background-size: cover;
