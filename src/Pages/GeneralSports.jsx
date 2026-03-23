@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/ZumbaFitness.css'
+import '../Styles/GeneralSports.css'
 import BeginnerYogaBackground from '../assets/BeginnerYogaBackground.jpeg'
 import ZumbaClassic from '../assets/ZumbaFitness.png'
 import ZumbaGold from '../assets/ZumbaGold.png'
@@ -7,31 +7,31 @@ import ZumbaChild from '../assets/ZumbaChild.png'
 import ZumbaSection from '../assets/ZumbaSection.png'
 import { useNavigate } from 'react-router-dom'
 
-function ZumbaFitness() {
+function GeneralSports() {
 
     const navigate = useNavigate();
     return (
         <>
-            <div className='ZumbaFitness'>
-                <div onClick={()=>{navigate("/zumbaClassic")}} className='ZumbaClasic'>
+            <div className='GeneralSports'>
+                <div onClick={()=>{navigate("/teamSports")}} className='TeamSports'>
                     <div className='picture'>
                         <img src={ZumbaClassic} alt="" />
                     </div>
-                    <div className='title'>ZUMBA CLASSIC</div>
+                    <div className='title'>TEAM SPORTS</div>
                 </div>
-                <div onClick={()=>{navigate("/zumbaGold")}} className='ZumbaGolden'>
+                <div onClick={()=>{navigate("/individualSports")}} className='IndividualSports'>
                     <div className='picture'>
                         <img src={ZumbaGold} alt="" />
                     </div>
-                    <div className='title'>ZUMBA GOLD</div>
+                    <div className='title'>INDIVIDUAL SPORTS</div>
                 </div>
-                <div onClick={()=>{navigate("/zumbaKids")}} className='ZumbaKids'>
+                <div onClick={()=>{navigate("/adventureSports")}} className='AdventureSports'>
                     <div className='picture'>
                         <img src={ZumbaChild} alt="" />
                     </div>
-                    <div className='title'>ZUMBA KIDS</div>
+                    <div className='title'>ADVENTURE SPORTS</div>
                 </div>
-                <div onClick={()=>{navigate("/pricingplan/ZumbaTraining")}} className='Membership'>
+                <div onClick={()=>{navigate("/pricingplan/GeneralSportss")}} className='Membership'>
                     <div className='picture'>
                         <img src={ZumbaSection} alt="" />
                     </div>
@@ -42,4 +42,4 @@ function ZumbaFitness() {
     )
 }
 
-export default ZumbaFitness
+export default GeneralSports

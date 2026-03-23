@@ -16,6 +16,12 @@ import BeginnerYoga from './Pages/BeginnerYoga';
 import ZumbaFitness from './Pages/ZumbaFitness';
 import ZumbaGold from './Pages/ZumbaGold'
 import PricingPlans from './Pages/PricingPlans';
+import ZumbaClassic from './Pages/ZumbaClassic';
+import ZumbaKids from './Pages/ZumbaKids';
+import GeneralSports from './Pages/GeneralSports';
+import TeamSports from './Pages/TeamSports';
+import IndividualSports from './Pages/IndividualSports';
+import AdventureSports from './Pages/AdventureSports';
 
 function App() {
 
@@ -38,7 +44,13 @@ function App() {
           <Route path="/beginnerYoga" element={<BeginnerYoga/>}/>
           <Route path="/zumbaFitness" element={<ZumbaFitness/>} />
           <Route path="/zumbaGold" element={<ZumbaGold/>}/>
+          <Route path="/zumbaClassic" element={<ZumbaClassic/>}/>
           <Route path="/pricingplan/:name" element={<PricingPlans/>}/>
+          <Route path="/zumbaKids" element={<ZumbaKids/>}/>
+          <Route path="/generalSports" element={<GeneralSports/>} />
+          <Route path="/teamSports" element={<TeamSports/>}/>
+          <Route path="/individualSports" element={<IndividualSports/>} />
+          <Route path="/adventureSports" element={<AdventureSports/>} />
         </Route>
 
       </Routes>

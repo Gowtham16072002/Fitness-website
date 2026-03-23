@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.CardioPage {
+.IndividualSportsPage {
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -33,7 +33,7 @@
 }
 
 /* LEFT SIDE */
-.CardioContent {
+.IndividualSportsContent {
     width: 50%;
     height: 100%;
     display: flex;
@@ -49,14 +49,14 @@
     color: #47ff47;
 } */
 
-.CardioContent p {
+.IndividualSportsContent p {
     color: white;
     line-height: 1.5;
 
 }
 
 /* RIGHT SIDE */
-.CardioImage {
+.IndividualSportsImage {
     width: 50%;
     display: flex;
     margin: 40px;
@@ -66,7 +66,7 @@
 
 }
 
-.CardioImages {
+.IndividualSportsImages {
     width: 100%;
     /* height: 100%; */
     /* border-radius: 20px;  */
@@ -76,7 +76,7 @@
 
 }
 
-.CardioImages .image-container {
+.IndividualSportsImages .image-container {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -104,10 +104,10 @@
 }
 
 /* SMALL BOXES */
-.subcribetred,
-.subcribeswim,
-.subcribejog,
-.subcribecyc {
+.subcribeBAD,
+.subcribeTEN,
+.subcribeBOX,
+.subcribeATH {
     width: 600px;
     /* height: 350px; */
     flex: 1;
@@ -119,34 +119,34 @@
     /* opacity: 0.5; */
 }
 
-.subcribetred ul,
-.subcribeswim ul,
-.subcribejog ul,
-.subcribecyc ul {
+.subcribeBAD ul,
+.subcribeTEN ul,
+.subcribeBOX ul,
+.subcribeATH ul {
     margin-top: 15px;
     padding-left: 10px;
 
 }
 
-.tredlist li,
-.swimlist li,
-.joglist li,
-.cyclist li{
+.BADlist li,
+.TENlist li,
+.BOXlist li,
+.ATHlist li{
     list-style: none;
     padding-left: 0;
 }
 
-.tredlist li::before,
-.swimlist li::before,
-.joglist li::before,
-.cyclist li::before{
+.BADlist li::before,
+.TENlist li::before,
+.BOXlist li::before,
+.ATHlist li::before{
     content: "◆";
     color: rgba(255, 47, 47, 1);
     font-weight: bold;
     display: inline-block;
     width: 1.5em;
 }
-.CardioContent h2 {
+.IndividualSportsContent h2 {
     color: white;
     padding-bottom: 10px;
 }
@@ -159,7 +159,7 @@
     opacity: 0.90;
 } */
 
-.btn {
+.INSPTbtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,7 +177,7 @@
     color: white;
 }
 
-.cardio-btn{
+.IndividualSports-btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,28 +224,28 @@ p {
     font-size: 1rem;
 }
 
-.subcribetred {
+.subcribeBAD {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail1.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribeswim {
+.subcribeTEN {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail2.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribejog {
+.subcribeBOX {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail3.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribecyc {
+.subcribecATH {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail4.jpeg");
     width: 100%;
     height: 100%;

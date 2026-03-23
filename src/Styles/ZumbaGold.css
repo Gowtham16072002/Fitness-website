@@ -42,6 +42,7 @@
     gap: 20px;
     margin-left: 20px;
     margin-top: 30px;
+    text-align: justify;
     /* border: 2px solid yellow;  */
 }
 
@@ -87,6 +88,8 @@
     background-position: center;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     /* transition: opacity 0.3s ease-in-out; */
     animation: fade 0.8s ease-in-out;
     /* border-top: 1000px; */
@@ -111,10 +114,10 @@
 }
 
 /* SMALL BOXES */
-.subcribetred,
-.subcribeswim,
-.subcribejog,
-.subcribecyc {
+.subcribeZGCLS,
+.subcribeZGCH,
+.subcribeZGTO,
+.subcribeZGSTFL {
     width: 600px;
     /* height: 350px; */
     flex: 1;
@@ -126,30 +129,32 @@
     /* opacity: 0.5; */
 }
 
-.subcribetred ul,
-.subcribeswim ul,
-.subcribejog ul,
-.subcribecyc ul {
+.subcribeZGCLS ul,
+.subcribeZGCH ul,
+.subcribeZGTO ul,
+.subcribeZGSTFL ul {
     margin-top: 15px;
     padding-left: 10px;
 
 }
 
-.prg-list ul {
+.ZGCLSlist li,
+.ZGCHlist li,
+.ZGTOlist li,
+.ZGSTFLlist li{
     list-style: none;
-    /* Remove default bullets */
     padding-left: 0;
 }
 
-.prg-list ul li::before {
+.ZGCLSlist li::before,
+.ZGCHlist li::before,
+.ZGTOlist li::before,
+.ZGSTFLlist li::before{
     content: "◆";
-    /* Diamond symbol */
-    color: #47ff47;
-    /* Change bullet color */
+    color: rgba(255, 47, 47, 1);
     font-weight: bold;
     display: inline-block;
     width: 1.5em;
-    /* Space between diamond and text */
 }
 
 .ZumbaGoldContent h2 {
@@ -225,28 +230,28 @@ p {
     font-size: 1rem;
 }
 
-.subcribetred {
+.subcribeZGCLS {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail1.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribeswim {
+.subcribeZGCH {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail2.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribejog {
+.subcribeZGTO {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail3.jpeg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribecyc {
+.subcribeZGSTFL {
     background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail4.jpeg");
     width: 100%;
     height: 100%;
