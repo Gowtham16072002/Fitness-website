@@ -56,7 +56,7 @@ function AboutTop() {
         </div>
       </div>
 
-      <button className="about-btn">
+      <button onClick={()=>{navigate("/programs")}} className="about-btn">
           Explore Programs
       </button>
 

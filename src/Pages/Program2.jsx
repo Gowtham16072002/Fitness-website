@@ -64,14 +64,14 @@ function Program2() {
 
         <div className="program-card">
           <div className="image-box"><img src={Athleteimage} alt="" /></div>
-          <h3>Sports Fitness Program</h3>
+          <h3>General Sports Fitness Program</h3>
           {/* <p>Our Athlete Fitness Program is designed to enhance strength, speed, agility, and endurance. It includes sport-specific training, strength conditioning, and performance drills to help individuals reach peak physical performance. Ideal for aspiring and professional athletes aiming to improve competitive skills.</p> */}
           <ul>
             <li>Boosts strength and power</li>
             <li>Improves speed and agility</li>
             <li>Enhances overall athletic performance</li>
           </ul>
-          <button className="program2-btn">Choose this Program</button>
+          <button className="program2-btn" onClick={()=>{navigate("/generalSports")}}>Choose this Program</button>
         </div>
 
 

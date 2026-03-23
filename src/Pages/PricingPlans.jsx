@@ -105,7 +105,7 @@ function PricingPlans() {
             ],
         },
         {
-            "name": "GeneralSports",
+            "name": "GeneralSportss",
             "plans": [
                 {
                     "planName": "Basic",

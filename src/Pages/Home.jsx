@@ -31,7 +31,7 @@ function FitnessLanding() {
                         Start 7-Day Free Trial
                     </button>
 
-                    <button className="hero-btn">
+                    <button onClick={()=>{navigate("/programs")}} className="hero-btn">
                         View Programs
                     </button>
 

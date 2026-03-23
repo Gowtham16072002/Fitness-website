@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../Styles/Cardio.css'
+import '../Styles/ZumbaClassic.css'
 import CardioImage1 from '../assets/CardioImage1.jpeg'
 import CardioImage2 from '../assets/CardioImage2.jpeg'
 import CardioImage3 from '../assets/CardioImage3.jpeg'
@@ -80,57 +80,57 @@ function ZumbaClassic() {
                 <div className='subscribe'>
 
                     <div className='subscribefirst'>
-                        <div className='subcribetred'>
-                            <div><h2>Treadmill</h2></div>
+                        <div className='subcribeZCRBL'>
+                            <div><h2>Zumba Cardio Blast</h2></div>
                             <div>
-                                <ul className='tredlist'>
-                                    <li>Bone Density:High-impact movement strengthens your skeleton and prevents bone loss.</li>
-                                    <li>Precision Control:You can precisely manage speed, incline, and pace for targeted training.</li>
-                                    <li>Mental Health:Releases endorphins that reduce stress and build mental resilience through consistent effort.</li>
-                                    <li>Functional Movement:Mimics natural human movement, improving your stamina for walking and running in daily life.</li>
+                                <ul className='ZCRBLlist'>
+                                    <li>High Intensity: Focuses on continuous fast-paced movements.</li>
+                                    <li>Fat Burning: Maximizes calorie burn in a short time.</li>
+                                    <li>Endurance Focus: Improves stamina and cardiovascular strength.</li>
+                                    <li>Energetic Routines: Non-stop dance sequences.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div className='subcribeswim'>
-                            <div><h2>Swimming</h2></div>
+                        <div className='subcribeZSTFU'>
+                            <div><h2>Zumba Strength Fusion</h2></div>
                             <div>
-                                <ul className='swimlist'>
-                                    <li>Zero Impact: Protects joints and aids injury recovery by supporting 90% of your body weight.</li>
-                                    <li>Full-Body Toning: Engages every major muscle group simultaneously, providing both cardio and resistance training.</li>
-                                    <li>Lung Capacity: Enhances respiratory strength and oxygen efficiency through rhythmic, controlled breathing techniques.</li>
-                                    <li>Mental Calm: The water's weightlessness and repetitive strokes provide a meditative, stress-reducing hydrotherapy experience.</li>
+                                <ul className='ZSTFUlist'>
+                                    <li>Muscle Engagement: Combines dance with bodyweight exercises.</li>
+                                    <li>Core Focus: Strengthens abs and lower back.</li>
+                                    <li>Balanced Workout: Mix of cardio and strength training.</li>
+                                    <li>Power Moves: Includes squats, lunges, and dynamic steps.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
                     <div className='subscribesecond'>
-                        <div className='subcribejog'>
-                            <div><h2>HIIT</h2></div>
+                        <div className='subcribeZDNPR'>
+                            <div><h2>Zumba Dance Party</h2></div>
                             <div>
-                                <ul className='joglist'>
-                                    <li>Maximum Efficiency: Delivers massive cardiovascular gains in just 15 to 30 minutes of intense work.</li>
-                                    <li>Afterburn Effect: Keeps your metabolism elevated and burning calories for hours after the workout ends.</li>
-                                    <li>Metabolic Health: Significantly improves insulin sensitivity and heart resilience through high-intensity intervals.</li>
-                                    <li>Muscle Preservation: Effectively burns fat while maintaining muscle mass through explosive, high-power movements.</li>
+                                <ul className='ZDNPRlist'>
+                                    <li>Fun Experience: Focuses more on enjoyment than intensity.</li>
+                                    <li>Simple Routines: Easy-to-follow dance moves.</li>
+                                    <li>Social Workout: Great for group sessions.</li>
+                                    <li>Stress Relief: Boosts mood through music and movement.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div className='subcribecyc'>
-                            <div><h2>Cycling</h2></div>
+                        <div className='subcribeZINMX'>
+                            <div><h2>Zumba Interval Mix</h2></div>
                             <div>
-                                <ul className='cyclist'>
-                                    <li>Lower-Body Power: Specifically targets and strengthens your quads, hamstrings, glutes, and calves.</li>
-                                    <li>Joint Longevity: Provides a high-intensity workout with minimal impact, protecting your knees and ankles.</li>
-                                    <li>Heart Health: Significantly reduces cardiovascular disease risk by maintaining a steady, elevated heart rate.</li>
-                                    <li>Sustainable Training: Allows for longer durations and more frequent sessions without the exhaustion of high-impact sports.</li>
+                                <ul className='ZINMXlist'>
+                                    <li>Interval Training: Alternates between high and moderate intensity.</li>
+                                    <li>Better Recovery: Allows short rest phases within workout.</li>
+                                    <li>Efficiency: Improves fitness in less time.</li>
+                                    <li>Heart Health: Enhances cardiovascular performance.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='ZumbaClassic-btn'>
-                    <button className='btn'>Enroll Now</button>
+                    <button className='ZCLbtn'>Enroll Now</button>
                 </div>
             </div>
 
