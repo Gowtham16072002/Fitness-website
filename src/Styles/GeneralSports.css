@@ -5,7 +5,7 @@
 
 .GeneralSports {
     width: 100%;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("../assets/ZumbaToning.jpg");
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("../assets/TeamSports.png");
     height: 100vh;
     background-position: center;
     display: flex;

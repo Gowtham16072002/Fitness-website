@@ -11,7 +11,7 @@
     flex-direction: column;
     /* important */
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-        url("../assets/BeginnerBackground.jpeg");
+        url("../assets/Zumba.jpg");
     background-size: cover;
     background-position: center;
     /* padding: 40px; */
@@ -225,28 +225,28 @@ p {
 }
 
 .subcribeZCRBL {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail1.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/ZumbaCardioBlast.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .subcribeZSTFU {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail2.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/ZumbaToning.jpg");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .subcribeZDNPR {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail3.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/ZumbaDanceParty.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .subcribeZINMX {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail4.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/ZumbaIntervalMix.png");
     width: 100%;
     height: 100%;
     background-size: cover;

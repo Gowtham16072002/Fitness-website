@@ -1,10 +1,10 @@
 import React from 'react'
 import '../Styles/GeneralSports.css'
 import BeginnerYogaBackground from '../assets/BeginnerYogaBackground.jpeg'
-import ZumbaClassic from '../assets/ZumbaFitness.png'
-import ZumbaGold from '../assets/ZumbaGold.png'
-import ZumbaChild from '../assets/ZumbaChild.png'
-import ZumbaSection from '../assets/ZumbaSection.png'
+import TeamSports from '../assets/TeamSports.png'
+import individualSports from '../assets/individualSports.png'
+import adventureSport from '../assets/adventureSport.png'
+import adventureSportmember from '../assets/adventureSportmember.png'
 import { useNavigate } from 'react-router-dom'
 
 function GeneralSports() {
@@ -15,25 +15,25 @@ function GeneralSports() {
             <div className='GeneralSports'>
                 <div onClick={()=>{navigate("/teamSports")}} className='TeamSports'>
                     <div className='picture'>
-                        <img src={ZumbaClassic} alt="" />
+                        <img src={TeamSports} alt="" />
                     </div>
                     <div className='title'>TEAM SPORTS</div>
                 </div>
                 <div onClick={()=>{navigate("/individualSports")}} className='IndividualSports'>
                     <div className='picture'>
-                        <img src={ZumbaGold} alt="" />
+                        <img src={individualSports} alt="" />
                     </div>
                     <div className='title'>INDIVIDUAL SPORTS</div>
                 </div>
                 <div onClick={()=>{navigate("/adventureSports")}} className='AdventureSports'>
                     <div className='picture'>
-                        <img src={ZumbaChild} alt="" />
+                        <img src={adventureSport} alt="" />
                     </div>
                     <div className='title'>ADVENTURE SPORTS</div>
                 </div>
                 <div onClick={()=>{navigate("/pricingplan/GeneralSportss")}} className='Membership'>
                     <div className='picture'>
-                        <img src={ZumbaSection} alt="" />
+                        <img src={adventureSportmember} alt="" />
                     </div>
                     <div className='title'>MEMBERSHIP</div>
                 </div>

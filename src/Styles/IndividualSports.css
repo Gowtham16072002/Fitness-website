@@ -225,28 +225,28 @@ p {
 }
 
 .subcribeBAD {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail1.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/Badminton.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .subcribeTEN {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail2.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/individual1.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .subcribeBOX {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail3.jpeg");
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/BoxingSport.png");
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
-.subcribecATH {
-    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/cardiodetail4.jpeg");
+.subcribeATH {
+    background: linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/individual2.png");
     width: 100%;
     height: 100%;
     background-size: cover;

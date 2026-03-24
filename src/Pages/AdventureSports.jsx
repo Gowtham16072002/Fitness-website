@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/AdventureSports.css'
-import CardioImage1 from '../assets/CardioImage1.jpeg'
-import CardioImage2 from '../assets/CardioImage2.jpeg'
-import CardioImage3 from '../assets/CardioImage3.jpeg'
-import CardioImage4 from '../assets/CardioImage4.jpeg'
-import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-import cardiodetail4 from '../assets/cardiodetail4.jpeg'
+import RockClimbing from '../assets/RockClimbing.png'
+import Hiking from '../assets/Hiking.png'
+import kayaking from '../assets/kayaking.png'
+import TrailCycling from '../assets/TrailCycling.png'
+// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
+// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
+// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
+// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function AdventureSports() {
 
-    const images = [CardioImage1, CardioImage2, CardioImage3, CardioImage4];
+    const images = [RockClimbing, Hiking, kayaking, TrailCycling];
     const [showImage, setShowImage] = useState(0);
     const [fade, setFade] = useState(true);
     useEffect(() => {

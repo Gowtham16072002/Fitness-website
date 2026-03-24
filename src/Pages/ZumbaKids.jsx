@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/ZumbaKids.css'
-import CardioImage1 from '../assets/CardioImage1.jpeg'
-import CardioImage2 from '../assets/CardioImage2.jpeg'
-import CardioImage3 from '../assets/CardioImage3.jpeg'
-import CardioImage4 from '../assets/CardioImage4.jpeg'
-import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-import cardiodetail4 from '../assets/cardiodetail4.jpeg'
+import ZumbaChild from '../assets/ZumbaChild.png'
+import ZumbaKids1 from '../assets/ZumbaKids1.png'
+import ZumbaKids2 from '../assets/ZumbaKids2.png'
+import ZumbaKids3 from '../assets/ZumbaKids3.png'
+// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
+// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
+// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
+// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function ZumbaKids() {
 
-    const images = [CardioImage1, CardioImage2, CardioImage3, CardioImage4];
+    const images = [ZumbaChild, ZumbaKids1, ZumbaKids2, ZumbaKids3];
     const [showImage, setShowImage] = useState(0);
     const [fade, setFade] = useState(true);
     useEffect(() => {

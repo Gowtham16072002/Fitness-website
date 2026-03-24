@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/ZumbaClassic.css'
-import CardioImage1 from '../assets/CardioImage1.jpeg'
-import CardioImage2 from '../assets/CardioImage2.jpeg'
-import CardioImage3 from '../assets/CardioImage3.jpeg'
-import CardioImage4 from '../assets/CardioImage4.jpeg'
+import ZumbaImage from '../assets/ZumbaImage.jpeg'
+import ZumbaChild from '../assets/ZumbaChild.png'
+import ZumbaGold from '../assets/ZumbaGold.png'
+import ZumbaFitness from '../assets/ZumbaFitness.png'
 import cardiodetail1 from '../assets/cardiodetail1.jpeg'
 import cardiodetail2 from '../assets/cardiodetail2.jpeg'
 import cardiodetail3 from '../assets/cardiodetail3.jpeg'
@@ -11,7 +11,7 @@ import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function ZumbaClassic() {
 
-    const images = [CardioImage1, CardioImage2, CardioImage3, CardioImage4];
+    const images = [ZumbaImage,ZumbaChild, ZumbaGold, ZumbaFitness];
     const [showImage, setShowImage] = useState(0);
     const [fade, setFade] = useState(true);
     useEffect(() => {
@@ -38,10 +38,10 @@ function ZumbaClassic() {
                 <div className='ZumbaClassicContent'>
                     <h1>ZUMBA CLASSIC</h1>
                     <p><span><b>Zumba Classic offers a high-energy, fun-filled workout, while its variations provide options for cardio intensity, strength, rhythm, and enjoyment, making it suitable for people who want an engaging and effective fitness routine.</b></span></p>
-                    <br /><section className='Content1'>
-                        {/* <h2>Treadmill</h2> */}
+                    {/* <br /><section className='Content1'>
+                        <h2>Treadmill</h2>
                         <p>Zumba Classic delivers a dynamic and engaging cardiovascular workout that blends high-energy dance movements with aerobic exercise, allowing individuals to improve fitness while enjoying an immersive and music-driven experience. By incorporating a variety of international dance styles such as salsa, merengue, reggaeton, and hip-hop, it transforms traditional workouts into an exciting and motivating routine suitable for all fitness enthusiasts.</p>
-                    </section>
+                    </section> */}
 
                     <section className='Content2'>
                         {/* <h2>Swimming</h2> */}

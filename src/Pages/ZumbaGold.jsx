@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/ZumbaGold.css'
-import ZumbaToning from '../assets/ZumbaToning.jpg'
-import ZumbaImage from '../assets/ZumbaImage.jpeg'
-import ZumbaMain from '../assets/ZumbaMain.jpg'
-import ZumbaKids from '../assets/ZumbaKids.jpg'
-import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-import cardiodetail4 from '../assets/cardiodetail4.jpeg'
+import ZumbaGold1 from '../assets/ZumbaGold1.png'
+import ZumbaGold2 from '../assets/ZumbaGold2.png'
+import ZumbaGold3 from '../assets/ZumbaGold3.png'
+import ZumbaGold4 from '../assets/ZumbaGold4.png'
+// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
+// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
+// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
+// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function ZumbaGold() {
 
-    const images = [ZumbaToning, ZumbaImage, ZumbaMain, ZumbaKids];
+    const images = [ZumbaGold1, ZumbaGold2, ZumbaGold3, ZumbaGold4];
     const [showImage, setShowImage] = useState(0);
     const [fade, setFade] = useState(true);
     useEffect(() => {

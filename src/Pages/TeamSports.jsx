@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/TeamSports.css'
-import CardioImage1 from '../assets/CardioImage1.jpeg'
-import CardioImage2 from '../assets/CardioImage2.jpeg'
-import CardioImage3 from '../assets/CardioImage3.jpeg'
-import CardioImage4 from '../assets/CardioImage4.jpeg'
-import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-import cardiodetail4 from '../assets/cardiodetail4.jpeg'
+import teamSports1 from '../assets/teamSports1.png'
+import teamSports2 from '../assets/teamSports2.png'
+import teamSports3 from '../assets/teamSports3.png'
+import teamSports4 from '../assets/teamSports4.png'
+// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
+// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
+// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
+// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function TeamSports() {
 
-    const images = [CardioImage1, CardioImage2, CardioImage3, CardioImage4];
+    const images = [teamSports1, teamSports2, teamSports3, teamSports4];
     const [showImage, setShowImage] = useState(0);
     const [fade, setFade] = useState(true);
     useEffect(() => {
