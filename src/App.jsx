@@ -22,6 +22,8 @@ import GeneralSports from './Pages/GeneralSports';
 import TeamSports from './Pages/TeamSports';
 import IndividualSports from './Pages/IndividualSports';
 import AdventureSports from './Pages/AdventureSports';
+import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
 
 function App() {
 
@@ -51,11 +53,14 @@ function App() {
           <Route path="/teamSports" element={<TeamSports/>}/>
           <Route path="/individualSports" element={<IndividualSports/>} />
           <Route path="/adventureSports" element={<AdventureSports/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} />
         </Route>
 
       </Routes>
 
     </BrowserRouter>
+
   )
 }
 
