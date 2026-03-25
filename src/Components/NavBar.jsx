@@ -92,14 +92,16 @@ function NavBar() {
         <li><Link to="/service">Services</Link></li>
         <li><Link to="/programs">Programs</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-          <li className="mobile-auth-item">
-    <Link to="/login" className="auth-link">Login / Sign Up</Link>
-  </li>
+        <li className="mobile-auth-item">
+          <Link to="/login" className="auth-link">Login</Link>
+          {/* <Link to="/signup" className="auth-link">Sign Up</Link> */}
+        </li>
       </ul>
 
       <div className="nav-button">
-  <Link to="/login" className="auth-link">Login / Sign Up</Link>
-</div>
+        <Link to="/login" className="auth-link">Login</Link> 
+        {/* <Link to="/signup" className="auth-link">Sign Up</Link> */}
+      </div>
 
     </nav>
   )
