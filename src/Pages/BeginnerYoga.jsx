@@ -12,19 +12,19 @@ function BeginnerYoga() {
   return (
     <>
       <div className='BeginnerYoga'>
-        <div className='Cardio'>
+        <div onClick={()=>{navigate("/KarmaYoga")}} className='karmayoga'>
           <div className='picture'>
             <img src={YogaDetail1} alt="" />
           </div>
           <div className='title'>KARMA YOGA</div>
         </div>
-        <div className='Strength'>
+        <div onClick={()=>{navigate("/Bhaktiyoga")}} className='bhaktiyoga'>
           <div className='picture'>
             <img src={YogaDetail2} alt="" />
           </div>
           <div className='title'>BHAKTi YOGA</div>
         </div>
-        <div className='Nutrition'>
+        <div onClick={()=>{navigate("/Jnanayoga")}} className='jnanayoga'>
           <div className='picture'>
             <img src={YogaDetail3} alt="" />
           </div>
@@ -41,4 +41,4 @@ function BeginnerYoga() {
   )
 }
 
-export default BeginnerYoga
+export default BeginnerYoga;
