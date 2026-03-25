@@ -13,6 +13,9 @@ import Cardio from "./Pages/Cardio";
 import StrengthTraining from "./Pages/StrengthTraining";
 import Nutrition from "./Pages/Nutrition";
 import BeginnerYoga from './Pages/BeginnerYoga';
+import KarmaYoga from './Pages/KarmaYoga';
+import Bhaktiyoga from './Pages/Bhaktiyoga';
+import Jnanayoga from './Pages/Jnanayoga';
 import ZumbaFitness from './Pages/ZumbaFitness';
 import ZumbaGold from './Pages/ZumbaGold'
 import PricingPlans from './Pages/PricingPlans';
@@ -44,6 +47,9 @@ function App() {
           <Route path='/StrengthTraining' element={<StrengthTraining/>}/>
           <Route path='/Nutrition' element={<Nutrition/>}/>
           <Route path="/beginnerYoga" element={<BeginnerYoga/>}/>
+          <Route path="/KarmaYoga" element={<KarmaYoga/>}/>
+          <Route path="/Bhaktiyoga" element={<Bhaktiyoga/>}/>
+          <Route path="/Jnanayoga" element={<Jnanayoga/>}/>
           <Route path="/zumbaFitness" element={<ZumbaFitness/>} />
           <Route path="/zumbaGold" element={<ZumbaGold/>}/>
           <Route path="/zumbaClassic" element={<ZumbaClassic/>}/>
