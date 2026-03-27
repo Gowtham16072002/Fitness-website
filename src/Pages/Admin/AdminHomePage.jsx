@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../../Styles/AdminHomePage.css"
+import AdminSidebar from "../../Components/AdminSidebar";
+import "../../Styles/AdminHomePage.css";
 
 function AdminHomePage() {
   const [openSection, setOpenSection] = useState("hero");
@@ -11,36 +12,53 @@ function AdminHomePage() {
     button1: "Start 7-Day Free Trial",
     button2: "View Programs",
     image:
-      "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800"
+      "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800",
   });
 
   const [statsData, setStatsData] = useState([
     { id: 1, value: "4.9", label: "Google Rating" },
     { id: 2, value: "500+", label: "Active Members" },
-    { id: 3, value: "10+", label: "Certified Trainers" }
+    { id: 3, value: "10+", label: "Certified Trainers" },
   ]);
 
   const [whyChooseData, setWhyChooseData] = useState({
     title: "Why Choose Us",
     description:
-      "We provide expert trainers, modern equipment, and personalized fitness programs to help you reach your goals."
+      "We provide expert trainers, modern equipment, and personalized fitness programs to help you reach your goals.",
   });
 
   const [programData, setProgramData] = useState([
     { id: 1, title: "Cardio Training" },
     { id: 2, title: "Yoga Classes" },
-    { id: 3, title: "Zumba Sessions" }
+    { id: 3, title: "Zumba Sessions" },
+    { id: 4, title: "Strength Training" },
   ]);
 
   const [trainerData, setTrainerData] = useState([
     { id: 1, name: "Emilia Clarke", role: "Strength Trainer" },
-    { id: 2, name: "Michael Lee", role: "Yoga Trainer" }
+    { id: 2, name: "Michael Lee", role: "Yoga Trainer" },
+    { id: 3, name: "Sophia", role: "Zumba Trainer" },
   ]);
 
   const [testimonialData, setTestimonialData] = useState([
     { id: 1, name: "Rahul Sharma", review: "Amazing trainers and environment." },
-    { id: 2, name: "Priya Patel", review: "Best fitness program I ever joined." }
+    { id: 2, name: "Priya Patel", review: "Best fitness program I ever joined." },
+    { id: 3, name: "Arjun", review: "Very motivating and professional trainers." },
   ]);
+
+  const [pricingData, setPricingData] = useState([
+    { id: 1, plan: "Basic", price: "999" },
+    { id: 2, plan: "Standard", price: "1499" },
+    { id: 3, plan: "Premium", price: "1999" },
+  ]);
+
+  const [footerData, setFooterData] = useState({
+    title: "Victory Fit",
+    description:
+      "Build strength, confidence, and a healthier lifestyle with our expert-led fitness programs.",
+    email: "victoryfit@gmail.com",
+    phone: "+91 9876543210",
+  });
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? "" : section);
@@ -53,7 +71,6 @@ function AdminHomePage() {
 
   const handleHeroImageChange = (e) => {
     const file = e.target.files[0];
-
     if (file) {
       const imageUrl = URL.createObjectURL(file);
       setHeroData({ ...heroData, image: imageUrl });
@@ -61,9 +78,9 @@ function AdminHomePage() {
   };
 
   const handleStatsChange = (index, field, value) => {
-    const updatedStats = [...statsData];
-    updatedStats[index][field] = value;
-    setStatsData(updatedStats);
+    const updated = [...statsData];
+    updated[index][field] = value;
+    setStatsData(updated);
   };
 
   const handleWhyChooseChange = (e) => {
@@ -72,21 +89,32 @@ function AdminHomePage() {
   };
 
   const handleProgramChange = (index, value) => {
-    const updatedPrograms = [...programData];
-    updatedPrograms[index].title = value;
-    setProgramData(updatedPrograms);
+    const updated = [...programData];
+    updated[index].title = value;
+    setProgramData(updated);
   };
 
   const handleTrainerChange = (index, field, value) => {
-    const updatedTrainers = [...trainerData];
-    updatedTrainers[index][field] = value;
-    setTrainerData(updatedTrainers);
+    const updated = [...trainerData];
+    updated[index][field] = value;
+    setTrainerData(updated);
   };
 
   const handleTestimonialChange = (index, field, value) => {
-    const updatedTestimonials = [...testimonialData];
-    updatedTestimonials[index][field] = value;
-    setTestimonialData(updatedTestimonials);
+    const updated = [...testimonialData];
+    updated[index][field] = value;
+    setTestimonialData(updated);
+  };
+
+  const handlePricingChange = (index, field, value) => {
+    const updated = [...pricingData];
+    updated[index][field] = value;
+    setPricingData(updated);
+  };
+
+  const handleFooterChange = (e) => {
+    const { name, value } = e.target;
+    setFooterData({ ...footerData, [name]: value });
   };
 
   const handleSubmit = () => {
@@ -96,55 +124,24 @@ function AdminHomePage() {
       whyChooseData,
       programData,
       trainerData,
-      testimonialData
+      testimonialData,
+      pricingData,
+      footerData,
     };
 
-    console.log("Updated Admin Data:", allData);
+    console.log("Updated Home Page Data:", allData);
     alert("Content updated successfully!");
   };
 
   return (
     <div className="admin-page">
-      {/* Sidebar */}
-      <aside className="admin-sidebar">
-        <div className="admin-logo">
-          <h2>VICTORY FIT</h2>
-          <p>Dream it. Do it.</p>
-        </div>
+      <AdminSidebar />
 
-        <ul className="sidebar-menu">
-          <li>Dashboard</li>
-          <li>Home Page</li>
-          <li>Programs</li>
-          <li>Trainers</li>
-          <li>Testimonials</li>
-          <li>Settings</li>
-        </ul>
-
-        <div className="admin-user-box">
-          <div className="admin-user-image">
-            <img
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Admin"
-            />
-          </div>
-          <div>
-            <h4>Hello, Admin</h4>
-            <p>Logout</p>
-          </div>
-        </div>
-      </aside>
-
-      {/* Main Content */}
       <main className="admin-content">
         <h1>Edit Home Page Content</h1>
 
-        {/* Hero Section */}
         <div className="admin-section">
-          <div
-            className="section-header"
-            onClick={() => toggleSection("hero")}
-          >
+          <div className="section-header" onClick={() => toggleSection("hero")}>
             <h2>Hero Section</h2>
             <span>{openSection === "hero" ? "⌃" : "⌄"}</span>
           </div>
@@ -162,9 +159,9 @@ function AdminHomePage() {
               <label>Subtitle</label>
               <textarea
                 name="subtitle"
+                rows="4"
                 value={heroData.subtitle}
                 onChange={handleHeroChange}
-                rows="4"
               />
 
               <label>Button 1 Text</label>
@@ -188,21 +185,13 @@ function AdminHomePage() {
                 <img src={heroData.image} alt="Hero Preview" />
               </div>
 
-              <input
-                type="file"
-                accept="image/*"
-                onChange={handleHeroImageChange}
-              />
+              <input type="file" accept="image/*" onChange={handleHeroImageChange} />
             </div>
           )}
         </div>
 
-        {/* Stats Section */}
         <div className="admin-section">
-          <div
-            className="section-header"
-            onClick={() => toggleSection("stats")}
-          >
+          <div className="section-header" onClick={() => toggleSection("stats")}>
             <h2>Stats Section</h2>
             <span>{openSection === "stats" ? "⌃" : "⌄"}</span>
           </div>
@@ -216,9 +205,7 @@ function AdminHomePage() {
                     <input
                       type="text"
                       value={item.value}
-                      onChange={(e) =>
-                        handleStatsChange(index, "value", e.target.value)
-                      }
+                      onChange={(e) => handleStatsChange(index, "value", e.target.value)}
                     />
                   </div>
 
@@ -227,9 +214,7 @@ function AdminHomePage() {
                     <input
                       type="text"
                       value={item.label}
-                      onChange={(e) =>
-                        handleStatsChange(index, "label", e.target.value)
-                      }
+                      onChange={(e) => handleStatsChange(index, "label", e.target.value)}
                     />
                   </div>
                 </div>
@@ -238,12 +223,8 @@ function AdminHomePage() {
           )}
         </div>
 
-        {/* Why Choose Us Section */}
         <div className="admin-section">
-          <div
-            className="section-header"
-            onClick={() => toggleSection("whyChoose")}
-          >
+          <div className="section-header" onClick={() => toggleSection("whyChoose")}>
             <h2>Why Choose Us Section</h2>
             <span>{openSection === "whyChoose" ? "⌃" : "⌄"}</span>
           </div>
@@ -269,13 +250,9 @@ function AdminHomePage() {
           )}
         </div>
 
-        {/* Programs Section */}
         <div className="admin-section">
-          <div
-            className="section-header"
-            onClick={() => toggleSection("programs")}
-          >
-            <h2>Our Fitness Programs</h2>
+          <div className="section-header" onClick={() => toggleSection("programs")}>
+            <h2>Programs Section</h2>
             <span>{openSection === "programs" ? "⌃" : "⌄"}</span>
           </div>
 
@@ -295,12 +272,8 @@ function AdminHomePage() {
           )}
         </div>
 
-        {/* Trainers Section */}
         <div className="admin-section">
-          <div
-            className="section-header"
-            onClick={() => toggleSection("trainers")}
-          >
+          <div className="section-header" onClick={() => toggleSection("trainers")}>
             <h2>Trainers Section</h2>
             <span>{openSection === "trainers" ? "⌃" : "⌄"}</span>
           </div>
@@ -313,18 +286,14 @@ function AdminHomePage() {
                   <input
                     type="text"
                     value={trainer.name}
-                    onChange={(e) =>
-                      handleTrainerChange(index, "name", e.target.value)
-                    }
+                    onChange={(e) => handleTrainerChange(index, "name", e.target.value)}
                   />
 
                   <label>Role</label>
                   <input
                     type="text"
                     value={trainer.role}
-                    onChange={(e) =>
-                      handleTrainerChange(index, "role", e.target.value)
-                    }
+                    onChange={(e) => handleTrainerChange(index, "role", e.target.value)}
                   />
                 </div>
               ))}
@@ -332,12 +301,8 @@ function AdminHomePage() {
           )}
         </div>
 
-        {/* Testimonials Section */}
         <div className="admin-section">
-          <div
-            className="section-header"
-            onClick={() => toggleSection("testimonials")}
-          >
+          <div className="section-header" onClick={() => toggleSection("testimonials")}>
             <h2>Testimonials Section</h2>
             <span>{openSection === "testimonials" ? "⌃" : "⌄"}</span>
           </div>
@@ -350,21 +315,93 @@ function AdminHomePage() {
                   <input
                     type="text"
                     value={item.name}
-                    onChange={(e) =>
-                      handleTestimonialChange(index, "name", e.target.value)
-                    }
+                    onChange={(e) => handleTestimonialChange(index, "name", e.target.value)}
                   />
 
                   <label>Review</label>
                   <textarea
                     rows="3"
                     value={item.review}
-                    onChange={(e) =>
-                      handleTestimonialChange(index, "review", e.target.value)
-                    }
+                    onChange={(e) => handleTestimonialChange(index, "review", e.target.value)}
                   />
                 </div>
               ))}
+            </div>
+          )}
+        </div>
+
+        <div className="admin-section">
+          <div className="section-header" onClick={() => toggleSection("pricing")}>
+            <h2>Pricing Section</h2>
+            <span>{openSection === "pricing" ? "⌃" : "⌄"}</span>
+          </div>
+
+          {openSection === "pricing" && (
+            <div className="section-body">
+              {pricingData.map((item, index) => (
+                <div className="multi-field-row" key={item.id}>
+                  <div>
+                    <label>Plan Name</label>
+                    <input
+                      type="text"
+                      value={item.plan}
+                      onChange={(e) => handlePricingChange(index, "plan", e.target.value)}
+                    />
+                  </div>
+
+                  <div>
+                    <label>Price</label>
+                    <input
+                      type="text"
+                      value={item.price}
+                      onChange={(e) => handlePricingChange(index, "price", e.target.value)}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="admin-section">
+          <div className="section-header" onClick={() => toggleSection("footer")}>
+            <h2>Footer Section</h2>
+            <span>{openSection === "footer" ? "⌃" : "⌄"}</span>
+          </div>
+
+          {openSection === "footer" && (
+            <div className="section-body">
+              <label>Footer Title</label>
+              <input
+                type="text"
+                name="title"
+                value={footerData.title}
+                onChange={handleFooterChange}
+              />
+
+              <label>Footer Description</label>
+              <textarea
+                rows="4"
+                name="description"
+                value={footerData.description}
+                onChange={handleFooterChange}
+              />
+
+              <label>Email</label>
+              <input
+                type="text"
+                name="email"
+                value={footerData.email}
+                onChange={handleFooterChange}
+              />
+
+              <label>Phone</label>
+              <input
+                type="text"
+                name="phone"
+                value={footerData.phone}
+                onChange={handleFooterChange}
+              />
             </div>
           )}
         </div>

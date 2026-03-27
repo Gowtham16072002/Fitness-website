@@ -28,6 +28,7 @@ import AdventureSports from './Pages/AdventureSports';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
 import AdminHomePage from './Pages/Admin/AdminHomePage';
+import AdminAboutPage from './Pages/Admin/AdminAboutPage';
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
         </Route>
 
         <Route path="/admin/home" element={<AdminHomePage />} />
+        <Route path="/admin/about" element={<AdminAboutPage />} />
 
       </Routes>
 
