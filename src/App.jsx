@@ -27,6 +27,7 @@ import IndividualSports from './Pages/IndividualSports';
 import AdventureSports from './Pages/AdventureSports';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
+import AdminHomePage from './Pages/Admin/AdminHomePage';
 
 function App() {
 
@@ -61,11 +62,16 @@ function App() {
           <Route path="/adventureSports" element={<AdventureSports/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
+
         </Route>
+
+        <Route path="/admin/home" element={<AdminHomePage />} />
 
       </Routes>
 
     </BrowserRouter>
+
+    
 
   )
 }
