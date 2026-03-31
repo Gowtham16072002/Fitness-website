@@ -29,6 +29,11 @@ import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
 import AdminHomePage from './Pages/Admin/AdminHomePage';
 import AdminAboutPage from './Pages/Admin/AdminAboutPage';
+import AdminDashBoard from './Pages/Admin/AdminDashBoard';
+import AdminTrainers from './Pages/Admin/AdminTrainers';
+import AdminPrograms from './Pages/Admin/AdminPrograms';
+import AdminTestimonials from './Pages/Admin/AdminTestimonials';
+import AdminSettings from './Pages/Admin/AdminSettings';
 
 function App() {
 
@@ -66,8 +71,13 @@ function App() {
 
         </Route>
 
+        <Route path="/admin/dashboard" element={<AdminDashBoard />} />
         <Route path="/admin/home" element={<AdminHomePage />} />
         <Route path="/admin/about" element={<AdminAboutPage />} />
+        <Route path="/admin/trainers" element={<AdminTrainers />} />
+        <Route path="/admin/programs" element={<AdminPrograms />} />
+        <Route path="/admin/testimonials" element={<AdminTestimonials />} />
+        <Route path="/admin/settings" element={<AdminSettings />} />
 
       </Routes>
 
