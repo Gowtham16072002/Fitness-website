@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Bhaktiyoga.css'
+import '../Styles/Bhaktiyoga.css'
 import artaimage from "../assets/artaimage.png"
 import artharthiimage from "../assets/artharthiimage.png"
 import jijnasuimage from "../assets/jijnasuimage.png"

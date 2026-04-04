@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Jnanayoga.css'
+import '../Styles/Jnanayoga.css'
 import vivekaimage from '../assets/vivekaimage.png'
 import vairagyaimage from '../assets/vairagyaimage.png'
 import shatsampattiimage from '../assets/shatsampattiimage.png'
