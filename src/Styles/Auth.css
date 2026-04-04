@@ -28,10 +28,8 @@
 
 .auth-left {
   width: 45%;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.55)
-    ),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
     url("../assets/HomeBackground.png");
   background-size: cover;
   background-position: center;

@@ -63,8 +63,7 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width:900px) {
-
+@media (max-width: 900px) {
   .community-card {
     height: 380px;
   }
@@ -72,11 +71,9 @@
   .community-content h2 {
     font-size: 32px;
   }
-
 }
 
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
   .community-wrapper {
     padding: 60px 20px;
   }
@@ -98,5 +95,4 @@
     padding: 12px 22px;
     font-size: 14px;
   }
-
 }

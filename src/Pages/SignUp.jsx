@@ -10,7 +10,7 @@ function SignUp() {
     email: "",
     phone: "",
     password: "",
-    confirmPassword: ""
+    confirmPassword: "",
   });
 
   const [errors, setErrors] = useState({
@@ -18,7 +18,7 @@ function SignUp() {
     email: "",
     phone: "",
     password: "",
-    confirmPassword: ""
+    confirmPassword: "",
   });
 
   const nameRegex = /^[A-Za-z ]{3,20}$/;
@@ -70,7 +70,7 @@ function SignUp() {
 
     setErrors((prev) => ({
       ...prev,
-      [name]: error
+      [name]: error,
     }));
 
     return error;
@@ -81,7 +81,7 @@ function SignUp() {
 
     setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
 
     validateField(name, value);
@@ -96,7 +96,7 @@ function SignUp() {
     const passwordError = validateField("password", formData.password);
     const confirmPasswordError = validateField(
       "confirmPassword",
-      formData.confirmPassword
+      formData.confirmPassword,
     );
 
     if (

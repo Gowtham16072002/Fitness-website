@@ -7,7 +7,7 @@ import ScrollToTop from "./ScrollToTop";
 function Layout() {
   return (
     <>
-      <ScrollToTop/>
+      <ScrollToTop />
       <NavBar />
 
       <main>

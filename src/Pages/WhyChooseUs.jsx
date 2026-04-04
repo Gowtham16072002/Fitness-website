@@ -1,5 +1,5 @@
-import React from 'react'
-import '../Styles/WhyChooseUs.css'
+import React from "react";
+import "../Styles/WhyChooseUs.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -7,11 +7,10 @@ import { useEffect } from "react";
 // npm install aos
 
 function WhyChooseUs() {
-
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true
+      once: true,
     });
   }, []);
 
@@ -20,7 +19,6 @@ function WhyChooseUs() {
       <h1>Why Choose Us</h1>
 
       <div className="why-container">
-
         <div className="why-card" data-aos="zoom-in" data-aos-delay="200">
           <i className="fas fa-dumbbell"></i>
           <h3>Certified Trainers</h3>
@@ -38,10 +36,9 @@ function WhyChooseUs() {
           <h3>Progress Tracking</h3>
           <p>Track your workouts and transformation.</p>
         </div>
-
       </div>
     </section>
-  )
+  );
 }
 
-export default WhyChooseUs
+export default WhyChooseUs;

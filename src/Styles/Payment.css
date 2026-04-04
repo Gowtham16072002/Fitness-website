@@ -1,9 +1,9 @@
-.payment-container{
-    margin: 80px auto;
-    padding: 40px;
-    background: #f4f4f4;
-    max-width: 500px;
-    border-radius: 15px;
+.payment-container {
+  margin: 80px auto;
+  padding: 40px;
+  background: #f4f4f4;
+  max-width: 500px;
+  border-radius: 15px;
 }
 
 .payment-container h2 {
@@ -14,20 +14,20 @@
   margin-bottom: 50px;
 }
 
-.payment-methods{
-    display: flex;
-    margin-bottom: 30px;
-    gap: 15px;
+.payment-methods {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 15px;
 }
 
 .method {
-    padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3;
-    flex: 1;
-    text-align: center;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3;
+  flex: 1;
+  text-align: center;
 }
 
 /* .method.active {
@@ -36,8 +36,8 @@
   font-weight: bold;
 } */
 
-.method:hover{
-    background-color: rgb(209, 243, 214);
+.method:hover {
+  background-color: rgb(209, 243, 214);
 }
 
 .form {
@@ -46,7 +46,7 @@
   gap: 15px;
 }
 
-.form h5{
+.form h5 {
   font-size: 15px;
   /* padding-left: 120px; */
   padding: auto;
@@ -54,10 +54,10 @@
   margin-bottom: 30px;
 }
 
-.form input{
-    padding: 12px;
-    border-radius: 8px;
-    border: 2px solid #ccc;
+.form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
 }
 .row {
   display: flex;
@@ -74,18 +74,13 @@
   border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-} 
-.change-payment-method{
+}
+.change-payment-method {
   font-size: 14px;
   font-weight: bolder;
   margin-top: 20px;
 }
-.change-payment-method span{
+.change-payment-method span {
   color: blue;
   cursor: pointer;
 }
-
-
-
-
-
