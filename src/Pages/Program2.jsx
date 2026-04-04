@@ -1,14 +1,11 @@
 import React from "react";
 import "../Styles/Program2.css";
-import Gymimage from '../assets/GymImage.jpeg'
-import Yogaimage from '../assets/YogaImage.jpeg'
-import Athleteimage from '../assets/AthleteImage.jpeg'
-import Zumbaimage from '../assets/ZumbaImage.jpeg'
+import Gymimage from "../assets/GymImage.jpeg";
+import Yogaimage from "../assets/YogaImage.jpeg";
+import Athleteimage from "../assets/AthleteImage.jpeg";
+import Zumbaimage from "../assets/ZumbaImage.jpeg";
 import { useNavigate } from "react-router-dom";
-;
-
 function Program2() {
-
   const navigate = useNavigate();
   return (
     <div className="programs-section">
@@ -17,7 +14,9 @@ function Program2() {
       </div>
       <div className="programs-container">
         <div className="program-card">
-          <div className="image-box"><img src={Gymimage} alt="" /></div>
+          <div className="image-box">
+            <img src={Gymimage} alt="" />
+          </div>
           <h3>Beginner fitness program</h3>
           {/* <p>Our Gym Fitness Program is designed to improve strength, endurance,
             and overall health through structured workouts and expert guidance.
@@ -30,12 +29,20 @@ function Program2() {
             <li>Supports weight management and fat loss</li>
             <li>Boosts energy and overall well-being</li>
           </ul>
-          <button className="program2-btn" onClick={()=>{navigate("/beginnerGym")}}>Choose this Program</button>
+          <button
+            className="program2-btn"
+            onClick={() => {
+              navigate("/beginnerGym");
+            }}
+          >
+            Choose this Program
+          </button>
         </div>
 
-
         <div className="program-card">
-          <div className="image-box"><img src={Yogaimage} alt="" /></div>
+          <div className="image-box">
+            <img src={Yogaimage} alt="" />
+          </div>
           <h3>Yoga Fitness Program</h3>
           {/* <p>Our Yoga Fitness Program focuses on improving flexibility, balance, and mental well-being through guided poses and breathing techniques.
             It combines traditional yoga practices with modern fitness methods to strengthen the body and calm the mind.
@@ -45,12 +52,20 @@ function Program2() {
             <li>Reduces stress and improves focus</li>
             <li>Enhances overall body strength</li>
           </ul>
-          <button className="program2-btn" onClick={()=>{navigate("/beginnerYoga")}}>Choose this Program</button>
+          <button
+            className="program2-btn"
+            onClick={() => {
+              navigate("/beginnerYoga");
+            }}
+          >
+            Choose this Program
+          </button>
         </div>
 
-
         <div className="program-card">
-          <div className="image-box"><img src={Zumbaimage} alt="" /></div>
+          <div className="image-box">
+            <img src={Zumbaimage} alt="" />
+          </div>
           <h3>Zumba Fitness Program</h3>
           {/* <p>Our Zumba Fitness Program blends energetic dance moves with cardio exercises for a fun and effective workout. Set to lively music, sessions are designed to burn calories while improving coordination and endurance. It’s perfect for those who enjoy dancing while staying fit.</p> */}
           <ul>
@@ -58,12 +73,20 @@ function Program2() {
             <li>Improves coordination and stamina</li>
             <li>Makes workouts fun and engaging</li>
           </ul>
-          <button className="program2-btn" onClick={()=>{navigate("/zumbaFitness")}}>Choose this Program</button>
+          <button
+            className="program2-btn"
+            onClick={() => {
+              navigate("/zumbaFitness");
+            }}
+          >
+            Choose this Program
+          </button>
         </div>
 
-
         <div className="program-card">
-          <div className="image-box"><img src={Athleteimage} alt="" /></div>
+          <div className="image-box">
+            <img src={Athleteimage} alt="" />
+          </div>
           <h3>General Sports Fitness Program</h3>
           {/* <p>Our Athlete Fitness Program is designed to enhance strength, speed, agility, and endurance. It includes sport-specific training, strength conditioning, and performance drills to help individuals reach peak physical performance. Ideal for aspiring and professional athletes aiming to improve competitive skills.</p> */}
           <ul>
@@ -71,12 +94,16 @@ function Program2() {
             <li>Improves speed and agility</li>
             <li>Enhances overall athletic performance</li>
           </ul>
-          <button className="program2-btn" onClick={()=>{navigate("/generalSports")}}>Choose this Program</button>
+          <button
+            className="program2-btn"
+            onClick={() => {
+              navigate("/generalSports");
+            }}
+          >
+            Choose this Program
+          </button>
         </div>
-
-
       </div>
-
     </div>
   );
 }

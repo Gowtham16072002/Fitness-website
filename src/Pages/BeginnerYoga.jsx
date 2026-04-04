@@ -7,7 +7,7 @@ import YogaDetail4 from '../assets/YogaDetail4.jpeg'
 import { useNavigate } from 'react-router-dom'
 
 function BeginnerYoga() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <div className='BeginnerYoga'>
@@ -15,29 +15,29 @@ function BeginnerYoga() {
           <div className='picture'>
             <img src={YogaDetail1} alt="" />
           </div>
-          <div className='title'>KARMA YOGA</div>
+          <div className="title">KARMA YOGA</div>
         </div>
         <div onClick={() => { navigate("/Bhaktiyoga") }} className='bhaktiyoga'>
           <div className='picture'>
             <img src={YogaDetail2} alt="" />
           </div>
-          <div className='title'>BHAKTi YOGA</div>
+          <div className="title">BHAKTi YOGA</div>
         </div>
         <div onClick={() => { navigate("/Jnanayoga") }} className='jnanayoga'>
           <div className='picture'>
             <img src={YogaDetail3} alt="" />
           </div>
-          <div className='title'>JNANA YOGA</div>
+          <div className="title">JNANA YOGA</div>
         </div>
         <div onClick={() => { navigate("/pricingplan/YogaTraining") }} className='Membership'>
           <div className='picture'>
             <img src={YogaDetail4} alt="" />
           </div>
-          <div className='title'>MEMBERSHIP</div>
+          <div className="title">MEMBERSHIP</div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default BeginnerYoga;

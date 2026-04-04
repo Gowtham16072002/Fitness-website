@@ -1,12 +1,14 @@
 .cta {
   position: relative;
   min-height: 80vh;
-  background: linear-gradient(180deg,
-      rgba(233, 6, 6, 0.5),
-      white,
-      white,
-      white,
-      rgba(233, 6, 6, 0.5));
+  background: linear-gradient(
+    180deg,
+    rgba(233, 6, 6, 0.5),
+    white,
+    white,
+    white,
+    rgba(233, 6, 6, 0.5)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,8 +115,7 @@
   }
 }
 
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
   .cta-content h1 {
     font-size: 32px;
   }
@@ -130,11 +131,9 @@
   .icon {
     font-size: 28px;
   }
-
 }
 
-@media (max-width:480px) {
-
+@media (max-width: 480px) {
   .cta {
     padding: 50px 15px;
   }
@@ -159,5 +158,4 @@
   .icon {
     display: none;
   }
-
 }

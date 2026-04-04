@@ -24,15 +24,29 @@
   position: absolute;
   font-size: 40px;
   /* color: rgba(255, 255, 255, 0.15); */
-  color:  rgb(245, 87, 87);
+  color: rgb(245, 87, 87);
 }
 
-.icon1 { top: 20px; left: 40px; }
-.icon2 { top: 80px; left: 220px; }
-.icon3 { bottom: 40px; left: 120px; }
-.icon4 { top: 40px; right: 220px; }
-.icon5 { bottom: 60px; right: 120px; }
-
+.icon1 {
+  top: 20px;
+  left: 40px;
+}
+.icon2 {
+  top: 80px;
+  left: 220px;
+}
+.icon3 {
+  bottom: 40px;
+  left: 120px;
+}
+.icon4 {
+  top: 40px;
+  right: 220px;
+}
+.icon5 {
+  bottom: 60px;
+  right: 120px;
+}
 
 @media (max-width: 768px) {
   .banner-content p {

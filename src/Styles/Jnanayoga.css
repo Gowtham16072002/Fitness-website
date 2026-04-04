@@ -4,32 +4,32 @@
   box-sizing: border-box;
 }
 
-.NutritionPage {
+.jnanayogaPage {
   width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   background:
     linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url("../assets/BeginnerBackground.jpeg");
+    url("../assets/BeginnerYogaBackground.jpeg");
   background-size: cover;
   background-position: center;
 }
 
-.NutritionTopContainer {
+.jnanayogaTopContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 100%;
 }
 
-.NutritionTopContainer h1 {
+.jnanayogaTopContainer h1 {
   text-align: center;
   color: rgb(245, 87, 87);
 }
 
 /* LEFT SIDE */
-.NutritionContent {
+.jnanayogaContent {
   width: 50%;
   height: 100%;
   display: flex;
@@ -37,32 +37,33 @@
   gap: 8px;
   margin-left: 20px;
   margin-top: 30px;
+  text-align: justify;
 }
 
-.NutritionContent p {
+.jnanayogaContent p {
   color: white;
   line-height: 1.5;
   gap: 2px;
 }
-.NutritionContent p span {
+.jnanayogaContent p span {
   margin-bottom: 20px;
 }
 
 /* RIGHT SIDE */
-.NutritionImage {
+.jnanayogaImage {
   width: 50%;
   display: flex;
   margin: 40px;
 }
 
-.NutritionImages {
+.jnanayogaImages {
   width: 100%;
   height: 100%;
   overflow: hidden;
   flex: 1;
 }
 
-.NutritionImages .image-container {
+.jnanayogaImages .image-container {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -83,7 +84,7 @@
   }
 }
 
-.Nutritionsubscribe {
+.jnanayogasubscribe {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,10 +92,10 @@
 }
 
 /* SMALL BOXES */
-.subcribeprotein,
-.subcribecarbohydrate,
-.subcribefat,
-.subcribevitAndmin {
+.subcribeviveka,
+.subcribevairagya,
+.subcribeshatsampatti,
+.subcribemumukshutva {
   width: 600px;
   height: 400px;
   padding: 20px;
@@ -102,26 +103,26 @@
   color: beige;
 }
 
-.subcribeprotein ul,
-.subcribecarbohydrate ul,
-.subcribefat ul,
-.subcribevitAndmin ul {
+.subcribeviveka ul,
+.subcribevairagya ul,
+.subcribeshatsampatti ul,
+.subcribemumukshutva ul {
   margin-top: 15px;
   padding-left: 10px;
 }
 
-.subcribeprotein li,
-.subcribecarbohydrate li,
-.subcribefat li,
-.subcribevitAndmin li {
+.subcribeviveka li,
+.subcribevairagya li,
+.subcribeshatsampatti li,
+.subcribemumukshutva li {
   list-style: none;
   padding-left: 0;
 }
 
-.subcribeproteinlist li::before,
-.subcribecarbohydratelist li::before,
-.subcribefatlist li::before,
-.subcribevitAndminlist li::before {
+.subcribevivekalist li::before,
+.subcribevairagyalist li::before,
+.subcribeshatsampattilist li::before,
+.subcribemumukshutvalist li::before {
   content: "◆";
   color: rgba(255, 47, 47, 0.8);
   font-weight: bold;
@@ -129,7 +130,7 @@
   width: 1.5em;
 }
 
-.Nutritioncontent h2 {
+.jnanayogaContent h2 {
   color: white;
   padding-bottom: 10px;
 }
@@ -138,18 +139,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px;
   font-size: 1rem;
+  border-radius: 15px;
+  border-style: none;
+  margin: 50px;
+  padding: 14px 30px;
+  font-size: 15px;
+  background-color: rgb(245, 87, 87);
+  color: white;
 }
 
-.Nutrition-btn {
+.jnanayoga-btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.Nutritionsubscribefirst,
-.Nutritionsubscribesecond {
+.jnanayogasubscribefirst,
+.jnanayogasubscribesecond {
   display: flex;
   padding: 50px;
   min-height: 230px;
@@ -161,8 +168,8 @@
   justify-content: center;
 }
 
-.Nutritionsubscribefirst h2,
-.Nutritionsubscribesecond h2 {
+.jnanayogasubscribefirst h2,
+.jnanayogasubscribesecond h2 {
   text-align: center;
 }
 
@@ -170,34 +177,35 @@ p {
   font-size: 1rem;
 }
 
-.subcribeprotein {
+.subcribeviveka {
   background:
-    linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/proteindetail.png");
+    linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/vivekadetail.png");
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 
-.subcribecarbohydrate {
+.subcribevairagya {
+  background:
+    linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/vairagyadetail.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.subcribeshatsampatti {
   background:
     linear-gradient(rgb(43, 41, 41, 0.8)),
-    url("../assets/carbohydratedetail.jpeg");
+    url("../assets/shatsampattidetail.png");
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 
-.subcribefat {
+.subcribemumukshutva {
   background:
-    linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/fatdetail.png");
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-
-.subcribevitAndmin {
-  background:
-    linear-gradient(rgb(43, 41, 41, 0.8)), url("../assets/vitAndmindetail.png");
+    linear-gradient(rgb(43, 41, 41, 0.8)),
+    url("../assets/mumukshutvadetail.png");
   width: 100%;
   height: 100%;
   background-size: cover;

@@ -7,12 +7,12 @@ function Login() {
 
   const [formData, setFormData] = useState({
     email: "",
-    password: ""
+    password: "",
   });
 
   const [errors, setErrors] = useState({
     email: "",
-    password: ""
+    password: "",
   });
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -38,7 +38,7 @@ function Login() {
 
     setErrors((prev) => ({
       ...prev,
-      [name]: error
+      [name]: error,
     }));
 
     return error;
@@ -49,7 +49,7 @@ function Login() {
 
     setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
 
     validateField(name, value);
