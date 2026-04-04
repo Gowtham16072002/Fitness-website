@@ -80,7 +80,6 @@ function AdminDashBoard() {
             <AdminSidebar />
 
             <main className="admin-content">
-                {/* HEADER */}
                 <div className="dashboard-header">
                     <div>
                         <h1>Dashboard Overview</h1>
@@ -90,7 +89,6 @@ function AdminDashBoard() {
                     <button className="dashboard-main-btn">+ Add New Content</button>
                 </div>
 
-                {/* STATS */}
                 <div className="dashboard-cards">
                     {stats.map((item) => (
                         <div className="dashboard-card" key={item.id}>
@@ -107,9 +105,7 @@ function AdminDashBoard() {
                     ))}
                 </div>
 
-                {/* GRID SECTION */}
                 <div className="dashboard-grid">
-                    {/* RECENT ACTIVITY */}
                     <div className="dashboard-box activity-box">
                         <div className="box-header">
                             <h2>Recent Activity</h2>
@@ -129,7 +125,6 @@ function AdminDashBoard() {
                         </div>
                     </div>
 
-                    {/* QUICK ACTIONS */}
                     <div className="dashboard-box quick-box">
                         <div className="box-header">
                             <h2>Quick Actions</h2>

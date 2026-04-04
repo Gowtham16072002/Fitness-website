@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AdminSidebar from "../../Components/AdminSidebar";
-import "../../Styles/AdminAboutPage.css"; // reuse same CSS
+import "../../Styles/AdminAboutPage.css";
 
 function AdminAboutPage() {
   const [openSection, setOpenSection] = useState("about");
@@ -64,7 +64,6 @@ function AdminAboutPage() {
       <main className="admin-content">
         <h1>Edit About Page</h1>
 
-        {/* ABOUT SECTION */}
         <div className="admin-section">
           <div
             className="section-header"
@@ -96,7 +95,6 @@ function AdminAboutPage() {
           )}
         </div>
 
-        {/* CARDS */}
         <div className="admin-section">
           <div
             className="section-header"
@@ -125,7 +123,6 @@ function AdminAboutPage() {
           )}
         </div>
 
-        {/* HIGHLIGHT */}
         <div className="admin-section">
           <div
             className="section-header"
@@ -149,7 +146,6 @@ function AdminAboutPage() {
           )}
         </div>
 
-        {/* MISSION VISION */}
         <div className="admin-section">
           <div
             className="section-header"
@@ -188,7 +184,6 @@ function AdminAboutPage() {
           )}
         </div>
 
-        {/* TRAINERS */}
         <div className="admin-section">
           <div
             className="section-header"
@@ -227,7 +222,6 @@ function AdminAboutPage() {
           )}
         </div>
 
-        {/* TESTIMONIALS */}
         <div className="admin-section">
           <div
             className="section-header"

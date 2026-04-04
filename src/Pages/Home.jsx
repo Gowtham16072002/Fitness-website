@@ -42,7 +42,7 @@ function FitnessLanding() {
             <section className="stats">
 
                 <div className="stat">
-                    <h2>⭐ 4.9</h2>
+                    <h2>4.9 Star</h2>
                     <p>Google Rating</p>
                 </div>
 

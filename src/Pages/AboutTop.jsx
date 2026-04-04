@@ -11,19 +11,18 @@ import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-// npm install aos
 
 function AboutTop() {
 
   const navigate = useNavigate();
 
-      useEffect(() => {
-          AOS.init({
-            duration: 1000,
-            once: true
-          });
-        }, []);
-  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
+
 
   return (
     <section className="about">
@@ -56,14 +55,14 @@ function AboutTop() {
         </div>
       </div>
 
-      <button onClick={()=>{navigate("/programs")}} className="about-btn">
-          Explore Programs
+      <button onClick={() => { navigate("/programs") }} className="about-btn">
+        Explore Programs
       </button>
 
       <button onClick={() => { navigate("/contact") }} className="about-btn">Get Started</button>
-      
+
       <button className="about-btn">
-          Join Now
+        Join Now
       </button>
     </section>
   );

@@ -4,10 +4,6 @@ import RockClimbing from '../assets/RockClimbing.png'
 import Hiking from '../assets/Hiking.png'
 import kayaking from '../assets/kayaking.png'
 import TrailCycling from '../assets/TrailCycling.png'
-// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function AdventureSports() {
 
@@ -15,55 +11,46 @@ function AdventureSports() {
     const [showImage, setShowImage] = useState(0);
     const [fade, setFade] = useState(true);
     useEffect(() => {
-    const interval = setInterval(() => {
-        setFade(false); // start fade out
+        const interval = setInterval(() => {
+            setFade(false);
 
-        setTimeout(() => {
-            setShowImage((prev) =>
-                prev === images.length - 1 ? 0 : prev + 1
-            );
-            setFade(true); // fade in new image
-        }, 900); // match CSS transition time
+            setTimeout(() => {
+                setShowImage((prev) =>
+                    prev === images.length - 1 ? 0 : prev + 1
+                );
+                setFade(true);
+            }, 900);
 
-    }, 3000); // change image every 3 sec
+        }, 3000);
 
-    return () => clearInterval(interval);
-}, []);
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <div className='AdventureSportsPage'>
-            {/* TOP ROW CONTAINER */}
             <div className='TopContainer'>
-                {/* LEFT */}
                 <div className='AdventureSportsContent'>
                     <h1>ADVENTURE SPORTS</h1>
                     <p><span><b>Adventure sports provide an exciting and physically engaging way to improve fitness while exploring challenging and dynamic environments. Activities such as rock climbing, hiking, trail cycling, and kayaking combine physical effort with outdoor experiences, offering a unique blend of strength training, endurance building, and mental stimulation. These sports are ideal for individuals who enjoy combining fitness with exploration and adventure.</b></span></p>
                     <br /><section className='Content1'>
-                        {/* <h2>Treadmill</h2> */}
-                        {/* <p>The treadmill provides a highly controlled indoor environment where you can manipulate speed and incline to simulate various terrains, offering more cushioning than outdoor pavement</p> */}
                     </section>
 
                     <section className='Content2'>
-                        {/* <h2>Swimming</h2> */}
                         <p>Unlike traditional indoor workouts, adventure sports involve natural terrains and unpredictable conditions, which enhance balance, coordination, and overall body control. The varied movements required in these activities engage multiple muscle groups, improving cardiovascular health, flexibility, and muscular strength while keeping the body active and responsive.</p>
                     </section>
 
                     <section className='Content3'>
-                        {/* <h2>HIIT</h2> */}
                         <p>Additionally, adventure sports contribute to mental well-being by promoting confidence, focus, and stress relief. The thrill of overcoming physical challenges and navigating different environments helps build resilience and a positive mindset. The connection with nature also plays a key role in reducing stress and enhancing overall mood.
                         </p>
                     </section>
 
                     <section className='Content4'>
-                        {/* <h2>Cycling</h2> */}
                         <p>Ultimately, adventure sports offer a powerful combination of fitness, excitement, and personal growth. By pushing physical limits in a safe and controlled manner, they encourage individuals to stay active, build endurance, and develop a strong sense of achievement, making them a valuable addition to a balanced and active lifestyle.</p>
                     </section>
                 </div>
 
-                {/* RIGHT */}
                 <div className="AdventureSportsImage">
                     <div className='AdventureSportsImages'>
-                        {/* <img src={images[showImage]} alt="cardio" /> */}
                         <div
                             key={showImage}
                             className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
@@ -77,7 +64,6 @@ function AdventureSports() {
             </div>
             <div>
 
-                {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
                 <div className='subscribe'>
 
                     <div className='subscribefirst'>
