@@ -16,22 +16,20 @@ function karmaYoga() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false);
 
       setTimeout(() => {
         setShowImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setFade(true); // fade in new image
-      }, 900); // match CSS transition time
-    }, 3000); // change image every 3 sec
+        setFade(true);
+      }, 900);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="karmayogaPage">
-      {/* TOP ROW CONTAINER */}
       <div className="karmayogaTopContainer">
-        {/* LEFT */}
         <div className="karmayogaContent">
           <h1>Karma Yoga</h1>
           <p>
@@ -84,7 +82,6 @@ function karmaYoga() {
           </section>
         </div>
 
-        {/* RIGHT */}
         <div className="karmayogaImage">
           <div className="karmayogaImages">
             <div
@@ -98,7 +95,6 @@ function karmaYoga() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="karmayogasubscribe">
           <div className="karmayogasubscribefirst">
             <div className="subcribenityakarma">

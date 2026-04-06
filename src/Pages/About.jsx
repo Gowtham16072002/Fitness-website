@@ -7,16 +7,6 @@ import Testimonials from "./Testimonials";
 import TransFormation from "./TransFormation";
 
 function About() {
-    return (
-        <div>
-            <AboutTop />
-            <MissionVision />
-            <TrainerSection />
-            <Testimonials />
-            <TransFormation />
-            <CommunitySection />
-        </div>
-    )
   return (
     <div>
       <AboutTop />
@@ -26,7 +16,7 @@ function About() {
       <TransFormation />
       <CommunitySection />
     </div>
-  );
+  )
 }
 
 export default About;

@@ -7,7 +7,6 @@
   background: #f5f5f5;
 }
 
-/* MAIN CONTENT */
 .admin-content {
   margin-left: 280px;
   min-height: 100vh;
@@ -22,7 +21,6 @@
   font-weight: 700;
 }
 
-/* SECTION */
 .admin-section {
   background: #ffffff;
   border-radius: 18px;
@@ -87,7 +85,6 @@
   border-color: #ef4444;
 }
 
-/* BOXES */
 .trainer-box,
 .testimonial-box {
   padding: 18px;
@@ -97,7 +94,6 @@
   background: #fafafa;
 }
 
-/* BUTTON */
 .update-btn-wrap {
   display: flex;
   justify-content: flex-end;
@@ -121,7 +117,6 @@
   opacity: 0.96;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1200px) {
   .admin-content {
     margin-left: 250px;

@@ -8,12 +8,10 @@
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background: linear-gradient(
-    135deg,
-    rgba(245, 87, 87, 0.15),
-    #ffffff,
-    rgba(245, 87, 87, 0.15)
-  );
+  background: linear-gradient(135deg,
+      rgba(245, 87, 87, 0.15),
+      #ffffff,
+      rgba(245, 87, 87, 0.15));
 }
 
 .auth-card {

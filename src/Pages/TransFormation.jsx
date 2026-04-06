@@ -15,7 +15,6 @@ import ZumbaAfter2 from "../assets/ZumbaAfter2.png";
 
 import "swiper/css";
 import "../Styles/TransFormation.css";
-// npm install swiper
 
 function TransFormation() {
   return (
@@ -25,14 +24,6 @@ function TransFormation() {
         See how our gym, yoga, zumba, and dance programs help members achieve
         their fitness goals and transform their lifestyle.
       </p>
-
-      {/* <Swiper
-                modules={[Autoplay]}
-                spaceBetween={30}
-                slidesPerView={3}
-                autoplay={{ delay: 2500 }}
-                loop={true}
-            > */}
 
       <Swiper
         modules={[Autoplay]}
@@ -54,7 +45,6 @@ function TransFormation() {
             <h3 className="after">After</h3>
             <h4>Weight Loss</h4>
             <p>Strength & Weight Loss Transformation</p>
-            {/* <p>Lost 12kg in 3 months through strength training</p> */}
           </div>
         </SwiperSlide>
 

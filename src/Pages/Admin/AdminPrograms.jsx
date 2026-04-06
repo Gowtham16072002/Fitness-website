@@ -118,7 +118,6 @@ function AdminPrograms() {
       <main className="admin-content">
         <h1>Edit Programs Page</h1>
 
-        {/* HERO SECTION */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("hero")}>
             <h2>Programs Hero Section</h2>
@@ -146,7 +145,6 @@ function AdminPrograms() {
           )}
         </div>
 
-        {/* CATEGORY SECTION */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("categories")}>
             <h2>Program Categories</h2>
@@ -180,7 +178,6 @@ function AdminPrograms() {
           )}
         </div>
 
-        {/* PROGRAM LIST */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("programs")}>
             <h2>Programs List</h2>
@@ -249,7 +246,6 @@ function AdminPrograms() {
           )}
         </div>
 
-        {/* CTA SECTION */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("cta")}>
             <h2>CTA Section</h2>

@@ -7,7 +7,6 @@ import WhyChooseUs from "./WhyChooseUs";
 import Program2 from "./Program2";
 import TrainerSection from "./TrainerSection";
 import Testimonials from "./Testimonials";
-// import PricingPlans from "./PricingPlans";
 
 function FitnessLanding() {
   const navigate = useNavigate();
@@ -37,7 +36,7 @@ function FitnessLanding() {
 
       <section className="stats">
         <div className="stat">
-          <h2>⭐ 4.9</h2>
+          <h2> 4.9 Star</h2>
           <p>Google Rating</p>
         </div>
 
@@ -57,7 +56,6 @@ function FitnessLanding() {
       <TrainerSection />
       <Testimonials />
       <HomeMidsec />
-      {/* <PricingPlans /> */}
       <FooterAbove />
     </div>
   );

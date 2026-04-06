@@ -4,10 +4,6 @@ import ZumbaChild from "../assets/ZumbaChild.png";
 import ZumbaKids1 from "../assets/ZumbaKids1.png";
 import ZumbaKids2 from "../assets/ZumbaKids2.png";
 import ZumbaKids3 from "../assets/ZumbaKids3.png";
-// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function ZumbaKids() {
   const images = [ZumbaChild, ZumbaKids1, ZumbaKids2, ZumbaKids3];
@@ -15,22 +11,20 @@ function ZumbaKids() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false); 
 
       setTimeout(() => {
         setShowImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setFade(true); // fade in new image
-      }, 900); // match CSS transition time
-    }, 3000); // change image every 3 sec
+        setFade(true); 
+      }, 900);
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="ZumbaKidsPage">
-      {/* TOP ROW CONTAINER */}
       <div className="TopContainer">
-        {/* LEFT */}
         <div className="ZumbaKidsContent">
           <h1>ZUMBA KIDS</h1>
           <p>
@@ -48,7 +42,6 @@ function ZumbaKids() {
           </p>
           <br />
           <section className="Content1">
-            {/* <h2>Treadmill</h2> */}
             <p>
               Unlike traditional exercise routines, Zumba Kids focuses on
               playful and easy-to-follow movements that help improve
@@ -60,7 +53,6 @@ function ZumbaKids() {
           </section>
 
           <section className="Content2">
-            {/* <h2>Swimming</h2> */}
             <p>
               Additionally, Zumba Kids promotes mental and emotional well-being
               by creating a positive atmosphere where children can express
@@ -71,7 +63,6 @@ function ZumbaKids() {
           </section>
 
           <section className="Content3">
-            {/* <h2>HIIT</h2> */}
             <p>
               Ultimately, Zumba Kids serves as a powerful tool to build healthy
               habits at an early age, combining fitness with fun in a way that
@@ -82,16 +73,10 @@ function ZumbaKids() {
             </p>
           </section>
 
-          {/* <section className='Content4'>
-                        <h2>Cycling</h2>
-                        <p>If you prefer a lower-impact alternative, cycling builds significant lower-body strength and endurance while being much gentler on the knees.By rotating through these activities, you can challenge different muscle groups and keep your fitness journey engaging and balanced.</p>
-                    </section> */}
         </div>
 
-        {/* RIGHT */}
         <div className="ZumbaKidsImage">
           <div className="ZumbaKidsImages">
-            {/* <img src={images[showImage]} alt="cardio" /> */}
             <div
               key={showImage}
               className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
@@ -103,7 +88,6 @@ function ZumbaKids() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="subscribe">
           <div className="subscribefirst">
             <div className="subcribeZKDJR">

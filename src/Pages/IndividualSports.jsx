@@ -4,10 +4,6 @@ import individual1 from "../assets/individual1.png";
 import individual2 from "../assets/individual2.png";
 import individual3 from "../assets/individual3.png";
 import individual4 from "../assets/individual4.png";
-// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function IndividualSports() {
   const images = [individual1, individual2, individual3, individual4];
@@ -15,22 +11,20 @@ function IndividualSports() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false); 
 
       setTimeout(() => {
         setShowImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setFade(true); // fade in new image
-      }, 900); // match CSS transition time
-    }, 3000); // change image every 3 sec
+        setFade(true); 
+      }, 900); 
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="IndividualSportsPage">
-      {/* TOP ROW CONTAINER */}
       <div className="TopContainer">
-        {/* LEFT */}
         <div className="IndividualSportsContent">
           <h1>INDIVIDUAL SPORTS</h1>
           <p>
@@ -48,12 +42,9 @@ function IndividualSports() {
           </p>
           <br />
           <section className="Content1">
-            {/* <h2>Treadmill</h2> */}
-            {/* <p>The treadmill provides a highly controlled indoor environment where you can manipulate speed and incline to simulate various terrains, offering more cushioning than outdoor pavement</p> */}
           </section>
 
           <section className="Content2">
-            {/* <h2>Swimming</h2> */}
             <p>
               Unlike team-based activities, individual sports place full
               responsibility on the participant, encouraging self-motivation,
@@ -66,7 +57,6 @@ function IndividualSports() {
           </section>
 
           <section className="Content3">
-            {/* <h2>HIIT</h2> */}
             <p>
               Additionally, individual sports contribute significantly to mental
               resilience by promoting focus, determination, and stress
@@ -77,7 +67,6 @@ function IndividualSports() {
           </section>
 
           <section className="Content4">
-            {/* <h2>Cycling</h2> */}
             <p>
               Ultimately, individual sports offer a balanced combination of
               physical development and mental growth, making them an excellent
@@ -89,10 +78,8 @@ function IndividualSports() {
           </section>
         </div>
 
-        {/* RIGHT */}
         <div className="IndividualSportsImage">
           <div className="IndividualSportsImages">
-            {/* <img src={images[showImage]} alt="cardio" /> */}
             <div
               key={showImage}
               className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
@@ -104,7 +91,6 @@ function IndividualSports() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="subscribe">
           <div className="subscribefirst">
             <div className="subcribeBAD">

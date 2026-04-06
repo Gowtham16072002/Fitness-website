@@ -16,22 +16,20 @@ function StrengthTraining() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false);
 
       setTimeout(() => {
         setShowImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setFade(true); // fade in new image
-      }, 900); // match CSS transition time
-    }, 3000); // change image every 3 sec
+        setFade(true);
+      }, 900);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="strengthTrainingPage">
-      {/* TOP ROW CONTAINER */}
       <div className="strengthTrainingTopContainer">
-        {/* LEFT */}
         <div className="strengthTrainingContent">
           <h1>StrengthTraining</h1>
           <p>
@@ -47,7 +45,6 @@ function StrengthTraining() {
           </p>
           <br />
           <section className="strengthTrainingContent1">
-            {/* <h2>Treadmill</h2> */}
             <p>
               Isometric training involves muscle contraction without any visible
               movement. For example, holding a Plank helps build stability and
@@ -59,7 +56,6 @@ function StrengthTraining() {
           </section>
 
           <section className="strengthTrainingContent2">
-            {/* <h2>Swimming</h2> */}
             <p>
               Isokinetic training uses specialized machines that keep movement
               at a constant speed. It is mainly used in physiotherapy and
@@ -71,7 +67,6 @@ function StrengthTraining() {
           </section>
 
           <section className="strengthTrainingContent3">
-            {/* <h2>HIIT</h2> */}
             <p>
               Regular strength training provides many benefits. It increases
               muscle mass and bone density, improves posture and balance, boosts
@@ -82,7 +77,6 @@ function StrengthTraining() {
           </section>
 
           <section className="strengthTrainingContent4">
-            {/* <h2>Cycling</h2> */}
             <p>
               strength training is a vital part of a healthy lifestyle that
               improves muscle strength, endurance, and overall fitness. By
@@ -93,10 +87,8 @@ function StrengthTraining() {
           </section>
         </div>
 
-        {/* RIGHT */}
         <div className="strengthTrainingImage">
           <div className="strengthTrainingImages">
-            {/* <img src={images[showImage]} alt="cardio" /> */}
             <div
               key={showImage}
               className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
@@ -108,7 +100,6 @@ function StrengthTraining() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="strengthTrainingsubscribe">
           <div className="strengthTrainingsubscribefirst">
             <div className="subcribeisometric">

@@ -1,14 +1,12 @@
 .cta {
   position: relative;
   min-height: 80vh;
-  background: linear-gradient(
-    180deg,
-    rgba(233, 6, 6, 0.5),
-    white,
-    white,
-    white,
-    rgba(233, 6, 6, 0.5)
-  );
+  background: linear-gradient(180deg,
+      rgba(233, 6, 6, 0.5),
+      white,
+      white,
+      white,
+      rgba(233, 6, 6, 0.5));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +69,7 @@
   left: 25%;
   animation-delay: 0s;
 }
+
 .icon2 {
   top: 40%;
   left: 15%;

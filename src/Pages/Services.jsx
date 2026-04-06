@@ -44,7 +44,6 @@ function Services() {
           </div>
         </div>
 
-        {/* <Link to="/contact" className="service-btn"><b>Get started</b></Link> */}
         <div className="service-btn-parent">
           <button
             onClick={() => {

@@ -30,12 +30,6 @@
   text-align: center;
 }
 
-/* .method.active {
-  border-color: #1f6b3a;
-  background: #e8f5ee;
-  font-weight: bold;
-} */
-
 .method:hover {
   background-color: rgb(209, 243, 214);
 }
@@ -48,7 +42,6 @@
 
 .form h5 {
   font-size: 15px;
-  /* padding-left: 120px; */
   padding: auto;
   color: #1f6b3a;
   margin-bottom: 30px;

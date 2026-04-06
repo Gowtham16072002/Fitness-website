@@ -4,10 +4,6 @@ import teamSports1 from "../assets/teamSports1.png";
 import teamSports2 from "../assets/teamSports2.png";
 import teamSports3 from "../assets/teamSports3.png";
 import teamSports4 from "../assets/teamSports4.png";
-// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function TeamSports() {
   const images = [teamSports1, teamSports2, teamSports3, teamSports4];
@@ -15,22 +11,20 @@ function TeamSports() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false);
 
       setTimeout(() => {
         setShowImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setFade(true); // fade in new image
-      }, 900); // match CSS transition time
-    }, 3000); // change image every 3 sec
+        setFade(true);
+      }, 900);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="TeamSportsPage">
-      {/* TOP ROW CONTAINER */}
       <div className="TopContainer">
-        {/* LEFT */}
         <div className="TeamSportsContent">
           <h1>TEAM SPORTS</h1>
           <p>
@@ -48,12 +42,9 @@ function TeamSports() {
           </p>
           <br />
           <section className="Content1">
-            {/* <h2>Treadmill</h2> */}
-            {/* <p>The treadmill provides a highly controlled indoor environment where you can manipulate speed and incline to simulate various terrains, offering more cushioning than outdoor pavement</p> */}
           </section>
 
           <section className="Content2">
-            {/* <h2>Swimming</h2> */}
             <p>
               Unlike individual workouts, team sports require constant
               interaction and coordination between players, which enhances
@@ -65,7 +56,6 @@ function TeamSports() {
           </section>
 
           <section className="Content3">
-            {/* <h2>HIIT</h2> */}
             <p>
               Additionally, team sports contribute significantly to mental and
               emotional well-being by promoting a sense of belonging and
@@ -77,7 +67,6 @@ function TeamSports() {
           </section>
 
           <section className="Content4">
-            {/* <h2>Cycling</h2> */}
             <p>
               Ultimately, team sports provide a balanced combination of fitness,
               fun, and social engagement, making them an excellent choice for
@@ -89,10 +78,8 @@ function TeamSports() {
           </section>
         </div>
 
-        {/* RIGHT */}
         <div className="TeamSportsImage">
           <div className="TeamSportsImages">
-            {/* <img src={images[showImage]} alt="cardio" /> */}
             <div
               key={showImage}
               className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
@@ -104,7 +91,6 @@ function TeamSports() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="subscribe">
           <div className="subscribefirst">
             <div className="subcribecrkt">

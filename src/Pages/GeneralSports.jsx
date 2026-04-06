@@ -1,6 +1,5 @@
 import React from "react";
 import "../Styles/GeneralSports.css";
-import BeginnerYogaBackground from "../assets/BeginnerYogaBackground.jpeg";
 import TeamSports from "../assets/TeamSports.png";
 import individualSports from "../assets/individualSports.png";
 import adventureSport from "../assets/adventureSport.png";

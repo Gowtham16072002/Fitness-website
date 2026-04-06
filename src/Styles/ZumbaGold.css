@@ -16,24 +16,18 @@
   background-position: center;
 }
 
-/* TOP ROW */
 .TopContainer {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   width: 100%;
-  /* flex: 1; */
   height: 100%;
-  /* border: 5px solid violet; */
 }
 
 .TopContainer h1 {
   text-align: center;
-  /* color: beige; */
   color: rgb(245, 87, 87);
 }
 
-/* LEFT SIDE */
 .ZumbaGoldContent {
   width: 50%;
   height: 100%;
@@ -43,90 +37,65 @@
   margin-left: 20px;
   margin-top: 30px;
   text-align: justify;
-  /* border: 2px solid yellow;  */
 }
-
-/* .CardioContent span{
-    color: #47ff47;
-} */
 
 .ZumbaGoldContent p {
   color: white;
   line-height: 1.5;
 }
 
-/* RIGHT SIDE */
 .ZumbaGoldImage {
   width: 50%;
   display: flex;
   margin: 40px;
-  /* height: 100%; */
-  /* margin-top: 60px; */
-  /* border: 2px solid red; */
 }
 
 .ZumbaGoldImages {
   width: 100%;
-  /* height: 100%; */
-  /* border-radius: 20px;  */
   overflow: hidden;
   flex: 1;
-  /* border: 2px solid green; */
 }
 
 .ZumbaGoldImages .image-container {
   width: 100%;
   height: 100%;
-  /* height: 100%; */
-  /* margin-top: 40px; */
-  /* object-fit: cover;
-    opacity: 0.7; */
   background-size: cover;
   background-position: center;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  /* transition: opacity 0.3s ease-in-out; */
   animation: fade 0.8s ease-in-out;
-  /* border-top: 1000px; */
-  /* border: 1px solid #47ff47; */
+
 }
 
 @keyframes fade {
   0% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-/* BOTTOM SUBSCRIBE ROW */
 .subscribe {
   margin-top: 50px;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
-  /* border: 6px solid rgb(185, 10, 10); */
 }
 
-/* SMALL BOXES */
 .subcribeZGCLS,
 .subcribeZGCH,
 .subcribeZGTO,
 .subcribeZGSTFL {
   width: 600px;
-  /* height: 350px; */
   flex: 1;
   padding: 20px;
-  /* border: 2px solid rgb(30, 146, 255); */
   border-radius: 10px;
   color: beige;
-  /* background-color: beige; */
-  /* opacity: 0.5; */
 }
 
 .subcribeZGCLS ul,
@@ -173,7 +142,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 70px; */
   border-radius: 15px;
   margin: 50px;
   padding: 14px 30px;
@@ -188,24 +156,6 @@
   justify-content: center;
 }
 
-/* .btn button {
-    padding: 10px 60px;
-    color: white;
-    font-weight: 800;
-    background-color: rgb(63, 167, 63);
-    border-radius: 20px;
-    border: none;
-} */
-
-/* .subcribetred,
-.subcribeswim,
-.subcribejog,
-.subcribecyc ul {
-  list-style-type: circle;
-  padding-left: 20px;
-  color: white; */
-/* font-weight: bold; */
-/* } */
 .subscribefirst,
 .subscribesecond {
   display: flex;
@@ -214,15 +164,12 @@
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;
-  /* border: 5px solid rgb(139, 89, 97); */
-
   justify-content: center;
 }
 
 .subscribefirst h2,
 .subscribesecond h2 {
   text-align: center;
-  /* color: #47ff47; */
 }
 
 p {

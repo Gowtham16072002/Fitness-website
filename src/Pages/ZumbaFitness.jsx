@@ -1,6 +1,5 @@
 import React from "react";
 import "../Styles/ZumbaFitness.css";
-import BeginnerYogaBackground from "../assets/BeginnerYogaBackground.jpeg";
 import ZumbaClassic from "../assets/ZumbaFitness.png";
 import ZumbaGold from "../assets/ZumbaGold.png";
 import ZumbaChild from "../assets/ZumbaChild.png";

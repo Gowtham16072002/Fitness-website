@@ -4,10 +4,6 @@ import RockClimbing from "../assets/RockClimbing.png";
 import Hiking from "../assets/Hiking.png";
 import kayaking from "../assets/kayaking.png";
 import TrailCycling from "../assets/TrailCycling.png";
-// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function AdventureSports() {
   const images = [RockClimbing, Hiking, kayaking, TrailCycling];
@@ -15,22 +11,20 @@ function AdventureSports() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false);
 
       setTimeout(() => {
         setShowImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setFade(true); // fade in new image
-      }, 900); // match CSS transition time
-    }, 3000); // change image every 3 sec
+        setFade(true);
+      }, 900);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="AdventureSportsPage">
-      {/* TOP ROW CONTAINER */}
       <div className="TopContainer">
-        {/* LEFT */}
         <div className="AdventureSportsContent">
           <h1>ADVENTURE SPORTS</h1>
           <p>
@@ -49,12 +43,9 @@ function AdventureSports() {
           </p>
           <br />
           <section className="Content1">
-            {/* <h2>Treadmill</h2> */}
-            {/* <p>The treadmill provides a highly controlled indoor environment where you can manipulate speed and incline to simulate various terrains, offering more cushioning than outdoor pavement</p> */}
           </section>
 
           <section className="Content2">
-            {/* <h2>Swimming</h2> */}
             <p>
               Unlike traditional indoor workouts, adventure sports involve
               natural terrains and unpredictable conditions, which enhance
@@ -66,7 +57,6 @@ function AdventureSports() {
           </section>
 
           <section className="Content3">
-            {/* <h2>HIIT</h2> */}
             <p>
               Additionally, adventure sports contribute to mental well-being by
               promoting confidence, focus, and stress relief. The thrill of
@@ -78,7 +68,6 @@ function AdventureSports() {
           </section>
 
           <section className="Content4">
-            {/* <h2>Cycling</h2> */}
             <p>
               Ultimately, adventure sports offer a powerful combination of
               fitness, excitement, and personal growth. By pushing physical
@@ -90,10 +79,8 @@ function AdventureSports() {
           </section>
         </div>
 
-        {/* RIGHT */}
         <div className="AdventureSportsImage">
           <div className="AdventureSportsImages">
-            {/* <img src={images[showImage]} alt="cardio" /> */}
             <div
               key={showImage}
               className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
@@ -105,7 +92,6 @@ function AdventureSports() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="subscribe">
           <div className="subscribefirst">
             <div className="subcribeclimb">

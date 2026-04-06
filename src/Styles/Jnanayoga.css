@@ -28,7 +28,6 @@
   color: rgb(245, 87, 87);
 }
 
-/* LEFT SIDE */
 .jnanayogaContent {
   width: 50%;
   height: 100%;
@@ -45,11 +44,11 @@
   line-height: 1.5;
   gap: 2px;
 }
+
 .jnanayogaContent p span {
   margin-bottom: 20px;
 }
 
-/* RIGHT SIDE */
 .jnanayogaImage {
   width: 50%;
   display: flex;
@@ -79,6 +78,7 @@
   0% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }
@@ -91,7 +91,6 @@
   margin-top: 40px;
 }
 
-/* SMALL BOXES */
 .subcribeviveka,
 .subcribevairagya,
 .subcribeshatsampatti,

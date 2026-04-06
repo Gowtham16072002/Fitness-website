@@ -4,10 +4,6 @@ import ZumbaImage from "../assets/ZumbaImage.jpeg";
 import ZumbaChild from "../assets/ZumbaChild.png";
 import ZumbaGold from "../assets/ZumbaGold.png";
 import ZumbaFitness from "../assets/ZumbaFitness.png";
-import cardiodetail1 from "../assets/cardiodetail1.jpeg";
-import cardiodetail2 from "../assets/cardiodetail2.jpeg";
-import cardiodetail3 from "../assets/cardiodetail3.jpeg";
-import cardiodetail4 from "../assets/cardiodetail4.jpeg";
 
 function ZumbaClassic() {
   const images = [ZumbaImage, ZumbaChild, ZumbaGold, ZumbaFitness];
@@ -15,22 +11,20 @@ function ZumbaClassic() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false);
 
       setTimeout(() => {
         setShowImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setFade(true); // fade in new image
-      }, 900); // match CSS transition time
-    }, 3000); // change image every 3 sec
+        setFade(true);
+      }, 900);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="ZumbaClassicPage">
-      {/* TOP ROW CONTAINER */}
       <div className="TopContainer">
-        {/* LEFT */}
         <div className="ZumbaClassicContent">
           <h1>ZUMBA CLASSIC</h1>
           <p>
@@ -43,13 +37,7 @@ function ZumbaClassic() {
               </b>
             </span>
           </p>
-          {/* <br /><section className='Content1'>
-                        <h2>Treadmill</h2>
-                        <p>Zumba Classic delivers a dynamic and engaging cardiovascular workout that blends high-energy dance movements with aerobic exercise, allowing individuals to improve fitness while enjoying an immersive and music-driven experience. By incorporating a variety of international dance styles such as salsa, merengue, reggaeton, and hip-hop, it transforms traditional workouts into an exciting and motivating routine suitable for all fitness enthusiasts.</p>
-                    </section> */}
-
           <section className="Content2">
-            {/* <h2>Swimming</h2> */}
             <p>
               Unlike conventional exercise methods, Zumba Classic focuses on
               continuous rhythmic movements that keep the body active and
@@ -61,7 +49,6 @@ function ZumbaClassic() {
           </section>
 
           <section className="Content3">
-            {/* <h2>HIIT</h2> */}
             <p>
               Additionally, Zumba Classic plays a significant role in improving
               mental well-being by releasing endorphins that reduce stress and
@@ -73,7 +60,6 @@ function ZumbaClassic() {
           </section>
 
           <section className="Content4">
-            {/* <h2>Cycling</h2> */}
             <p>
               Ultimately, Zumba Classic stands out as a powerful yet enjoyable
               fitness solution that combines effective calorie burning, muscle
@@ -85,10 +71,8 @@ function ZumbaClassic() {
           </section>
         </div>
 
-        {/* RIGHT */}
         <div className="ZumbaClassicImage">
           <div className="ZumbaClassicImages">
-            {/* <img src={images[showImage]} alt="cardio" /> */}
             <div
               key={showImage}
               className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
@@ -100,7 +84,6 @@ function ZumbaClassic() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="subscribe">
           <div className="subscribefirst">
             <div className="subcribeZCRBL">

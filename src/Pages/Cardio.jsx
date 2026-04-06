@@ -4,10 +4,6 @@ import CardioImage1 from "../assets/CardioImage1.jpeg";
 import CardioImage2 from "../assets/CardioImage2.jpeg";
 import CardioImage3 from "../assets/CardioImage3.jpeg";
 import CardioImage4 from "../assets/CardioImage4.jpeg";
-import cardiodetail1 from "../assets/cardiodetail1.jpeg";
-import cardiodetail2 from "../assets/cardiodetail2.jpeg";
-import cardiodetail3 from "../assets/cardiodetail3.jpeg";
-import cardiodetail4 from "../assets/cardiodetail4.jpeg";
 
 function Cardio() {
   const images = [CardioImage1, CardioImage2, CardioImage3, CardioImage4];
@@ -15,22 +11,20 @@ function Cardio() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false);
 
       setTimeout(() => {
         setShowImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-        setFade(true); // fade in new image
-      }, 900); // match CSS transition time
-    }, 3000); // change image every 3 sec
+        setFade(true);
+      }, 900);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="CardioPage">
-      {/* TOP ROW CONTAINER */}
       <div className="TopContainer">
-        {/* LEFT */}
         <div className="CardioContent">
           <h1>CARDIO FIT</h1>
           <p>
@@ -44,7 +38,6 @@ function Cardio() {
           </p>
           <br />
           <section className="Content1">
-            {/* <h2>Treadmill</h2> */}
             <p>
               The treadmill provides a highly controlled indoor environment
               where you can manipulate speed and incline to simulate various
@@ -53,7 +46,6 @@ function Cardio() {
           </section>
 
           <section className="Content2">
-            {/* <h2>Swimming</h2> */}
             <p>
               Finally, swimming stands out as a premier full-body workout; the
               water’s natural resistance tones muscle and improves lung capacity
@@ -63,7 +55,6 @@ function Cardio() {
           </section>
 
           <section className="Content3">
-            {/* <h2>HIIT</h2> */}
             <p>
               HIIT, or High-Intensity Interval Training, is a cardiovascular
               exercise strategy that alternates between short periods of intense
@@ -75,7 +66,6 @@ function Cardio() {
           </section>
 
           <section className="Content4">
-            {/* <h2>Cycling</h2> */}
             <p>
               If you prefer a lower-impact alternative, cycling builds
               significant lower-body strength and endurance while being much
@@ -86,10 +76,8 @@ function Cardio() {
           </section>
         </div>
 
-        {/* RIGHT */}
         <div className="CardioImage">
           <div className="CardioImages">
-            {/* <img src={images[showImage]} alt="cardio" /> */}
             <div
               key={showImage}
               className={`image-container ${fade ? "fade-In" : "fade-Out"}`}
@@ -101,7 +89,6 @@ function Cardio() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="subscribe">
           <div className="subscribefirst">
             <div className="subcribetred">

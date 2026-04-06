@@ -3,12 +3,9 @@ import "../Styles/TrainerSection.css";
 import Trainer1 from "../assets/Trainer1.avif";
 import ZumbaTrainer from "../assets/ZumbaTrainer.png";
 import YogaMaleTrainer from "../assets/YogaMaleTrainer.png";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
-// npm install aos
 
 function TrainerSection() {
   useEffect(() => {

@@ -4,10 +4,6 @@ import ZumbaGold1 from "../assets/ZumbaGold1.png";
 import ZumbaGold2 from "../assets/ZumbaGold2.png";
 import ZumbaGold3 from "../assets/ZumbaGold3.png";
 import ZumbaGold4 from "../assets/ZumbaGold4.png";
-// import cardiodetail1 from '../assets/cardiodetail1.jpeg'
-// import cardiodetail2 from '../assets/cardiodetail2.jpeg'
-// import cardiodetail3 from '../assets/cardiodetail3.jpeg'
-// import cardiodetail4 from '../assets/cardiodetail4.jpeg'
 
 function ZumbaGold() {
   const images = [ZumbaGold1, ZumbaGold2, ZumbaGold3, ZumbaGold4];
@@ -31,7 +27,6 @@ function ZumbaGold() {
 
   return (
     <div className="ZumbaGold">
-      {/* TOP ROW CONTAINER */}
       <div className="TopContainer">
         {/* LEFT */}
         <div className="ZumbaGoldContent">
@@ -51,7 +46,6 @@ function ZumbaGold() {
           </p>
           <br />
           <section className="Content1">
-            {/* <h2>Treadmill</h2> */}
             <p>
               Unlike traditional high-intensity workouts, Zumba Gold focuses on
               controlled, rhythmic movements that improve balance, coordination,
@@ -63,7 +57,6 @@ function ZumbaGold() {
           </section>
 
           <section className="Content2">
-            {/* <h2>Swimming</h2> */}
             <p>
               Additionally, Zumba Gold promotes both physical and mental
               well-being by encouraging social interaction and reducing stress.
@@ -75,7 +68,6 @@ function ZumbaGold() {
           </section>
 
           <section className="Content3">
-            {/* <h2>HIIT</h2> */}
             <p>
               Ultimately, Zumba Gold serves as a sustainable fitness solution
               that prioritizes safety, comfort, and consistency. By providing a
@@ -84,17 +76,10 @@ function ZumbaGold() {
               enhancing their overall quality of life.
             </p>
           </section>
-          {/* 
-                    <section className='Content4'>
-                        <h2>Cycling</h2> 
-                        <p>If you prefer a lower-impact alternative, cycling builds significant lower-body strength and endurance while being much gentler on the knees.By rotating through these activities, you can challenge different muscle groups and keep your fitness journey engaging and balanced.</p>
-                    </section> */}
         </div>
 
-        {/* RIGHT */}
         <div className="ZumbaGoldImage">
           <div className="ZumbaGoldImages">
-            {/* <img src={images[showImage]} alt="cardio" /> */}
             <div
               key={showImage}
               className={`image-container ${fade ? "fade-in" : "fade-out"}`}
@@ -106,7 +91,6 @@ function ZumbaGold() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="subscribe">
           <div className="subscribefirst">
             <div className="subcribeZGCLS">

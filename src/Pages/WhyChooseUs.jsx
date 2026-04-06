@@ -4,8 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-// npm install aos
-
 function WhyChooseUs() {
   useEffect(() => {
     AOS.init({

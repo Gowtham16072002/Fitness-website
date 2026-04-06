@@ -28,7 +28,6 @@
   color: rgb(245, 87, 87);
 }
 
-/* LEFT SIDE */
 .NutritionContent {
   width: 50%;
   height: 100%;
@@ -44,11 +43,11 @@
   line-height: 1.5;
   gap: 2px;
 }
+
 .NutritionContent p span {
   margin-bottom: 20px;
 }
 
-/* RIGHT SIDE */
 .NutritionImage {
   width: 50%;
   display: flex;
@@ -78,6 +77,7 @@
   0% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }
@@ -90,7 +90,6 @@
   margin-top: 40px;
 }
 
-/* SMALL BOXES */
 .subcribeprotein,
 .subcribecarbohydrate,
 .subcribefat,

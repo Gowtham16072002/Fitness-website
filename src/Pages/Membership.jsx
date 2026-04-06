@@ -7,7 +7,6 @@ function Membership() {
       <h2 className="membership-title">Choose your payment method</h2>
 
       <div className="card-wrapper">
-        {/* Basic plan */}
         <div className="membership-card">
           <div className="card-header">BASIC</div>
 
@@ -35,7 +34,6 @@ function Membership() {
           </div>
         </div>
 
-        {/* Premier plan */}
         <div className="membership-card">
           <div className="card-header">PREMIER</div>
 

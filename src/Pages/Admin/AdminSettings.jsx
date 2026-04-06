@@ -100,7 +100,6 @@ function AdminSettings() {
       <main className="admin-content">
         <h1>Settings</h1>
 
-        {/* SITE SETTINGS */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("site")}>
             <h2>Site Settings</h2>
@@ -144,7 +143,6 @@ function AdminSettings() {
           )}
         </div>
 
-        {/* CONTACT SETTINGS */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("contact")}>
             <h2>Contact Settings</h2>
@@ -188,7 +186,6 @@ function AdminSettings() {
           )}
         </div>
 
-        {/* SOCIAL SETTINGS */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("social")}>
             <h2>Social Media Links</h2>
@@ -232,7 +229,6 @@ function AdminSettings() {
           )}
         </div>
 
-        {/* THEME SETTINGS */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("theme")}>
             <h2>Theme Settings</h2>
@@ -288,7 +284,6 @@ function AdminSettings() {
           )}
         </div>
 
-        {/* ADMIN PROFILE */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("admin")}>
             <h2>Admin Profile</h2>
@@ -324,7 +319,6 @@ function AdminSettings() {
           )}
         </div>
 
-        {/* PASSWORD */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("password")}>
             <h2>Password Settings</h2>

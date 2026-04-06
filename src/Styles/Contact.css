@@ -2,11 +2,13 @@
   width: 40%;
   margin-left: 50px;
 }
+
 .paragraph h2 {
   font-size: clamp(18px, 3vw, 42px);
   line-height: 1.2;
   color: white;
 }
+
 .paragraph p {
   font-size: clamp(12px, 1.5vw, 20px);
   margin-top: 15px;
@@ -145,10 +147,12 @@
     height: 320px;
     border-radius: 12px;
   }
+
   .map {
     width: 100%;
     margin-bottom: 40px;
   }
+
   .detailss,
   .form {
     width: 90%;
@@ -200,6 +204,7 @@
   font-size: 14px;
   margin-bottom: 10px;
 }
+
 .consultation-text {
   font-size: 22px;
   font-weight: bold;
@@ -257,12 +262,10 @@
 }
 
 .offer-banner {
-  background: linear-gradient(
-    90deg,
-    rgba(2, 2, 2, 1),
-    rgba(2, 2, 2, 0.5),
-    rgb(2, 2, 2, 1)
-  );
+  background: linear-gradient(90deg,
+      rgba(2, 2, 2, 1),
+      rgba(2, 2, 2, 0.5),
+      rgb(2, 2, 2, 1));
   color: white;
   overflow: hidden;
   white-space: nowrap;
@@ -281,10 +284,12 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 .loader {
   height: 100vh;
   display: flex;

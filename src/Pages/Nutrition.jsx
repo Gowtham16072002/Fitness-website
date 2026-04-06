@@ -24,9 +24,7 @@ function Nutrition() {
 
   return (
     <div className="NutritionPage">
-      {/* TOP ROW CONTAINER */}
       <div className="NutritionTopContainer">
-        {/* LEFT */}
         <div className="NutritionContent">
           <h1>Nutrition</h1>
           <p>
@@ -74,7 +72,6 @@ function Nutrition() {
           </section>
         </div>
 
-        {/* RIGHT */}
         <div className="NutritionImage">
           <div className="NutritionImages">
             <div
@@ -88,7 +85,6 @@ function Nutrition() {
         </div>
       </div>
       <div>
-        {/* BOTTOM SEPARATE SUBSCRIBE ROW */}
         <div className="Nutritionsubscribe">
           <div className="Nutritionsubscribefirst">
             <div className="subcribeprotein">

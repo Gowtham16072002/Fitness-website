@@ -9,16 +9,13 @@
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  /* important */
   background:
     linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
     url("../assets/Zumba.jpg");
   background-size: cover;
   background-position: center;
-  /* padding: 40px; */
 }
 
-/* TOP ROW */
 .TopContainer {
   display: flex;
   justify-content: space-between;
@@ -28,11 +25,9 @@
 
 .TopContainer h1 {
   text-align: center;
-  /* color: beige; */
   color: rgb(245, 87, 87);
 }
 
-/* LEFT SIDE */
 .ZumbaClassicContent {
   width: 50%;
   height: 100%;
@@ -42,35 +37,23 @@
   margin-left: 20px;
   margin-top: 30px;
   text-align: justify;
-  /* border: 2px solid yellow;  */
 }
-
-/* .CardioContent span{
-    color: #47ff47;
-} */
 
 .ZumbaClassicContent p {
   color: white;
   line-height: 1.5;
 }
 
-/* RIGHT SIDE */
 .ZumbaClassicImage {
   width: 50%;
   display: flex;
   margin: 40px;
-  /* height: 100%; */
-  /* margin-top: 60px; */
-  /* border: 2px solid red; */
 }
 
 .ZumbaClassicImages {
   width: 100%;
-  /* height: 100%; */
-  /* border-radius: 20px;  */
   overflow: hidden;
   flex: 1;
-  /* border: 2px solid green; */
 }
 
 .ZumbaClassicImages .image-container {
@@ -89,6 +72,7 @@
   0% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }
@@ -102,20 +86,15 @@
   justify-content: space-around;
 }
 
-/* SMALL BOXES */
 .subcribeZCRBL,
 .subcribeZSTFU,
 .subcribeZDNPR,
 .subcribeZINMX {
   width: 600px;
-  /* height: 350px; */
   flex: 1;
   padding: 20px;
-  /* border: 2px solid rgb(30, 146, 255); */
   border-radius: 10px;
   color: beige;
-  /* background-color: beige; */
-  /* opacity: 0.5; */
 }
 
 .subcribeZCRBL ul,
@@ -144,27 +123,16 @@
   display: inline-block;
   width: 1.5em;
 }
+
 .ZumbaClassicContent h2 {
   color: white;
   padding-bottom: 10px;
 }
-/* 
-.fade-In {
-    opacity: 1;
-}
-
-.fade-Out {
-    opacity: 0.90;
-} */
 
 .ZCLbtn {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 70px; */
-  /* border: 2px solid blue; */
-  /* margin: 50px; */
-  /* padding: 50px; */
   font-size: 1rem;
   border-radius: 15px;
   border-style: none;
@@ -181,24 +149,6 @@
   justify-content: center;
 }
 
-/* .btn button {
-    padding: 10px 60px;
-    color: white;
-    font-weight: 800;
-    background-color: rgb(63, 167, 63);
-    border-radius: 20px;
-    border: none;
-} */
-
-/* .subcribetred,
-.subcribeswim,
-.subcribejog,
-.subcribecyc ul {
-  list-style-type: circle;
-  padding-left: 20px;
-  color: white; */
-/* font-weight: bold; */
-/* } */
 .subscribefirst,
 .subscribesecond {
   display: flex;
@@ -207,7 +157,6 @@
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;
-  /* border: 5px solid rgb(139, 89, 97); */
 
   justify-content: center;
 }
@@ -215,7 +164,6 @@
 .subscribefirst h2,
 .subscribesecond h2 {
   text-align: center;
-  /* color: #47ff47; */
 }
 
 p {
