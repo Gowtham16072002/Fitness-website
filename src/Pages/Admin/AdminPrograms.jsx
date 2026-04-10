@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import AdminSidebar from "../../Components/AdminSidebar";
 import "../../Styles/AdminPrograms.css";
 
@@ -12,10 +13,26 @@ function AdminPrograms() {
   });
 
   const [categoryData, setCategoryData] = useState([
-    { id: 1, title: "Gym Training", description: "Strength, muscle gain and endurance programs." },
-    { id: 2, title: "Yoga Classes", description: "Improve flexibility, balance and mindfulness." },
-    { id: 3, title: "Zumba Sessions", description: "Fun dance workouts for energy and weight loss." },
-    { id: 4, title: "Sports Training", description: "Build agility, stamina and athletic performance." },
+    {
+      id: 1,
+      title: "Gym Training",
+      description: "Strength, muscle gain and endurance programs.",
+    },
+    {
+      id: 2,
+      title: "Yoga Classes",
+      description: "Improve flexibility, balance and mindfulness.",
+    },
+    {
+      id: 3,
+      title: "Zumba Sessions",
+      description: "Fun dance workouts for energy and weight loss.",
+    },
+    {
+      id: 4,
+      title: "Sports Training",
+      description: "Build agility, stamina and athletic performance.",
+    },
   ]);
 
   const [programList, setProgramList] = useState([
@@ -56,6 +73,18 @@ function AdminPrograms() {
     button1: "Join Now",
     button2: "View Pricing",
   });
+  useEffect(() => {
+    fetch("http://localhost:5000/api/programs", {
+      credentials: "include",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setHeroData(data.heroData || {});
+        setCategoryData(data.categoryData || []);
+        setProgramList(data.programList || []);
+        setCtaData(data.ctaData || {});
+      });
+  }, []);
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? "" : section);
@@ -107,8 +136,30 @@ function AdminPrograms() {
       ctaData,
     };
 
-    console.log("Programs Page Data:", allData);
-    alert("Programs page updated successfully!");
+    const handleSubmit = async () => {
+      const allData = {
+        heroData,
+        categoryData,
+        programList,
+        ctaData,
+      };
+
+      try {
+        await fetch("http://localhost:5000/api/programs", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+          body: JSON.stringify(allData),
+        });
+
+        alert("Programs updated successfully!");
+      } catch (error) {
+        console.log(error);
+        alert("Error saving data");
+      }
+    };
   };
 
   return (
@@ -146,7 +197,10 @@ function AdminPrograms() {
         </div>
 
         <div className="admin-section">
-          <div className="section-header" onClick={() => toggleSection("categories")}>
+          <div
+            className="section-header"
+            onClick={() => toggleSection("categories")}
+          >
             <h2>Program Categories</h2>
             <span>{openSection === "categories" ? "⌃" : "⌄"}</span>
           </div>
@@ -179,7 +233,10 @@ function AdminPrograms() {
         </div>
 
         <div className="admin-section">
-          <div className="section-header" onClick={() => toggleSection("programs")}>
+          <div
+            className="section-header"
+            onClick={() => toggleSection("programs")}
+          >
             <h2>Programs List</h2>
             <span>{openSection === "programs" ? "⌃" : "⌄"}</span>
           </div>
