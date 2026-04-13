@@ -334,7 +334,7 @@ function SignUp() {
         alert(data.message || "Signup failed");
       }
     } catch (error) {
-      console.error("Signup error:", error);
+      console.error("Signup error:", error.message);
       alert("Something went wrong while signing up");
     } finally {
       setLoading(false);

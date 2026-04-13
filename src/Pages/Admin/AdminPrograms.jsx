@@ -74,7 +74,7 @@ function AdminPrograms() {
     button2: "View Pricing",
   });
   useEffect(() => {
-    fetch("http://localhost:5000/api/programs", {
+    fetch("http://localhost:3000/api/programs", {
       credentials: "include",
     })
       .then((res) => res.json())
@@ -145,7 +145,7 @@ function AdminPrograms() {
       };
 
       try {
-        await fetch("http://localhost:5000/api/programs", {
+        await fetch("http://localhost:3000/api/programs", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
