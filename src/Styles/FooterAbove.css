@@ -51,6 +51,14 @@
   margin: 10px;
 }
 
+.cta-btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .cta-btn:hover {
   background: rgb(233, 6, 6);
   transform: scale(1.05);

@@ -41,7 +41,13 @@
   margin-top: 40px;
   transition: 0.3s;
 }
-
+.hero-btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 .hero-btn:hover {
   background: rgb(233, 6, 6);
 }
