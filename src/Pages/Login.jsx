@@ -155,9 +155,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/Auth.css";
+import { useContext } from "react";
+import { AuthContext } from "../Context/AuthContext";
 
 function Login() {
   const navigate = useNavigate();
+  const { login } = useContext(AuthContext);
 
   const [formData, setFormData] = useState({
     emailAddress: "",
@@ -229,10 +232,14 @@ function Login() {
         headers: {
           "Content-Type": "application/json",
         },
+        credentials: "include",
         body: JSON.stringify(formData),
       });
+      console.log(response);
 
       const data = await response.json();
+
+      console.log(data);
 
       if (data.success) {
         alert(data.message || "Login successful");
@@ -245,10 +252,13 @@ function Login() {
 
         // 👉 if admin → go admin panel
         if (data.user.role === "admin") {
+          login(data.user);
           navigate("/admin/dashboard");
         } else {
+          login(data.user);
           navigate("/");
         }
+        
       } else {
         alert(data.message || "Login failed");
       }
