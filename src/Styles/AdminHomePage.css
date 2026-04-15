@@ -80,6 +80,14 @@
   min-height: 120px;
 }
 
+
+.section-body p {
+  margin-top: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #444;
+}
+
 .section-body input:focus,
 .section-body textarea:focus {
   border-color: #ef4444;
@@ -138,6 +146,20 @@
 .update-btn:hover {
   transform: translateY(-2px);
   opacity: 0.96;
+}
+
+
+.upload-status-text {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+.update-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 @media (max-width: 1200px) {

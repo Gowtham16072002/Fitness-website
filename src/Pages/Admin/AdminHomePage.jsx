@@ -420,12 +420,808 @@
 
 
 
+
+
+
+// import React, { useState, useEffect } from "react";
+// import AdminSidebar from "../../Components/AdminSidebar";
+// import "../../Styles/AdminHomePage.css";
+
+// function AdminHomePage() {
+//   const [openSection, setOpenSection] = useState("hero");
+
+//   const [formData, setFormData] = useState({
+//     hero: {
+//       heading: "",
+//       description: "",
+//       primaryButtonText: "",
+//       secondaryButtonText: "",
+//       backgroundImage: "",
+//     },
+//     stats: [
+//       { number: "", label: "" },
+//       { number: "", label: "" },
+//       { number: "", label: "" },
+//     ],
+//     whyChooseUs: {
+//       heading: "",
+//       cards: [
+//         { title: "", description: "", icon: "" },
+//         { title: "", description: "", icon: "" },
+//         { title: "", description: "", icon: "" },
+//       ],
+//     },
+//     cta: {
+//       heading: "",
+//       subHeading: "",
+//       description: "",
+//       primaryButtonText: "",
+//       secondaryButtonText: "",
+//     },
+//   });
+
+//   // ---------------- FETCH DATA ----------------
+//   useEffect(() => {
+//     fetchHomeContent();
+//   }, []);
+
+//   const fetchHomeContent = async () => {
+//     try {
+//       const res = await fetch("http://localhost:3000/api/home-content");
+//       const data = await res.json();
+
+//       if (data.success) {
+//         setFormData(data.data);
+//       }
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   };
+
+//   // ---------------- TOGGLE ----------------
+//   const toggleSection = (section) => {
+//     setOpenSection(openSection === section ? "" : section);
+//   };
+
+//   // ---------------- HERO ----------------
+//   const handleHeroChange = (e) => {
+//     const { name, value } = e.target;
+
+//     setFormData((prev) => ({
+//       ...prev,
+//       hero: {
+//         ...prev.hero,
+//         [name]: value,
+//       },
+//     }));
+//   };
+
+//   // ---------------- STATS ----------------
+//   const handleStatChange = (index, field, value) => {
+//     const updated = [...formData.stats];
+//     updated[index][field] = value;
+
+//     setFormData((prev) => ({
+//       ...prev,
+//       stats: updated,
+//     }));
+//   };
+
+//   // ---------------- WHY CHOOSE ----------------
+//   const handleWhyCardChange = (index, field, value) => {
+//     const updated = [...formData.whyChooseUs.cards];
+//     updated[index][field] = value;
+
+//     setFormData((prev) => ({
+//       ...prev,
+//       whyChooseUs: {
+//         ...prev.whyChooseUs,
+//         cards: updated,
+//       },
+//     }));
+//   };
+
+//   const handleWhyHeadingChange = (e) => {
+//     setFormData((prev) => ({
+//       ...prev,
+//       whyChooseUs: {
+//         ...prev.whyChooseUs,
+//         heading: e.target.value,
+//       },
+//     }));
+//   };
+
+//   // ---------------- CTA ----------------
+//   const handleCTAChange = (e) => {
+//     const { name, value } = e.target;
+
+//     setFormData((prev) => ({
+//       ...prev,
+//       cta: {
+//         ...prev.cta,
+//         [name]: value,
+//       },
+//     }));
+//   };
+
+//   // ---------------- SUBMIT ----------------
+//   const handleSubmit = async () => {
+//     try {
+//       const response = await fetch("http://localhost:3000/api/home-content", {
+//         method: "PUT",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(formData),
+//       });
+
+//       const result = await response.json();
+
+//       if (result.success) {
+//         alert("Content updated successfully!");
+//       } else {
+//         alert(result.message || "Update failed");
+//       }
+//     } catch (error) {
+//       console.error(error);
+//       alert("Error updating content");
+//     }
+//   };
+
+//   return (
+//     <div className="admin-page">
+//       <AdminSidebar />
+
+//       <main className="admin-content">
+//         <h1>Edit Home Page Content</h1>
+
+//         {/* HERO */}
+//         <div className="admin-section">
+//           <div className="section-header" onClick={() => toggleSection("hero")}>
+//             <h2>Hero Section</h2>
+//             <span>{openSection === "hero" ? "⌃" : "⌄"}</span>
+//           </div>
+
+//           {openSection === "hero" && (
+//             <div className="section-body">
+//               <label>Heading</label>
+//               <input
+//                 type="text"
+//                 name="heading"
+//                 value={formData.hero.heading}
+//                 onChange={handleHeroChange}
+//               />
+
+//               <label>Description</label>
+//               <textarea
+//                 name="description"
+//                 rows="4"
+//                 value={formData.hero.description}
+//                 onChange={handleHeroChange}
+//               />
+
+//               <label>Primary Button</label>
+//               <input
+//                 type="text"
+//                 name="primaryButtonText"
+//                 value={formData.hero.primaryButtonText}
+//                 onChange={handleHeroChange}
+//               />
+
+//               <label>Secondary Button</label>
+//               <input
+//                 type="text"
+//                 name="secondaryButtonText"
+//                 value={formData.hero.secondaryButtonText}
+//                 onChange={handleHeroChange}
+//               />
+
+//               <label>Background Image URL</label>
+//               <input
+//                 type="text"
+//                 name="backgroundImage"
+//                 value={formData.hero.backgroundImage}
+//                 onChange={handleHeroChange}
+//               />
+//             </div>
+//           )}
+//         </div>
+
+//         {/* STATS */}
+//         <div className="admin-section">
+//           <div className="section-header" onClick={() => toggleSection("stats")}>
+//             <h2>Stats Section</h2>
+//             <span>{openSection === "stats" ? "⌃" : "⌄"}</span>
+//           </div>
+
+//           {openSection === "stats" && (
+//             <div className="section-body">
+//               {formData.stats.map((item, index) => (
+//                 <div className="multi-field-row" key={index}>
+//                   <div>
+//                     <label>Number</label>
+//                     <input
+//                       type="text"
+//                       value={item.number}
+//                       onChange={(e) =>
+//                         handleStatChange(index, "number", e.target.value)
+//                       }
+//                     />
+//                   </div>
+
+//                   <div>
+//                     <label>Label</label>
+//                     <input
+//                       type="text"
+//                       value={item.label}
+//                       onChange={(e) =>
+//                         handleStatChange(index, "label", e.target.value)
+//                       }
+//                     />
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+//           )}
+//         </div>
+
+//         {/* WHY CHOOSE */}
+//         <div className="admin-section">
+//           <div
+//             className="section-header"
+//             onClick={() => toggleSection("why")}
+//           >
+//             <h2>Why Choose Us</h2>
+//             <span>{openSection === "why" ? "⌃" : "⌄"}</span>
+//           </div>
+
+//           {openSection === "why" && (
+//             <div className="section-body">
+//               <label>Heading</label>
+//               <input
+//                 type="text"
+//                 value={formData.whyChooseUs.heading}
+//                 onChange={handleWhyHeadingChange}
+//               />
+
+//               {formData.whyChooseUs.cards.map((card, index) => (
+//                 <div key={index} className="trainer-box">
+//                   <label>Title</label>
+//                   <input
+//                     type="text"
+//                     value={card.title}
+//                     onChange={(e) =>
+//                       handleWhyCardChange(index, "title", e.target.value)
+//                     }
+//                   />
+
+//                   <label>Description</label>
+//                   <input
+//                     type="text"
+//                     value={card.description}
+//                     onChange={(e) =>
+//                       handleWhyCardChange(index, "description", e.target.value)
+//                     }
+//                   />
+
+//                   <label>Icon (FontAwesome)</label>
+//                   <input
+//                     type="text"
+//                     value={card.icon}
+//                     onChange={(e) =>
+//                       handleWhyCardChange(index, "icon", e.target.value)
+//                     }
+//                   />
+//                 </div>
+//               ))}
+//             </div>
+//           )}
+//         </div>
+
+//         {/* CTA */}
+//         <div className="admin-section">
+//           <div className="section-header" onClick={() => toggleSection("cta")}>
+//             <h2>CTA Section</h2>
+//             <span>{openSection === "cta" ? "⌃" : "⌄"}</span>
+//           </div>
+
+//           {openSection === "cta" && (
+//             <div className="section-body">
+//               <label>Heading</label>
+//               <input
+//                 type="text"
+//                 name="heading"
+//                 value={formData.cta.heading}
+//                 onChange={handleCTAChange}
+//               />
+
+//               <label>Sub Heading</label>
+//               <input
+//                 type="text"
+//                 name="subHeading"
+//                 value={formData.cta.subHeading}
+//                 onChange={handleCTAChange}
+//               />
+
+//               <label>Description</label>
+//               <textarea
+//                 name="description"
+//                 rows="3"
+//                 value={formData.cta.description}
+//                 onChange={handleCTAChange}
+//               />
+
+//               <label>Primary Button</label>
+//               <input
+//                 type="text"
+//                 name="primaryButtonText"
+//                 value={formData.cta.primaryButtonText}
+//                 onChange={handleCTAChange}
+//               />
+
+//               <label>Secondary Button</label>
+//               <input
+//                 type="text"
+//                 name="secondaryButtonText"
+//                 value={formData.cta.secondaryButtonText}
+//                 onChange={handleCTAChange}
+//               />
+//             </div>
+//           )}
+//         </div>
+
+//         {/* UPDATE BUTTON */}
+//         <div className="update-btn-wrap">
+//           <button className="update-btn" onClick={handleSubmit}>
+//             Update Content
+//           </button>
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+// export default AdminHomePage;
+
+
+
+
+
+// import React, { useState, useEffect } from "react";
+// import AdminSidebar from "../../Components/AdminSidebar";
+// import "../../Styles/AdminHomePage.css";
+
+// function AdminHomePage() {
+//   const [openSection, setOpenSection] = useState("hero");
+//   const [uploading, setUploading] = useState(false);
+//   const [saving, setSaving] = useState(false);
+//   const [uploadMessage, setUploadMessage] = useState("");
+
+//   const [formData, setFormData] = useState({
+//     hero: {
+//       heading: "",
+//       description: "",
+//       primaryButtonText: "",
+//       secondaryButtonText: "",
+//       backgroundImage: "",
+//     },
+//     stats: [
+//       { number: "", label: "" },
+//       { number: "", label: "" },
+//       { number: "", label: "" },
+//     ],
+//     whyChooseUs: {
+//       heading: "",
+//       cards: [
+//         { title: "", description: "", icon: "" },
+//         { title: "", description: "", icon: "" },
+//         { title: "", description: "", icon: "" },
+//       ],
+//     },
+//     cta: {
+//       heading: "",
+//       subHeading: "",
+//       description: "",
+//       primaryButtonText: "",
+//       secondaryButtonText: "",
+//     },
+//   });
+
+//   useEffect(() => {
+//     fetchHomeContent();
+//   }, []);
+
+//   const fetchHomeContent = async () => {
+//     try {
+//       const res = await fetch("http://localhost:3000/api/home-content");
+//       const data = await res.json();
+
+//       if (data.success) {
+//         setFormData(data.data);
+//       }
+//     } catch (error) {
+//       console.error("Fetch error:", error);
+//     }
+//   };
+
+//   const toggleSection = (section) => {
+//     setOpenSection(openSection === section ? "" : section);
+//   };
+
+//   const handleHeroChange = (e) => {
+//     const { name, value } = e.target;
+
+//     setFormData((prev) => ({
+//       ...prev,
+//       hero: {
+//         ...prev.hero,
+//         [name]: value,
+//       },
+//     }));
+//   };
+
+//   const handleStatChange = (index, field, value) => {
+//     const updated = [...formData.stats];
+//     updated[index][field] = value;
+
+//     setFormData((prev) => ({
+//       ...prev,
+//       stats: updated,
+//     }));
+//   };
+
+//   const handleWhyHeadingChange = (e) => {
+//     setFormData((prev) => ({
+//       ...prev,
+//       whyChooseUs: {
+//         ...prev.whyChooseUs,
+//         heading: e.target.value,
+//       },
+//     }));
+//   };
+
+//   const handleWhyCardChange = (index, field, value) => {
+//     const updated = [...formData.whyChooseUs.cards];
+//     updated[index][field] = value;
+
+//     setFormData((prev) => ({
+//       ...prev,
+//       whyChooseUs: {
+//         ...prev.whyChooseUs,
+//         cards: updated,
+//       },
+//     }));
+//   };
+
+//   const handleCTAChange = (e) => {
+//     const { name, value } = e.target;
+
+//     setFormData((prev) => ({
+//       ...prev,
+//       cta: {
+//         ...prev.cta,
+//         [name]: value,
+//       },
+//     }));
+//   };
+
+//   const handleImageUpload = async (e) => {
+//     const file = e.target.files[0];
+//     if (!file) return;
+
+//     const imageData = new FormData();
+//     imageData.append("image", file);
+
+//     setUploading(true);
+//     setUploadMessage("Uploading image... Please wait.");
+
+//     try {
+//       const response = await fetch("http://localhost:3000/api/upload", {
+//         method: "POST",
+//         body: imageData,
+//       });
+
+//       const result = await response.json();
+//       console.log("Upload response:", result);
+
+//       if (result.success) {
+//         setFormData((prev) => ({
+//           ...prev,
+//           hero: {
+//             ...prev.hero,
+//             backgroundImage: result.imageUrl,
+//           },
+//         }));
+
+//         setUploadMessage("Image uploaded successfully.");
+//         alert("Image uploaded successfully!");
+//       } else {
+//         setUploadMessage(result.message || "Image upload failed.");
+//         alert(result.message || "Image upload failed");
+//       }
+//     } catch (error) {
+//       console.error("Upload error:", error);
+//       setUploadMessage("Error uploading image.");
+//       alert("Error uploading image");
+//     } finally {
+//       setUploading(false);
+//     }
+//   };
+
+//   const handleSubmit = async () => {
+//     if (uploading) {
+//       alert("Please wait until image upload is completed.");
+//       return;
+//     }
+
+//     try {
+//       setSaving(true);
+
+//       const response = await fetch("http://localhost:3000/api/home-content", {
+//         method: "PUT",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(formData),
+//       });
+
+//       const result = await response.json();
+
+//       if (result.success) {
+//         alert("Content updated successfully!");
+//         fetchHomeContent();
+//       } else {
+//         alert(result.message || "Update failed");
+//       }
+//     } catch (error) {
+//       console.error("Update error:", error);
+//       alert("Error updating content");
+//     } finally {
+//       setSaving(false);
+//     }
+//   };
+
+//   return (
+//     <div className="admin-page">
+//       <AdminSidebar />
+
+//       <main className="admin-content">
+//         <h1>Edit Home Page Content</h1>
+
+//         <div className="admin-section">
+//           <div className="section-header" onClick={() => toggleSection("hero")}>
+//             <h2>Hero Section</h2>
+//             <span>{openSection === "hero" ? "⌃" : "⌄"}</span>
+//           </div>
+
+//           {openSection === "hero" && (
+//             <div className="section-body">
+//               <label>Heading</label>
+//               <input
+//                 type="text"
+//                 name="heading"
+//                 value={formData.hero.heading}
+//                 onChange={handleHeroChange}
+//               />
+
+//               <label>Description</label>
+//               <textarea
+//                 name="description"
+//                 rows="4"
+//                 value={formData.hero.description}
+//                 onChange={handleHeroChange}
+//               />
+
+//               <label>Primary Button</label>
+//               <input
+//                 type="text"
+//                 name="primaryButtonText"
+//                 value={formData.hero.primaryButtonText}
+//                 onChange={handleHeroChange}
+//               />
+
+//               <label>Secondary Button</label>
+//               <input
+//                 type="text"
+//                 name="secondaryButtonText"
+//                 value={formData.hero.secondaryButtonText}
+//                 onChange={handleHeroChange}
+//               />
+
+//               <label>Upload Background Image</label>
+//               <input
+//                 type="file"
+//                 accept="image/*"
+//                 onChange={handleImageUpload}
+//               />
+
+//               {uploadMessage && (
+//                 <p className="upload-status-text">{uploadMessage}</p>
+//               )}
+
+//               {formData.hero.backgroundImage && (
+//                 <div className="image-preview-box">
+//                   <img
+//                     src={formData.hero.backgroundImage}
+//                     alt="Hero Preview"
+//                   />
+//                 </div>
+//               )}
+//             </div>
+//           )}
+//         </div>
+
+//         <div className="admin-section">
+//           <div className="section-header" onClick={() => toggleSection("stats")}>
+//             <h2>Stats Section</h2>
+//             <span>{openSection === "stats" ? "⌃" : "⌄"}</span>
+//           </div>
+
+//           {openSection === "stats" && (
+//             <div className="section-body">
+//               {formData.stats.map((item, index) => (
+//                 <div className="multi-field-row" key={index}>
+//                   <div>
+//                     <label>Number</label>
+//                     <input
+//                       type="text"
+//                       value={item.number}
+//                       onChange={(e) =>
+//                         handleStatChange(index, "number", e.target.value)
+//                       }
+//                     />
+//                   </div>
+
+//                   <div>
+//                     <label>Label</label>
+//                     <input
+//                       type="text"
+//                       value={item.label}
+//                       onChange={(e) =>
+//                         handleStatChange(index, "label", e.target.value)
+//                       }
+//                     />
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+//           )}
+//         </div>
+
+//         <div className="admin-section">
+//           <div className="section-header" onClick={() => toggleSection("why")}>
+//             <h2>Why Choose Us</h2>
+//             <span>{openSection === "why" ? "⌃" : "⌄"}</span>
+//           </div>
+
+//           {openSection === "why" && (
+//             <div className="section-body">
+//               <label>Heading</label>
+//               <input
+//                 type="text"
+//                 value={formData.whyChooseUs.heading}
+//                 onChange={handleWhyHeadingChange}
+//               />
+
+//               {formData.whyChooseUs.cards.map((card, index) => (
+//                 <div className="trainer-box" key={index}>
+//                   <label>Card Title</label>
+//                   <input
+//                     type="text"
+//                     value={card.title}
+//                     onChange={(e) =>
+//                       handleWhyCardChange(index, "title", e.target.value)
+//                     }
+//                   />
+
+//                   <label>Card Description</label>
+//                   <input
+//                     type="text"
+//                     value={card.description}
+//                     onChange={(e) =>
+//                       handleWhyCardChange(index, "description", e.target.value)
+//                     }
+//                   />
+
+//                   <label>Icon Class</label>
+//                   <input
+//                     type="text"
+//                     value={card.icon}
+//                     onChange={(e) =>
+//                       handleWhyCardChange(index, "icon", e.target.value)
+//                     }
+//                     placeholder="fa-dumbbell"
+//                   />
+//                 </div>
+//               ))}
+//             </div>
+//           )}
+//         </div>
+
+//         <div className="admin-section">
+//           <div className="section-header" onClick={() => toggleSection("cta")}>
+//             <h2>CTA Section</h2>
+//             <span>{openSection === "cta" ? "⌃" : "⌄"}</span>
+//           </div>
+
+//           {openSection === "cta" && (
+//             <div className="section-body">
+//               <label>Heading</label>
+//               <input
+//                 type="text"
+//                 name="heading"
+//                 value={formData.cta.heading}
+//                 onChange={handleCTAChange}
+//               />
+
+//               <label>Sub Heading</label>
+//               <input
+//                 type="text"
+//                 name="subHeading"
+//                 value={formData.cta.subHeading}
+//                 onChange={handleCTAChange}
+//               />
+
+//               <label>Description</label>
+//               <textarea
+//                 rows="4"
+//                 name="description"
+//                 value={formData.cta.description}
+//                 onChange={handleCTAChange}
+//               />
+
+//               <label>Primary Button Text</label>
+//               <input
+//                 type="text"
+//                 name="primaryButtonText"
+//                 value={formData.cta.primaryButtonText}
+//                 onChange={handleCTAChange}
+//               />
+
+//               <label>Secondary Button Text</label>
+//               <input
+//                 type="text"
+//                 name="secondaryButtonText"
+//                 value={formData.cta.secondaryButtonText}
+//                 onChange={handleCTAChange}
+//               />
+//             </div>
+//           )}
+//         </div>
+
+//         <div className="update-btn-wrap">
+//           <button
+//             className="update-btn"
+//             onClick={handleSubmit}
+//             disabled={uploading || saving}
+//           >
+//             {uploading
+//               ? "Please wait, image uploading..."
+//               : saving
+//               ? "Saving..."
+//               : "Update Content"}
+//           </button>
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+// export default AdminHomePage;
+
+
+
+
+
 import React, { useState, useEffect } from "react";
 import AdminSidebar from "../../Components/AdminSidebar";
 import "../../Styles/AdminHomePage.css";
 
 function AdminHomePage() {
   const [openSection, setOpenSection] = useState("hero");
+  const [uploading, setUploading] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [uploadMessage, setUploadMessage] = useState("");
 
   const [formData, setFormData] = useState({
     hero: {
@@ -457,7 +1253,6 @@ function AdminHomePage() {
     },
   });
 
-  // ---------------- FETCH DATA ----------------
   useEffect(() => {
     fetchHomeContent();
   }, []);
@@ -471,16 +1266,14 @@ function AdminHomePage() {
         setFormData(data.data);
       }
     } catch (error) {
-      console.error(error);
+      console.error("Fetch error:", error);
     }
   };
 
-  // ---------------- TOGGLE ----------------
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? "" : section);
   };
 
-  // ---------------- HERO ----------------
   const handleHeroChange = (e) => {
     const { name, value } = e.target;
 
@@ -493,7 +1286,6 @@ function AdminHomePage() {
     }));
   };
 
-  // ---------------- STATS ----------------
   const handleStatChange = (index, field, value) => {
     const updated = [...formData.stats];
     updated[index][field] = value;
@@ -501,20 +1293,6 @@ function AdminHomePage() {
     setFormData((prev) => ({
       ...prev,
       stats: updated,
-    }));
-  };
-
-  // ---------------- WHY CHOOSE ----------------
-  const handleWhyCardChange = (index, field, value) => {
-    const updated = [...formData.whyChooseUs.cards];
-    updated[index][field] = value;
-
-    setFormData((prev) => ({
-      ...prev,
-      whyChooseUs: {
-        ...prev.whyChooseUs,
-        cards: updated,
-      },
     }));
   };
 
@@ -528,7 +1306,19 @@ function AdminHomePage() {
     }));
   };
 
-  // ---------------- CTA ----------------
+  const handleWhyCardChange = (index, field, value) => {
+    const updated = [...formData.whyChooseUs.cards];
+    updated[index][field] = value;
+
+    setFormData((prev) => ({
+      ...prev,
+      whyChooseUs: {
+        ...prev.whyChooseUs,
+        cards: updated,
+      },
+    }));
+  };
+
   const handleCTAChange = (e) => {
     const { name, value } = e.target;
 
@@ -541,13 +1331,76 @@ function AdminHomePage() {
     }));
   };
 
-  // ---------------- SUBMIT ----------------
-  const handleSubmit = async () => {
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const token = localStorage.getItem("token");
+    if (!token) {
+      alert("Please login first");
+      return;
+    }
+
+    const imageData = new FormData();
+    imageData.append("image", file);
+
+    setUploading(true);
+    setUploadMessage("Uploading image... Please wait.");
+
     try {
+      const response = await fetch("http://localhost:3000/api/upload", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        body: imageData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setFormData((prev) => ({
+          ...prev,
+          hero: {
+            ...prev.hero,
+            backgroundImage: result.imageUrl,
+          },
+        }));
+
+        setUploadMessage("Image uploaded successfully.");
+      } else {
+        setUploadMessage(result.message || "Image upload failed.");
+        alert(result.message || "Image upload failed");
+      }
+    } catch (error) {
+      console.error("Upload error:", error);
+      setUploadMessage("Error uploading image.");
+      alert("Error uploading image");
+    } finally {
+      setUploading(false);
+    }
+  };
+
+  const handleSubmit = async () => {
+    if (uploading) {
+      alert("Please wait until image upload is completed.");
+      return;
+    }
+
+    const token = localStorage.getItem("token");
+    if (!token) {
+      alert("Please login first");
+      return;
+    }
+
+    try {
+      setSaving(true);
+
       const response = await fetch("http://localhost:3000/api/home-content", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify(formData),
       });
@@ -556,12 +1409,15 @@ function AdminHomePage() {
 
       if (result.success) {
         alert("Content updated successfully!");
+        fetchHomeContent();
       } else {
         alert(result.message || "Update failed");
       }
     } catch (error) {
-      console.error(error);
+      console.error("Update error:", error);
       alert("Error updating content");
+    } finally {
+      setSaving(false);
     }
   };
 
@@ -572,7 +1428,6 @@ function AdminHomePage() {
       <main className="admin-content">
         <h1>Edit Home Page Content</h1>
 
-        {/* HERO */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("hero")}>
             <h2>Hero Section</h2>
@@ -613,18 +1468,29 @@ function AdminHomePage() {
                 onChange={handleHeroChange}
               />
 
-              <label>Background Image URL</label>
+              <label>Upload Background Image</label>
               <input
-                type="text"
-                name="backgroundImage"
-                value={formData.hero.backgroundImage}
-                onChange={handleHeroChange}
+                type="file"
+                accept="image/*"
+                onChange={handleImageUpload}
               />
+
+              {uploadMessage && (
+                <p className="upload-status-text">{uploadMessage}</p>
+              )}
+
+              {formData.hero.backgroundImage && (
+                <div className="image-preview-box">
+                  <img
+                    src={formData.hero.backgroundImage}
+                    alt="Hero Preview"
+                  />
+                </div>
+              )}
             </div>
           )}
         </div>
 
-        {/* STATS */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("stats")}>
             <h2>Stats Section</h2>
@@ -662,12 +1528,8 @@ function AdminHomePage() {
           )}
         </div>
 
-        {/* WHY CHOOSE */}
         <div className="admin-section">
-          <div
-            className="section-header"
-            onClick={() => toggleSection("why")}
-          >
+          <div className="section-header" onClick={() => toggleSection("why")}>
             <h2>Why Choose Us</h2>
             <span>{openSection === "why" ? "⌃" : "⌄"}</span>
           </div>
@@ -682,8 +1544,8 @@ function AdminHomePage() {
               />
 
               {formData.whyChooseUs.cards.map((card, index) => (
-                <div key={index} className="trainer-box">
-                  <label>Title</label>
+                <div className="trainer-box" key={index}>
+                  <label>Card Title</label>
                   <input
                     type="text"
                     value={card.title}
@@ -692,7 +1554,7 @@ function AdminHomePage() {
                     }
                   />
 
-                  <label>Description</label>
+                  <label>Card Description</label>
                   <input
                     type="text"
                     value={card.description}
@@ -701,13 +1563,14 @@ function AdminHomePage() {
                     }
                   />
 
-                  <label>Icon (FontAwesome)</label>
+                  <label>Icon Class</label>
                   <input
                     type="text"
                     value={card.icon}
                     onChange={(e) =>
                       handleWhyCardChange(index, "icon", e.target.value)
                     }
+                    placeholder="fa-dumbbell"
                   />
                 </div>
               ))}
@@ -715,7 +1578,6 @@ function AdminHomePage() {
           )}
         </div>
 
-        {/* CTA */}
         <div className="admin-section">
           <div className="section-header" onClick={() => toggleSection("cta")}>
             <h2>CTA Section</h2>
@@ -742,13 +1604,13 @@ function AdminHomePage() {
 
               <label>Description</label>
               <textarea
+                rows="4"
                 name="description"
-                rows="3"
                 value={formData.cta.description}
                 onChange={handleCTAChange}
               />
 
-              <label>Primary Button</label>
+              <label>Primary Button Text</label>
               <input
                 type="text"
                 name="primaryButtonText"
@@ -756,7 +1618,7 @@ function AdminHomePage() {
                 onChange={handleCTAChange}
               />
 
-              <label>Secondary Button</label>
+              <label>Secondary Button Text</label>
               <input
                 type="text"
                 name="secondaryButtonText"
@@ -767,10 +1629,17 @@ function AdminHomePage() {
           )}
         </div>
 
-        {/* UPDATE BUTTON */}
         <div className="update-btn-wrap">
-          <button className="update-btn" onClick={handleSubmit}>
-            Update Content
+          <button
+            className="update-btn"
+            onClick={handleSubmit}
+            disabled={uploading || saving}
+          >
+            {uploading
+              ? "Please wait, image uploading..."
+              : saving
+              ? "Saving..."
+              : "Update Content"}
           </button>
         </div>
       </main>

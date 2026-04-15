@@ -27,6 +27,9 @@ import IndividualSports from "./Pages/IndividualSports";
 import AdventureSports from "./Pages/AdventureSports";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
+
+import AdminProtectedRoute from "./Components/AdminProtectedRoute";
+
 import AdminHomePage from "./Pages/Admin/AdminHomePage";
 import AdminAboutPage from "./Pages/Admin/AdminAboutPage";
 import AdminDashBoard from "./Pages/Admin/AdminDashBoard";
@@ -66,13 +69,15 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
         </Route>
 
-        <Route path="/admin/dashboard" element={<AdminDashBoard />} />
-        <Route path="/admin/home" element={<AdminHomePage />} />
-        <Route path="/admin/about" element={<AdminAboutPage />} />
-        <Route path="/admin/trainers" element={<AdminTrainers />} />
-        <Route path="/admin/programs" element={<AdminPrograms />} />
-        <Route path="/admin/testimonials" element={<AdminTestimonials />} />
-        <Route path="/admin/settings" element={<AdminSettings />} />
+        <Route element={<AdminProtectedRoute />}>
+          <Route path="/admin/dashboard" element={<AdminDashBoard />} />
+          <Route path="/admin/home" element={<AdminHomePage />} />
+          <Route path="/admin/about" element={<AdminAboutPage />} />
+          <Route path="/admin/trainers" element={<AdminTrainers />} />
+          <Route path="/admin/programs" element={<AdminPrograms />} />
+          <Route path="/admin/testimonials" element={<AdminTestimonials />} />
+          <Route path="/admin/settings" element={<AdminSettings />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
