@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/LogoIcon.png";
 import logoName from "../assets/LogoName.png";
 import "../Styles/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../Context/AuthContext";
 import { IoSettingsOutline } from "react-icons/io5";
@@ -11,6 +11,7 @@ function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { user, logout } = useContext(AuthContext);
   const [openDrop, setOpenDrop] = useState(false);
+  const navigate  = useNavigate();
 
   useEffect(() => {
     console.log(user);
@@ -93,6 +94,7 @@ function NavBar() {
                     onClick={() => {
                       setOpenDrop(false);
                       logout();
+                      navigate("/login")
                     }}
                   >
                     Logout

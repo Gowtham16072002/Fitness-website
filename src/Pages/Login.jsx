@@ -256,7 +256,7 @@ function Login() {
           navigate("/admin/dashboard");
         } else {
           login(data.user);
-          navigate("/");
+          navigate("/home");
         }
         
       } else {
