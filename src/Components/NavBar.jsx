@@ -1,32 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/LogoIcon.png";
 import logoName from "../assets/LogoName.png";
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../Context/AuthContext";
+import { IoSettingsOutline } from "react-icons/io5";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [user,setUser] = useState(null)
+  const { user, logout } = useContext(AuthContext);
+  const [openDrop, setOpenDrop] = useState(false);
+
   useEffect(() => {
-    const fetchUserData = async () => {
-      try {
-        const res = await fetch("http://localhost:3000/auth/profile", {
-          credentials: "include",
-        });
-        if (!res.ok) {
-          console.log("User not logged in");
-          return;
-        }
-
-        const data = await res.json();
-        setUser(data.user)
-      } catch (error) {
-        console.error("Error fetching profile:", error);
-      }
-    };
-
-    fetchUserData();
-  }, []);
+    console.log(user);
+  }, [user]);
 
   return (
     <nav className="navbar">
@@ -60,22 +48,60 @@ function NavBar() {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        {user && <li className="mobile-auth-item">
-          <Link to="/login" className="auth-link">
-            {user && user.fullName}
-          </Link>
-        </li>}
-        {!user && <li className="mobile-auth-item">
-          <Link to="/login" className="auth-link">
-            loging
-          </Link>
-        </li>}
+        {user && (
+          <li className="mobile-auth-item">
+            <Link to="/login" className="auth-link">
+              {user && user.fullName}
+            </Link>
+          </li>
+        )}
+        {!user && (
+          <li className="mobile-auth-item">
+            <Link to="/login" className="auth-link">
+              loging
+            </Link>
+          </li>
+        )}
       </ul>
 
       <div className="nav-button">
-        <Link to="/login" className="auth-link">
-          Login
-        </Link>
+        {!user ? (
+          <Link to="/login" className="auth-link">
+            Login
+          </Link>
+        ) : (
+          // <Link to="/" className="auth-link" onClick={logout}>
+          //   Logout
+          // </Link>
+          <div>
+            <div className="user-logo" onClick={() => setOpenDrop(!openDrop)}>
+              <span>{user.fullName.split("")[0].toUpperCase()}</span>
+            </div>
+            {openDrop && (
+              <div className="dropdown">
+                <p className="userName">
+                  {user.fullName
+                    .split("")
+                    .map((w, i) => (i == 0 ? w.toUpperCase() : w))}
+                </p>
+                <p className="dropdown-settings">
+                  <IoSettingsOutline />
+                  Settings
+                </p>
+                <div className="dropdown-button">
+                  <button
+                    onClick={() => {
+                      setOpenDrop(false);
+                      logout();
+                    }}
+                  >
+                    Logout
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </nav>
   );

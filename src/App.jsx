@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { AuthProvider } from "./Context/AuthContext";
 import Layout from "./Pages/Layout";
 
 import Home from "./Pages/Home";
@@ -37,44 +37,46 @@ import AdminSettings from "./Pages/Admin/AdminSettings";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/programs" element={<Programs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/beginnerGym" element={<BeginnerGym />} />
-          <Route path="/cardio" element={<Cardio />} />
-          <Route path="/StrengthTraining" element={<StrengthTraining />} />
-          <Route path="/Nutrition" element={<Nutrition />} />
-          <Route path="/beginnerYoga" element={<BeginnerYoga />} />
-          <Route path="/KarmaYoga" element={<KarmaYoga />} />
-          <Route path="/Bhaktiyoga" element={<Bhaktiyoga />} />
-          <Route path="/Jnanayoga" element={<Jnanayoga />} />
-          <Route path="/zumbaFitness" element={<ZumbaFitness />} />
-          <Route path="/zumbaGold" element={<ZumbaGold />} />
-          <Route path="/zumbaClassic" element={<ZumbaClassic />} />
-          <Route path="/pricingplan/:name" element={<PricingPlans />} />
-          <Route path="/zumbaKids" element={<ZumbaKids />} />
-          <Route path="/generalSports" element={<GeneralSports />} />
-          <Route path="/teamSports" element={<TeamSports />} />
-          <Route path="/individualSports" element={<IndividualSports />} />
-          <Route path="/adventureSports" element={<AdventureSports />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Route>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/service" element={<Services />} />
+            <Route path="/programs" element={<Programs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/beginnerGym" element={<BeginnerGym />} />
+            <Route path="/cardio" element={<Cardio />} />
+            <Route path="/StrengthTraining" element={<StrengthTraining />} />
+            <Route path="/Nutrition" element={<Nutrition />} />
+            <Route path="/beginnerYoga" element={<BeginnerYoga />} />
+            <Route path="/KarmaYoga" element={<KarmaYoga />} />
+            <Route path="/Bhaktiyoga" element={<Bhaktiyoga />} />
+            <Route path="/Jnanayoga" element={<Jnanayoga />} />
+            <Route path="/zumbaFitness" element={<ZumbaFitness />} />
+            <Route path="/zumbaGold" element={<ZumbaGold />} />
+            <Route path="/zumbaClassic" element={<ZumbaClassic />} />
+            <Route path="/pricingplan/:name" element={<PricingPlans />} />
+            <Route path="/zumbaKids" element={<ZumbaKids />} />
+            <Route path="/generalSports" element={<GeneralSports />} />
+            <Route path="/teamSports" element={<TeamSports />} />
+            <Route path="/individualSports" element={<IndividualSports />} />
+            <Route path="/adventureSports" element={<AdventureSports />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+          </Route>
 
-        <Route path="/admin/dashboard" element={<AdminDashBoard />} />
-        <Route path="/admin/home" element={<AdminHomePage />} />
-        <Route path="/admin/about" element={<AdminAboutPage />} />
-        <Route path="/admin/trainers" element={<AdminTrainers />} />
-        <Route path="/admin/programs" element={<AdminPrograms />} />
-        <Route path="/admin/testimonials" element={<AdminTestimonials />} />
-        <Route path="/admin/settings" element={<AdminSettings />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/admin/dashboard" element={<AdminDashBoard />} />
+          <Route path="/admin/home" element={<AdminHomePage />} />
+          <Route path="/admin/about" element={<AdminAboutPage />} />
+          <Route path="/admin/trainers" element={<AdminTrainers />} />
+          <Route path="/admin/programs" element={<AdminPrograms />} />
+          <Route path="/admin/testimonials" element={<AdminTestimonials />} />
+          <Route path="/admin/settings" element={<AdminSettings />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 

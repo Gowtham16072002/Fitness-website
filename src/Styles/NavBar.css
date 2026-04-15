@@ -103,11 +103,79 @@
   font-size: 15px;
 }
 
+.user-logo {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: 2px solid rgb(245, 87, 87);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+.user-logo:hover {
+  box-shadow: 0 0 40px rgb(233, 6, 6);
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  background-color: var(--light-bg);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dropdown-settings{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.dropdown button {
+  background: rgb(245, 87, 87);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropdown button:hover {
+  background: rgb(233, 6, 6);
+}
+
+.userName{
+  font-weight: 800;
+}
+
 .menu-icon {
   display: none;
   font-size: 28px;
   color: white;
   cursor: pointer;
+}
+
+.dropdown-button{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 @media (max-width: 1024px) {
