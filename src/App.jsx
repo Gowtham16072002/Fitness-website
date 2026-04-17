@@ -37,6 +37,7 @@ import AdminTrainers from "./Pages/Admin/AdminTrainers";
 import AdminPrograms from "./Pages/Admin/AdminPrograms";
 import AdminTestimonials from "./Pages/Admin/AdminTestimonials";
 import AdminSettings from "./Pages/Admin/AdminSettings";
+import { API_BASE_URL } from "./config";
 
 function App() {
   return (

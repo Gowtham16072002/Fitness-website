@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import AdminSidebar from "../../Components/AdminSidebar";
 import "../../Styles/AdminPrograms.css";
+import { API_BASE_URL } from "../../config";
 
 function AdminPrograms() {
   const [openSection, setOpenSection] = useState("hero");
@@ -74,7 +75,7 @@ function AdminPrograms() {
     button2: "View Pricing",
   });
   useEffect(() => {
-    fetch("http://localhost:3000/api/programs", {
+    fetch(`${API_BASE_URL}/api/programs`, {
       credentials: "include",
     })
       .then((res) => res.json())
@@ -145,7 +146,7 @@ function AdminPrograms() {
       };
 
       try {
-        await fetch("http://localhost:3000/api/programs", {
+        await fetch(`${API_BASE_URL}/api/programs`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

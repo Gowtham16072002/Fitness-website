@@ -3,6 +3,7 @@ import AdminSidebar from "../../Components/AdminSidebar";
 import "../../Styles/AdminHomePage.css";
 import { AuthContext } from "../../Context/AuthContext";
 import axios from "axios";
+import { API_BASE_URL } from "../../config";
 
 function AdminHomePage() {
   // const {user} = useContext(AuthContext);
@@ -46,7 +47,7 @@ function AdminHomePage() {
 
   const fetchHomeContent = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/home-content");
+      const res = await fetch(`${API_BASE_URL}/api/home-content`);
       const data = await res.json();
       console.log(data);
       if (data.success) {
@@ -164,7 +165,7 @@ function AdminHomePage() {
     setUploadMessage("Uploading image... Please wait.");
 
     try {
-      const response = await fetch("http://localhost:3000/api/upload", {
+      const response = await fetch(`${API_BASE_URL}/api/upload`, {
         method: "POST",
         credentials:"include",
         body: imageData,
@@ -209,30 +210,13 @@ function AdminHomePage() {
     }
 
     try {
-      const response = await axios.put(`http://localhost:3000/api/home-content`, {
+      const response = await axios.put(`${API_BASE_URL}/api/home-content`, {
         hero: formData.hero,
         stats: formData.stats,
         whyChooseUs:formData.whyChooseUs,
         cta:formData.cta
       }, { withCredentials: true })
       response && response.data.success && alert("content updated")
-      // const response = await fetch("http://localhost:3000/api/home-content", {
-      //   method: "PUT",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //     Authorization: `Bearer ${token}`,
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
-
-      // const result = await response.json();
-
-      // if (result.success) {
-      //   alert("Content updated successfully!");
-      //   fetchHomeContent();
-      // } else {
-      //   alert(result.message || "Update failed");
-      // }
     } catch (error) {
       console.error("Update error:", error);
       alert("Error updating content");
