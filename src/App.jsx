@@ -44,7 +44,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Login />} />
+            <Route index element={<Home />} />
             <Route path="/home" element={<Home/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/service" element={<Services />} />
@@ -67,9 +67,10 @@ function App() {
             <Route path="/teamSports" element={<TeamSports />} />
             <Route path="/individualSports" element={<IndividualSports />} />
             <Route path="/adventureSports" element={<AdventureSports />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<SignUp />} />
           </Route>
+
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
 
         <Route element={<AdminProtectedRoute />}>
           <Route path="/admin/dashboard" element={<AdminDashBoard />} />

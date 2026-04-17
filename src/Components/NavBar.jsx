@@ -10,6 +10,8 @@ import { IoSettingsOutline } from "react-icons/io5";
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { user, logout } = useContext(AuthContext);
+  console.log(user);
+  
   const [openDrop, setOpenDrop] = useState(false);
   const navigate  = useNavigate();
 
@@ -35,7 +37,7 @@ function NavBar() {
 
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
@@ -48,6 +50,9 @@ function NavBar() {
         </li>
         <li>
           <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/admin/dashboard">Admin</Link>
         </li>
         {user && (
           <li className="mobile-auth-item">

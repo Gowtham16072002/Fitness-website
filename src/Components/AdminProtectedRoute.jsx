@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navigate, Outlet } from "react-router-dom";
-
+import { AuthContext } from "../Context/AuthContext";
 function AdminProtectedRoute() {
-  const token = localStorage.getItem("token");
-  const user = JSON.parse(localStorage.getItem("user"));
-
-  if (!token || !user) {
+  const {user} = useContext(AuthContext);
+  
+  if (!user) {
     return <Navigate to="/login" replace />;
   }
 
   if (user.role !== "admin") {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/home" replace />;
   }
 
   return <Outlet />;
